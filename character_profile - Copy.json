@@ -1,0 +1,54 @@
+{
+  "character": {
+    "name": "Linh Trang",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only)",
+    "face": {
+      "shape": "soft oval with slightly rounded cheeks, delicate jawline, natural Vietnamese proportions",
+      "eyes": "almond-shaped, dark brown, double eyelids, slightly upturned outer corners, warm and friendly expression",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight, slightly button",
+      "lips": "natural, rose-pink",
+      "skin": "light to medium tan with natural glow, smooth complexion, typical Northern Vietnamese skin tone",
+      "cheekbones": "high but soft",
+      "features": "small mole near left eye"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "fit and toned, athletic build with feminine curves",
+      "height": "165cm (average Vietnamese height)",
+      "build": "slim waist, toned arms and legs, defined abs, proportionate figure",
+      "posture": "confident and natural"
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo",
+      "lighting": "natural daylight",
+      "composition": "cinematic composition"
+    },
+    "core_identity_prompt": "A high-quality, realistic photo of Linh Trang, a 23-year-old Vietnamese woman from Hanoi. She has long, straight jet black hair reaching her lower back. Body: fit and toned athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs. Face: soft oval shape with slightly rounded cheeks, delicate jawline, light to medium tan skin with natural glow (typical Northern Vietnamese), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, straight bridge with slightly button tip nose (typical Vietnamese nose shape), natural rose-pink lips with medium fullness, soft slightly high cheekbones, small mole near left eye. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian."
+  },
+  "base_prompt": "A high-quality, realistic photo of a 23 years old Vietnamese woman with long, straight jet black hair standing on an electric scooter. She has a fit and toned, athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs, proportionate figure. She has a natural Vietnamese face with a soft oval face shape with slightly rounded cheeks, delicate jawline, light to medium tan skin with natural glow (typical Northern Vietnamese), straight bridge with slightly button tip nose (typical Vietnamese nose shape), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, natural rose-pink lips with medium fullness, soft slightly high cheekbones, distinctly Southeast Asian features with youthful fresh appearance. She is wearing a fitted black short-sleeved t-shirt and high-waisted black leggings. The scooter is modern, matte black and grey. The setting is a roadside in Vietnam, with a paved sidewalk, yellow road lines, and blurred street-side shops in the background. Natural daylight, side view, cinematic composition. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian."
+}

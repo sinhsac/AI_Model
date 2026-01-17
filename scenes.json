@@ -8,10 +8,11 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T13:18:33.110403",
+      "updatedAt": "2026-01-17T14:54:54.489132",
       "generated_images": [
         "/uploads/scene_01/1768627149.jpg",
-        "/uploads/scene_01/1768630713.jpg"
+        "/uploads/scene_01/1768630713.jpg",
+        "/uploads/scene_01/1768636494.jpg"
       ]
     },
     {
@@ -130,9 +131,10 @@
       "setting": "Vietnamese street food stall with plastic chairs and tables",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T13:48:14.138877",
+      "updatedAt": "2026-01-17T14:57:24.708400",
       "generated_images": [
-        "/uploads/scene_10/1768632494.jpg"
+        "/uploads/scene_10/1768632494.jpg",
+        "/uploads/scene_10/1768636644.jpg"
       ]
     },
     {
@@ -570,8 +572,10 @@
       "setting": "morning street with sunlight",
       "view": "front view, full body shot, relaxed vibe",
       "createdAt": "2026-01-17T14:45:00.000000",
-      "updatedAt": "2026-01-17T14:45:00.000000",
-      "generated_images": []
+      "updatedAt": "2026-01-17T14:52:43.357861",
+      "generated_images": [
+        "/uploads/scene_42/1768636363.jpg"
+      ]
     },
     {
       "id": "scene_43",
@@ -582,8 +586,10 @@
       "setting": "university gate",
       "view": "front view, full body shot, youthful",
       "createdAt": "2026-01-17T14:45:00.000000",
-      "updatedAt": "2026-01-17T14:45:00.000000",
-      "generated_images": []
+      "updatedAt": "2026-01-17T14:53:24.915297",
+      "generated_images": [
+        "/uploads/scene_43/1768636404.jpg"
+      ]
     },
     {
       "id": "scene_44",
@@ -594,8 +600,10 @@
       "setting": "suburban road with greenery",
       "view": "front view, full body shot, adventurous",
       "createdAt": "2026-01-17T14:45:00.000000",
-      "updatedAt": "2026-01-17T14:45:00.000000",
-      "generated_images": []
+      "updatedAt": "2026-01-17T14:54:18.624896",
+      "generated_images": [
+        "/uploads/scene_44/1768636458.jpg"
+      ]
     }
   ]
 }
