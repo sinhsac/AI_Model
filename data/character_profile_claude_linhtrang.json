@@ -1,0 +1,258 @@
+{
+  "character": {
+    "name": "Linh Trang 3",
+    "age": "23 years old",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only. Typical Northern Vietnamese Kinh appearance with Southeast Asian traits)",
+    "nationality": "Vietnamese",
+    "hometown": "Hanoi, Vietnam",
+    
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": {
+        "size": "medium-wide",
+        "color": "dark brown",
+        "shape": "natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+        "expression": "bright, warm, friendly, intelligent"
+      },
+      "eyebrows": "naturally arched, medium thickness, dark brown, well-defined",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full, soft appearance",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "special_features": "small mole near left eye, youthful Southeast Asian facial structure",
+      "expression": "natural, approachable, confident smile"
+    },
+    
+    "hair": {
+      "length": "long, reaching lower back (approximately 70-75cm from shoulder)",
+      "texture": "straight, silky, well-maintained",
+      "color": "jet black, natural dark tone",
+      "style": "mostly left loose, sometimes in casual ponytail or bun",
+      "volume": "thick, healthy shine, natural body"
+    },
+    
+    "body": {
+      "height": "165cm (5'5\") - average Vietnamese height",
+      "weight_range": "52-55kg (fitness athlete range)",
+      "build": "fit and toned, athletic build with feminine curves",
+      "body_type": "mesomorph - lean muscle tone",
+      "fitness_level": "advanced fitness enthusiast, 6-7 pack abs visible",
+      
+      "measurements": {
+        "bust": "85cm (33-34 inches) - proportionate, athletic",
+        "waist": "60-62cm (23.5-24.5 inches) - defined, minimal body fat",
+        "hips": "88-90cm (34.5-35.5 inches) - balanced, feminine curves",
+        "thighs": "toned, lean, well-defined muscles, no excess fat",
+        "arms": "toned, defined biceps and triceps, feminine but athletic",
+        "calves": "lean and defined, athletic appearance"
+      },
+      
+      "physique_details": {
+        "torso": "flat stomach with visible 6-7 pack abs, strong core, defined obliques",
+        "shoulders": "toned, lean, not overly broad, feminine shoulder line",
+        "back": "toned back muscles visible, athletic posture, slight spinal definition when tensed",
+        "legs": "toned thighs with visible muscle definition, lean calves, athletic appearance",
+        "body_fat_percentage": "15-18% - lean and defined but healthy, maintains feminine curves",
+        "skin_texture": "smooth, toned, healthy glow, no visible cellulite",
+        "posture": "confident, upright, athletic stance"
+      },
+      
+      "fitness_characteristics": {
+        "exercise_routine": "mix of weight training, cardio, and flexibility work",
+        "muscle_definition": "visible but not extreme - balanced, athletic appearance",
+        "skin_tone_after_fitness": "warm golden undertone, slight natural flush from activity",
+        "muscle_groups": "shoulders, arms, core, glutes, and legs all toned and defined"
+      }
+    },
+    
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic",
+        "confident",
+        "authentic",
+        "ambitious"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful, authentic",
+      "communication_style": "direct but kind, enthusiastic, engaging",
+      "values": "authenticity, growth, community, creativity"
+    },
+    
+    "background": {
+      "occupation": "Content Creator & Digital Marketing Specialist",
+      "industry": "social media, fitness content, lifestyle",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother",
+      "interests": [
+        "fitness and health",
+        "content creation",
+        "digital marketing",
+        "travel",
+        "photography",
+        "Vietnamese culture"
+      ]
+    },
+    
+    "clothing_styles": [
+      {
+        "name": "casual_fitness",
+        "top": "fitted white short-sleeved t-shirt or sports bra",
+        "bottom": "high-waisted muted olive leggings or black athletic shorts",
+        "accessories": "minimalist watch, simple gold jewelry",
+        "occasion": "everyday, casual outings"
+      },
+      {
+        "name": "gym_wear",
+        "top": "black sports bra or fitted tank top",
+        "bottom": "high-waisted black leggings with side pockets",
+        "accessories": "athletic watch, gym bag",
+        "occasion": "workout sessions"
+      },
+      {
+        "name": "casual_street",
+        "top": "fitted crop top or oversized t-shirt",
+        "bottom": "high-waisted jeans or cargo pants",
+        "accessories": "crossbody bag, sneakers, simple jewelry",
+        "occasion": "casual outings, shopping"
+      },
+      {
+        "name": "smart_casual",
+        "top": "fitted blouse or elegant top",
+        "bottom": "black trousers or midi skirt",
+        "accessories": "leather bag, heels or loafers, minimal jewelry",
+        "occasion": "professional meetings, events"
+      },
+      {
+        "name": "going_out",
+        "top": "fitted black or neutral top, sometimes off-shoulder",
+        "bottom": "high-waisted dress or stylish pants",
+        "accessories": "small clutch, heels, statement jewelry",
+        "occasion": "dinner, night out"
+      }
+    ],
+    
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": "",
+      "footwear": "white sneakers or comfortable walking shoes"
+    },
+    
+    "photography": {
+      "quality": "high-quality, realistic photo",
+      "lighting": "natural daylight, soft golden hour preferred",
+      "composition": "cinematic composition",
+      "photography_style": "lifestyle, authentic, natural poses",
+      "preferred_settings": [
+        "urban Vietnam (Hanoi streets)",
+        "coffee shop",
+        "gym or fitness studio",
+        "outdoor parks",
+        "rooftop",
+        "street with street vendors"
+      ],
+      "pose_style": "natural, confident, genuine expressions"
+    },
+    
+    "core_identity_prompt": "A high-quality, realistic photo of Linh Trang, a 23-year-old Vietnamese woman from Hanoi. She has long, straight jet black hair reaching her lower back with healthy shine. Height: 165cm. Body: fit and toned athletic build with feminine curves, 52-55kg weight range, lean mesomorph physique. Torso: flat stomach with visible 6-7 pack abs, strong defined core, athletic appearance with 15-18% body fat. Thighs: toned and lean with visible muscle definition. Arms: toned with defined biceps, feminine yet athletic. Legs: athletic and defined. Face: soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), warm light-medium tan skin with golden undertone (classic Northern Vietnamese), medium-wide dark brown eyes with natural double eyelids and soft rounded shape, naturally arched medium thickness dark brown eyebrows, low-to-medium nose bridge with softly rounded button tip (typical Vietnamese nose shape, wider and flatter), full natural rose-pink lips, soft gently prominent cheekbones, small mole near left eye, youthful Southeast Asian appearance. Expression: warm, friendly, confident smile. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics whatsoever. Strictly Vietnamese Southeast Asian facial structure only – no fox eyes, no pale white skin, no sharp angular bone structure, no K-pop idol look. No high nose bridge. Natural, authentic Vietnamese beauty.",
+    
+    "image_generation_variants": [
+      {
+        "variant_name": "fitness_enthusiast",
+        "description": "Linh Trang in gym or fitness setting showing her athletic physique",
+        "key_elements": "sports bra or fitted athletic top, high-waisted leggings, visible abs and muscle tone, gym background or outdoor fitness setting",
+        "lighting": "bright, energetic, natural daylight"
+      },
+      {
+        "variant_name": "casual_lifestyle",
+        "description": "Linh Trang in everyday casual setting",
+        "key_elements": "fitted casual t-shirt, leggings or jeans, natural environment like cafe or street in Hanoi",
+        "lighting": "warm, natural, golden hour preferred"
+      },
+      {
+        "variant_name": "content_creator",
+        "description": "Linh Trang creating content, taking photos or filming",
+        "key_elements": "phone or camera in hand, confident pose, well-lit environment, authentic expression",
+        "lighting": "natural, cinematic"
+      },
+      {
+        "variant_name": "professional",
+        "description": "Linh Trang in professional or polished setting",
+        "key_elements": "smart casual or business casual outfit, confident posture, professional background",
+        "lighting": "balanced, professional"
+      },
+      {
+        "variant_name": "active_lifestyle",
+        "description": "Linh Trang in active scenarios - on electric scooter, cycling, or outdoor activity",
+        "key_elements": "athletic casual wear, motion or dynamic pose, urban Vietnam setting",
+        "lighting": "natural daylight"
+      }
+    ],
+    
+    "generation_tips_for_gemini": {
+      "essential_keywords": [
+        "Vietnamese woman",
+        "23 years old",
+        "long straight jet black hair",
+        "athletic fitness build",
+        "visible abs",
+        "warm tan skin with golden undertone",
+        "soft rounded face",
+        "Southeast Asian features",
+        "dark brown eyes",
+        "natural double eyelids",
+        "rounded nose",
+        "genuine smile",
+        "confident posture"
+      ],
+      "avoid_keywords": [
+        "Chinese",
+        "Korean",
+        "Japanese",
+        "sharp V-line jaw",
+        "fox eyes",
+        "pale white skin",
+        "high nose bridge",
+        "K-pop",
+        "anime",
+        "heavily makeup",
+        "overdone features"
+      ],
+      "composition_tips": [
+        "Use natural lighting from windows or golden hour sunlight",
+        "Include authentic Vietnamese background elements",
+        "Focus on confident, natural poses",
+        "Show fitness physique naturally without exaggeration",
+        "Emphasize warm, approachable expression",
+        "Capture Southeast Asian beauty authentically"
+      ],
+      "prompt_structure": "Start with 'high-quality realistic photo' → describe setting → describe pose → describe full body with emphasis on fitness → describe face and features → include MUST AVOID section at end"
+    }
+  },
+  
+  "extended_character_details": {
+    "daily_routine": "Morning workout (5:30-6:30am), breakfast, work as digital marketer, afternoon content creation, flexible evening schedule",
+    "fitness_routine": "Strength training 3-4x per week, cardio 2-3x per week, yoga/flexibility 1-2x per week, active recovery on off days",
+    "favorite_locations_hanoi": [
+      "Hoan Kiem Lake area",
+      "Old Quarter streets",
+      "modern coffee shops in Tay Ho",
+      "Tao Đàn Park",
+      "fitness gyms in Cau Giay district"
+    ],
+    "social_presence": "Active on TikTok, Instagram, and YouTube - content about fitness, lifestyle, and daily vlogs",
+    "personality_quirks": [
+      "gets excited easily about new projects",
+      "perfectionist about content quality",
+      "loves trying new coffee places",
+      "authentic on social media, rarely filters heavily",
+      "supportive of others' fitness journey"
+    ],
+    "speech_patterns": "Mix of Vietnamese and English, uses casual slang, friendly and approachable tone"
+  }
+}

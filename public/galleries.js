@@ -11,7 +11,9 @@ async function init() {
 // Load all images from all scenes
 async function loadGalleries() {
     try {
-        const res = await fetch(`${API_BASE}/profile`);
+        const urlParams = new URLSearchParams(window.location.search);
+        const profileId = urlParams.get('id') || 'linhtrang';
+        const res = await fetch(`${API_BASE}/profile?id=${profileId}`);
         const data = await res.json();
 
         data.scenes.forEach(scene => {

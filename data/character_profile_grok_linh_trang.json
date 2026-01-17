@@ -1,0 +1,54 @@
+{
+  "character": {
+    "name": "Linh Trang 2",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only. Typical Northern Vietnamese Kinh appearance with Southeast Asian traits)",
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": "medium-wide dark brown eyes, natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "features": "small mole near left eye, youthful Southeast Asian facial structure"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "fit and toned, athletic build with feminine curves",
+      "height": "165cm (average Vietnamese height)",
+      "build": "slim waist, toned arms and legs, defined abs, proportionate figure",
+      "posture": "confident and natural"
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo",
+      "lighting": "natural daylight",
+      "composition": "cinematic composition"
+    },
+    "core_identity_prompt": "A high-quality, realistic photo of Linh Trang, a 23-year-old Vietnamese woman from Hanoi. She has long, straight jet black hair reaching her lower back. Body: fit and toned athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs. Face: soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), warm light-medium tan skin with golden undertone (classic Northern Vietnamese), medium-wide dark brown eyes with natural double eyelids and soft rounded shape, naturally arched medium thickness dark brown eyebrows, low-to-medium nose bridge with softly rounded button tip (typical Vietnamese nose shape, wider and flatter), full natural rose-pink lips, soft gently prominent cheekbones, small mole near left eye. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics whatsoever. Strictly Vietnamese Southeast Asian facial structure only – no fox eyes, no pale white skin, no sharp angular bone structure, no K-pop idol look."
+  },
+  "base_prompt": "A high-quality, realistic photo of a 23 years old Vietnamese woman with long, straight jet black hair standing on an electric scooter. She has a fit and toned, athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs, proportionate figure. She has a typical Northern Vietnamese face: soft rounded oval with noticeably full cheeks, gentle rounded jawline, warm light-medium tan skin with golden undertone, medium-wide dark brown eyes with natural double eyelids, low-to-medium nose bridge with softly rounded button tip (classic Vietnamese nose), full natural rose-pink lips, soft cheekbones, small mole near left eye, distinctly Southeast Asian youthful fresh appearance. She is wearing a fitted black short-sleeved t-shirt and high-waisted black leggings. The scooter is modern, matte black and grey. The setting is a roadside in Vietnam, with a paved sidewalk, yellow road lines, and blurred street-side shops in the background. Natural daylight, side view, cinematic composition. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only – no sharp V-jaw, no high nose bridge, no pale skin, no fox eye shape."
+}

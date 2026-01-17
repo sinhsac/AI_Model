@@ -8,12 +8,19 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T14:54:54.489132",
-      "generated_images": [
-        "/uploads/scene_01/1768627149.jpg",
-        "/uploads/scene_01/1768630713.jpg",
-        "/uploads/scene_01/1768636494.jpg"
-      ]
+      "updatedAt": "2026-01-17T15:19:57.831926",
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_01/1768627149.jpg",
+          "/uploads/linhtrang/scene_01/1768630713.jpg",
+          "/uploads/linhtrang/scene_01/1768636494.jpg"
+        ],
+        "grok_linh_trang": [
+          "/uploads/grok_linh_trang/scene_01/1768637952.jpg"
+        ]
+      },
+      "lighting": null,
+      "outfit_changes": null
     },
     {
       "id": "scene_02",
@@ -23,11 +30,16 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:46:49.364361",
-      "generated_images": [
-        "/uploads/scene_02/1768628803.jpg",
-        "/uploads/scene_02/1768628809.jpg"
-      ]
+      "updatedAt": "2026-01-17T15:32:03.923242",
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_02/1768628803.jpg",
+          "/uploads/linhtrang/scene_02/1768628809.jpg"
+        ],
+        "grok_linh_trang": [
+          "/uploads/grok_linh_trang/scene_02/1768638723.jpg"
+        ]
+      }
     },
     {
       "id": "scene_03",
@@ -38,9 +50,11 @@
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T12:55:54.967341",
-      "generated_images": [
-        "/uploads/scene_03/1768629354.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_03/1768629354.jpg"
+        ]
+      }
     },
     {
       "id": "scene_04",
@@ -51,9 +65,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T12:56:36.615581",
-      "generated_images": [
-        "/uploads/scene_04/1768629396.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_04/1768629396.jpg"
+        ]
+      }
     },
     {
       "id": "scene_05",
@@ -65,9 +81,11 @@
       "view": "front view, portrait style",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T12:57:21.258326",
-      "generated_images": [
-        "/uploads/scene_05/1768629441.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_05/1768629441.jpg"
+        ]
+      }
     },
     {
       "id": "scene_06",
@@ -78,9 +96,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:16:46.545501",
-      "generated_images": [
-        "/uploads/scene_06/1768630606.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_06/1768630606.jpg"
+        ]
+      }
     },
     {
       "id": "scene_07",
@@ -91,9 +111,11 @@
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:17:48.660867",
-      "generated_images": [
-        "/uploads/scene_07/1768630668.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_07/1768630668.jpg"
+        ]
+      }
     },
     {
       "id": "scene_08",
@@ -105,9 +127,11 @@
       "view": "back view, looking at ocean",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:19:21.013721",
-      "generated_images": [
-        "/uploads/scene_08/1768630761.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_08/1768630761.jpg"
+        ]
+      }
     },
     {
       "id": "scene_09",
@@ -118,9 +142,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:47:33.098331",
-      "generated_images": [
-        "/uploads/scene_09/1768632453.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_09/1768632453.jpg"
+        ]
+      }
     },
     {
       "id": "scene_10",
@@ -131,11 +157,17 @@
       "setting": "Vietnamese street food stall with plastic chairs and tables",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T14:57:24.708400",
-      "generated_images": [
-        "/uploads/scene_10/1768632494.jpg",
-        "/uploads/scene_10/1768636644.jpg"
-      ]
+      "updatedAt": "2026-01-17T15:31:08.328147",
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_10/1768632494.jpg",
+          "/uploads/linhtrang/scene_10/1768636644.jpg"
+        ],
+        "grok_linh_trang": [
+          "/uploads/grok_linh_trang/scene_10/1768638668.jpg"
+        ]
+      },
+      "props": null
     },
     {
       "id": "scene_11",
@@ -146,9 +178,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:49:43.806685",
-      "generated_images": [
-        "/uploads/scene_11/1768632583.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_11/1768632583.jpg"
+        ]
+      }
     },
     {
       "id": "scene_12",
@@ -160,9 +194,11 @@
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:52:40.396379",
-      "generated_images": [
-        "/uploads/scene_12/1768632760.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_12/1768632760.jpg"
+        ]
+      }
     },
     {
       "id": "scene_13",
@@ -173,9 +209,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:53:34.756169",
-      "generated_images": [
-        "/uploads/scene_13/1768632814.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_13/1768632814.jpg"
+        ]
+      }
     },
     {
       "id": "scene_14",
@@ -187,9 +225,11 @@
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T13:58:51.185986",
-      "generated_images": [
-        "/uploads/scene_14/1768633131.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_14/1768633131.jpg"
+        ]
+      }
     },
     {
       "id": "scene_15",
@@ -199,11 +239,16 @@
       "setting": "iconic Hoan Kiem Lake background with Turtle Tower or red bridge in distance",
       "view": "portrait shot",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T14:32:19.215837",
-      "generated_images": [
-        "/uploads/scene_15/1768633639.jpg",
-        "/uploads/scene_15/1768635139.jpg"
-      ]
+      "updatedAt": "2026-01-17T15:31:20.423587",
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_15/1768633639.jpg",
+          "/uploads/linhtrang/scene_15/1768635139.jpg"
+        ],
+        "grok_linh_trang": [
+          "/uploads/grok_linh_trang/scene_15/1768638680.jpg"
+        ]
+      }
     },
     {
       "id": "scene_16",
@@ -214,9 +259,11 @@
       "view": "close up side profile",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:08:28.565404",
-      "generated_images": [
-        "/uploads/scene_16/1768633708.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_16/1768633708.jpg"
+        ]
+      }
     },
     {
       "id": "scene_17",
@@ -227,9 +274,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:09:12.197494",
-      "generated_images": [
-        "/uploads/scene_17/1768633752.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_17/1768633752.jpg"
+        ]
+      }
     },
     {
       "id": "scene_18",
@@ -241,9 +290,11 @@
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T12:50:52.589625",
-      "generated_images": [
-        "/uploads/scene_18/1768629052.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_18/1768629052.jpg"
+        ]
+      }
     },
     {
       "id": "scene_19",
@@ -254,9 +305,11 @@
       "view": "wide shot",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:10:18.745229",
-      "generated_images": [
-        "/uploads/scene_19/1768633818.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_19/1768633818.jpg"
+        ]
+      }
     },
     {
       "id": "scene_20",
@@ -267,9 +320,11 @@
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:11:10.040089",
-      "generated_images": [
-        "/uploads/scene_20/1768633870.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_20/1768633870.jpg"
+        ]
+      }
     },
     {
       "id": "scene_21",
@@ -280,9 +335,11 @@
       "view": "offset front view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:11:49.815210",
-      "generated_images": [
-        "/uploads/scene_21/1768633909.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_21/1768633909.jpg"
+        ]
+      }
     },
     {
       "id": "scene_22",
@@ -293,9 +350,11 @@
       "view": "mid shot",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:15:55.811940",
-      "generated_images": [
-        "/uploads/scene_22/1768634155.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_22/1768634155.jpg"
+        ]
+      }
     },
     {
       "id": "scene_23",
@@ -307,9 +366,11 @@
       "view": "low angle",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:17:25.840810",
-      "generated_images": [
-        "/uploads/scene_23/1768634245.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_23/1768634245.jpg"
+        ]
+      }
     },
     {
       "id": "scene_24",
@@ -320,10 +381,12 @@
       "view": "candid side view",
       "createdAt": "2026-01-17T12:15:26.394918",
       "updatedAt": "2026-01-17T14:38:40.881970",
-      "generated_images": [
-        "/uploads/scene_24/1768634290.jpg",
-        "/uploads/scene_24/1768635520.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_24/1768634290.jpg",
+          "/uploads/linhtrang/scene_24/1768635520.jpg"
+        ]
+      }
     },
     {
       "id": "scene_25",
@@ -335,9 +398,11 @@
       "view": "extreme close up on face, focusing on eyes and skin texture",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:25:44.615084",
-      "generated_images": [
-        "/uploads/scene_25/1768634744.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_25/1768634744.jpg"
+        ]
+      }
     },
     {
       "id": "scene_26",
@@ -349,9 +414,11 @@
       "view": "90 degree side profile, focusing on nose bridge and jawline",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:27:01.776362",
-      "generated_images": [
-        "/uploads/scene_26/1768634821.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_26/1768634821.jpg"
+        ]
+      }
     },
     {
       "id": "scene_27",
@@ -363,9 +430,11 @@
       "view": "high angle shot (camera above eye level), focusing on eyes",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:28:31.367206",
-      "generated_images": [
-        "/uploads/scene_27/1768634911.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_27/1768634911.jpg"
+        ]
+      }
     },
     {
       "id": "scene_28",
@@ -377,9 +446,11 @@
       "view": "low angle shot (camera below chin level), focusing on face shape",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:29:05.923800",
-      "generated_images": [
-        "/uploads/scene_28/1768634945.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_28/1768634945.jpg"
+        ]
+      }
     },
     {
       "id": "scene_29",
@@ -391,9 +462,11 @@
       "view": "3/4 portrait view, highlighting cheekbones",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:29:44.171723",
-      "generated_images": [
-        "/uploads/scene_29/1768634984.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_29/1768634984.jpg"
+        ]
+      }
     },
     {
       "id": "scene_30",
@@ -405,9 +478,11 @@
       "view": "dutch angle (tilted), candid close up",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:31:55.972670",
-      "generated_images": [
-        "/uploads/scene_30/1768635115.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_30/1768635115.jpg"
+        ]
+      }
     },
     {
       "id": "scene_31",
@@ -419,9 +494,11 @@
       "view": "close up, cinematic lighting on face",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:33:12.458751",
-      "generated_images": [
-        "/uploads/scene_31/1768635192.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_31/1768635192.jpg"
+        ]
+      }
     },
     {
       "id": "scene_32",
@@ -433,9 +510,11 @@
       "view": "close up face, wet skin texture detail",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:33:52.173979",
-      "generated_images": [
-        "/uploads/scene_32/1768635232.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_32/1768635232.jpg"
+        ]
+      }
     },
     {
       "id": "scene_33",
@@ -447,9 +526,11 @@
       "view": "front facing, focus on eyes behind glasses",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:35:28.272921",
-      "generated_images": [
-        "/uploads/scene_33/1768635328.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_33/1768635328.jpg"
+        ]
+      }
     },
     {
       "id": "scene_34",
@@ -461,9 +542,11 @@
       "view": "portrait, face in soft shadow, rim light on hair",
       "createdAt": "2026-01-17T14:30:00.000000",
       "updatedAt": "2026-01-17T14:37:47.474323",
-      "generated_images": [
-        "/uploads/scene_34/1768635467.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_34/1768635467.jpg"
+        ]
+      }
     },
     {
       "id": "scene_35",
@@ -475,9 +558,11 @@
       "view": "front view, full body shot, camera at eye level",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:44:32.978373",
-      "generated_images": [
-        "/uploads/scene_35/1768635872.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_35/1768635872.jpg"
+        ]
+      }
     },
     {
       "id": "scene_36",
@@ -489,9 +574,11 @@
       "view": "front view, full body shot, showcasing athletic build",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:45:10.006883",
-      "generated_images": [
-        "/uploads/scene_36/1768635910.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_36/1768635910.jpg"
+        ]
+      }
     },
     {
       "id": "scene_37",
@@ -503,9 +590,11 @@
       "view": "front view, full body shot, elegant pose",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:45:48.979785",
-      "generated_images": [
-        "/uploads/scene_37/1768635948.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_37/1768635948.jpg"
+        ]
+      }
     },
     {
       "id": "scene_38",
@@ -517,9 +606,11 @@
       "view": "front view, full body shot, cinematic lighting",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:46:28.770263",
-      "generated_images": [
-        "/uploads/scene_38/1768635988.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_38/1768635988.jpg"
+        ]
+      }
     },
     {
       "id": "scene_39",
@@ -531,9 +622,11 @@
       "view": "front view, full body shot, cool attitude",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:47:15.290348",
-      "generated_images": [
-        "/uploads/scene_39/1768636035.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_39/1768636035.jpg"
+        ]
+      }
     },
     {
       "id": "scene_40",
@@ -545,9 +638,11 @@
       "view": "front view, full body shot, highlighting legs",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:48:17.747511",
-      "generated_images": [
-        "/uploads/scene_40/1768636097.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_40/1768636097.jpg"
+        ]
+      }
     },
     {
       "id": "scene_41",
@@ -559,9 +654,11 @@
       "view": "front view, full body shot, edgy look",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:51:46.354187",
-      "generated_images": [
-        "/uploads/scene_41/1768636306.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_41/1768636306.jpg"
+        ]
+      }
     },
     {
       "id": "scene_42",
@@ -573,9 +670,11 @@
       "view": "front view, full body shot, relaxed vibe",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:52:43.357861",
-      "generated_images": [
-        "/uploads/scene_42/1768636363.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_42/1768636363.jpg"
+        ]
+      }
     },
     {
       "id": "scene_43",
@@ -587,9 +686,11 @@
       "view": "front view, full body shot, youthful",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:53:24.915297",
-      "generated_images": [
-        "/uploads/scene_43/1768636404.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_43/1768636404.jpg"
+        ]
+      }
     },
     {
       "id": "scene_44",
@@ -601,9 +702,11 @@
       "view": "front view, full body shot, adventurous",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:54:18.624896",
-      "generated_images": [
-        "/uploads/scene_44/1768636458.jpg"
-      ]
+      "generated_images": {
+        "linhtrang": [
+          "/uploads/linhtrang/scene_44/1768636458.jpg"
+        ]
+      }
     }
   ]
 }

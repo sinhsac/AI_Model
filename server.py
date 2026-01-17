@@ -4,59 +4,118 @@ import json
 import os
 import sys
 import base64
+import re
 from datetime import datetime
+from urllib.parse import urlparse, parse_qs
 
 PORT = 3000
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROFILE_PATH = os.path.join(BASE_DIR, 'character_profile.json')
-SCENES_PATH = os.path.join(BASE_DIR, 'scenes.json')
+DATA_DIR = os.path.join(BASE_DIR, 'data')
 PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
-UPLOAD_DIR = os.path.join(PUBLIC_DIR, 'uploads')
+UPLOADS_DIR = os.path.join(PUBLIC_DIR, 'uploads')
 ITEMS_PER_PAGE = 8
 
-# Ensure upload dir exists
-if not os.path.exists(UPLOAD_DIR):
-    os.makedirs(UPLOAD_DIR)
+# Ensure dirs exist
+if not os.path.exists(DATA_DIR):
+    os.makedirs(DATA_DIR)
+if not os.path.exists(UPLOADS_DIR):
+    os.makedirs(UPLOADS_DIR)
 
-# Ensure scenes.json exists if not present
-if not os.path.exists(SCENES_PATH):
-    with open(SCENES_PATH, 'w', encoding='utf-8') as f:
-        json.dump({"scenes": []}, f)
+# Shared Scenes Path
+SCENES_PATH = os.path.join(DATA_DIR, 'scenes.json')
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
+        # Parse Query Params first to get clean path
+        parsed_url = urlparse(self.path)
+        clean_path = parsed_url.path
+        query_params = parse_qs(parsed_url.query)
+        profile_id = query_params.get('id', ['linhtrang'])[0] # Default to linhtrang
+
         # Serve Static Files
-        if self.path == '/' or self.path == '/index.html':
+        if clean_path == '/' or clean_path == '/index.html':
             self.path = '/public/index.html'
-        elif self.path == '/galleries' or self.path == '/galleries.html':
+        elif clean_path == '/galleries' or clean_path == '/galleries.html':
             self.path = '/public/galleries.html'
-        elif self.path.startswith('/style.css'):
+        elif clean_path.startswith('/style.css'):
              self.path = '/public/style.css'
-        elif self.path.startswith('/app.js'):
+        elif clean_path.startswith('/app.js'):
              self.path = '/public/app.js'
-        elif self.path.startswith('/galleries.js'):
+        elif clean_path.startswith('/galleries.js'):
              self.path = '/public/galleries.js'
-        elif self.path.startswith('/uploads/'):
+        elif clean_path.startswith('/uploads/'):
             # Allow serving uploaded images
-            self.path = '/public' + self.path
+            self.path = '/public' + clean_path
             
-        # API: Get Profile (Merges Profile + Scenes for frontend compatibility)
-        if self.path.startswith('/api/profile'):
+        # API: List Profiles
+        if clean_path == '/api/profiles':
             try:
+                profiles = []
+                for f in os.listdir(DATA_DIR):
+                    if f.startswith('character_profile_') and f.endswith('.json'):
+                        # character_profile_xxx.json -> xxx
+                        p_id = f.replace('character_profile_', '').replace('.json', '')
+                        
+                        # Read name from file
+                        try:
+                            with open(os.path.join(DATA_DIR, f), 'r', encoding='utf-8') as pf:
+                                p_data = json.load(pf)
+                                p_name = p_data.get('character', {}).get('name', p_id)
+                        except:
+                            p_name = p_id
+                            
+                        profiles.append({'id': p_id, 'name': p_name})
+                
+                self.send_json({'profiles': profiles})
+                return
+            except Exception as e:
+                self.send_error(500, str(e))
+                return
+
+        # API: Get Profile (Merges Profile + Shared Scenes with Filtered Images)
+        if parsed_url.path == '/api/profile':
+            try:
+                profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
+                
+                if not os.path.exists(profile_path):
+                    self.send_error(404, "Profile not found")
+                    return
+
                 # Read Profile
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(profile_path, 'r', encoding='utf-8') as f:
                     profile_data = json.load(f)
                 
-                # Read Scenes
-                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
-                    scenes_data = json.load(f)
-                
+                # Read Shared Scenes
+                if os.path.exists(SCENES_PATH):
+                    with open(SCENES_PATH, 'r', encoding='utf-8') as f:
+                        scenes_source = json.load(f)
+                    
+                    # FILTER IMAGES FOR PROFILE
+                    processed_scenes = []
+                    for scene in scenes_source.get('scenes', []):
+                        # Create a copy to not mutate cache significantly (though per request)
+                        s = scene.copy()
+                        # Get images for this profile, default to empty list
+                        images_map = s.get('generated_images', {})
+                        # If legacy array (shouldn't happen with migration, but safe check)
+                        if isinstance(images_map, list):
+                            s['generated_images'] = images_map if profile_id == 'linhtrang' else []
+                        else:
+                            s['generated_images'] = images_map.get(profile_id, [])
+                        
+                        processed_scenes.append(s)
+                    
+                    scenes_data = {"scenes": processed_scenes}
+                else:
+                    scenes_data = {"scenes": []}
+
                 # Merge
                 full_data = {**profile_data, **scenes_data}
                 
                 self.send_json(full_data)
                 return
             except Exception as e:
+                print(e)
                 self.send_error(500, str(e))
                 return
 
@@ -69,13 +128,80 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         length = int(self.headers.get('content-length'))
         body = self.rfile.read(length).decode('utf-8')
+        req_data = json.loads(body)
         
-        # API: Add Scene
+        # Profile ID for context
+        profile_id = req_data.get('profileId', 'linhtrang')
+        
+        profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
+
+        # API: Create Profile (New or Clone)
+        if self.path == '/api/profiles':
+            try:
+                new_id = req_data.get('id')
+                new_name = req_data.get('name')
+                source_id = req_data.get('sourceId') # Optional: ID to clone from
+                
+                if not new_id:
+                     self.send_error(400, "Missing ID")
+                     return
+
+                # Check if exists
+                new_p_path = os.path.join(DATA_DIR, f'character_profile_{new_id}.json')
+                if os.path.exists(new_p_path):
+                    self.send_error(400, "Profile ID already exists")
+                    return
+
+                if source_id:
+                    # Clone Mode
+                    source_path = os.path.join(DATA_DIR, f'character_profile_{source_id}.json')
+                    if not os.path.exists(source_path):
+                        self.send_error(404, "Source Profile not found")
+                        return
+                        
+                    with open(source_path, 'r', encoding='utf-8') as f:
+                        source_data = json.load(f)
+                    
+                    # Update name/id of clone
+                    if new_name:
+                        source_data['character']['name'] = new_name
+                    
+                    with open(new_p_path, 'w', encoding='utf-8') as f:
+                        json.dump(source_data, f, indent=2, ensure_ascii=False)
+                else:
+                    # Create New Template
+                    template = {
+                        "character": {
+                            "name": new_name or new_id,
+                            "age": "20",
+                            "ethnicity": "Vietnamese",
+                            "face": {},
+                            "body": {},
+                            "hair": "",
+                            "base_outfit": {},
+                            "photography": { "lighting": "natural", "quality": "high", "composition": "standard" }
+                        }
+                    }
+                    
+                    with open(new_p_path, 'w', encoding='utf-8') as f:
+                        json.dump(template, f, indent=2, ensure_ascii=False)
+                
+                # Scenes are shared, so no scene file creation needed
+                
+                self.send_json({'success': True})
+            except Exception as e:
+                self.send_error(500, str(e))
+            return
+
+        # API: Add Scene (Adds Globally)
         if self.path == '/api/scenes':
             try:
-                req_data = json.loads(body)
                 new_scene = req_data.get('newScene')
                 
+                if not os.path.exists(SCENES_PATH):
+                    with open(SCENES_PATH, 'w', encoding='utf-8') as f:
+                        json.dump({"scenes": []}, f)
+
                 with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
@@ -86,11 +212,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 now = datetime.now().isoformat()
                 new_scene['createdAt'] = now
                 new_scene['updatedAt'] = now
-                new_scene['generated_images'] = []
+                # Init empty map for images
+                new_scene['generated_images'] = {} 
                 
                 data['scenes'].append(new_scene)
                 self.save_json(SCENES_PATH, data)
                 
+                # Return strict frontend structure (array)
+                new_scene['generated_images'] = []
                 self.send_json({'success': True, 'scene': new_scene})
             except Exception as e:
                 self.send_error(500, str(e))
@@ -99,10 +228,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # API: Generate Prompt
         if self.path == '/api/generate-prompt':
             try:
-                req_data = json.loads(body)
                 scene = req_data.get('scene')
                 
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(profile_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 prompt = self.generate_prompt_logic(scene, data['character'])
@@ -114,7 +242,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # API: Upload Image
         if self.path == '/api/upload':
             try:
-                req_data = json.loads(body)
                 image_data = req_data.get('image') # Base64 string
                 scene_id = req_data.get('sceneId')
                 
@@ -130,29 +257,36 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 
                 file_data = base64.b64decode(encoded)
                 
-                # Create Scene Dir
-                scene_dir = os.path.join(UPLOAD_DIR, scene_id)
+                # Create Profile/Scene Dir
+                # Path: public/uploads/{profileId}/{sceneId}/...
+                scene_dir = os.path.join(UPLOADS_DIR, profile_id, scene_id)
                 if not os.path.exists(scene_dir):
                     os.makedirs(scene_dir)
                 
-                filename = f"{int(datetime.now().timestamp())}.jpg" # Simple naming
+                filename = f"{int(datetime.now().timestamp())}.jpg"
                 filepath = os.path.join(scene_dir, filename)
                 
                 with open(filepath, 'wb') as f:
                     f.write(file_data)
                 
-                # Update JSON (Scenes)
+                # Update JSON (Shared Scenes)
                 with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
-                relative_path = f"/uploads/{scene_id}/{filename}"
+                relative_path = f"/uploads/{profile_id}/{scene_id}/{filename}"
                 
                 found = False
                 for scene in data['scenes']:
                     if scene['id'] == scene_id:
-                        if 'generated_images' not in scene:
-                            scene['generated_images'] = []
-                        scene['generated_images'].append(relative_path)
+                        # Ensure dict
+                        if type(scene.get('generated_images')) is not dict:
+                            scene['generated_images'] = {}
+                        
+                        # Init list for profile if needed
+                        if profile_id not in scene['generated_images']:
+                            scene['generated_images'][profile_id] = []
+                            
+                        scene['generated_images'][profile_id].append(relative_path)
                         scene['updatedAt'] = datetime.now().isoformat()
                         found = True
                         break
@@ -171,27 +305,29 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_PUT(self):
         length = int(self.headers.get('content-length'))
         body = self.rfile.read(length).decode('utf-8')
+        req_data = json.loads(body)
+        profile_id = req_data.get('profileId', 'linhtrang')
+        
+        profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
 
         # API: Update Profile
         if self.path == '/api/profile':
             try:
-                req_data = json.loads(body)
                 new_char = req_data.get('character')
                 
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(profile_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 data['character'] = new_char # Replace
-                self.save_json(PROFILE_PATH, data)
+                self.save_json(profile_path, data)
                 self.send_json({'success': True})
             except Exception as e:
                 self.send_error(500, str(e))
             return
 
-        # API: Update Scene
+        # API: Update Scene (Global Update)
         if self.path == '/api/scenes':
             try:
-                req_data = json.loads(body)
                 updated_scene = req_data.get('scene')
                 
                 with open(SCENES_PATH, 'r', encoding='utf-8') as f:
@@ -199,13 +335,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 
                 for i, scene in enumerate(data['scenes']):
                     if scene['id'] == updated_scene['id']:
-                        updated_scene['updatedAt'] = datetime.now().isoformat()
-                        if 'generated_images' not in updated_scene:
-                            updated_scene['generated_images'] = scene.get('generated_images', [])
-                        if 'createdAt' not in updated_scene:
-                            updated_scene['createdAt'] = scene.get('createdAt', datetime.now().isoformat())
-                            
+                        # Update metadata fields only, Preserve Images Map
+                        # The frontend sends 'generated_images' as array (from the GET filter)
+                        # We must NOT overwrite the global map with that array.
+                        current_images_map = scene.get('generated_images', {})
+                        
+                        # Replace entire object to support arbitrary fields editing via JSON
                         data['scenes'][i] = updated_scene
+                        
+                        # Restore critical system fields
+                        data['scenes'][i]['generated_images'] = current_images_map
+                        data['scenes'][i]['updatedAt'] = datetime.now().isoformat()
+                        
+                        # Ensure createdAt is preserved if missing in update (unlikely if full JSON editing but safe)
+                        if 'createdAt' not in data['scenes'][i] and 'createdAt' in scene:
+                            data['scenes'][i]['createdAt'] = scene['createdAt']
+                        
                         break
                 
                 self.save_json(SCENES_PATH, data)
@@ -215,8 +360,69 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
 
     def do_DELETE(self):
+        # API: Delete Uploaded Image
+        if self.path.startswith('/api/upload'):
+            try:
+                parsed_url = urlparse(self.path)
+                query_params = parse_qs(parsed_url.query)
+                image_path = query_params.get('path', [None])[0]
+                profile_id = query_params.get('profileId', ['linhtrang'])[0]
+                
+                if not image_path:
+                    self.send_error(400, "Missing image path")
+                    return
+
+                # Security check: ensure path is within uploads
+                # image_path is like /uploads/linhtrang/scene_01/123.jpg
+                # relative to public dir
+                
+                if not image_path.startswith('/uploads/'):
+                    self.send_error(403, "Invalid path")
+                    return
+                
+                full_path = os.path.join(PUBLIC_DIR, image_path.lstrip('/'))
+                
+                # Delete File
+                if os.path.exists(full_path):
+                    os.remove(full_path)
+                
+                # Update JSON
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                found = False
+                for scene in data['scenes']:
+                    images = scene.get('generated_images', {})
+                    # If dict
+                    if isinstance(images, dict):
+                        if profile_id in images and image_path in images[profile_id]:
+                            images[profile_id].remove(image_path)
+                            scene['updatedAt'] = datetime.now().isoformat()
+                            found = True
+                            break
+                    # Legacy list fallback (should not happen after migration but good for safety)
+                    elif isinstance(images, list) and profile_id == 'linhtrang':
+                         if image_path in images:
+                            images.remove(image_path)
+                            scene['updatedAt'] = datetime.now().isoformat()
+                            found = True
+                            break
+                
+                if found:
+                    self.save_json(SCENES_PATH, data)
+                    self.send_json({'success': True})
+                else:
+                    # File might be gone but not in JSON, or vice versa. 
+                    # If file deleted but not found in JSON, still success? 
+                    # Let's say success if file gone, but warn if logic fails.
+                    self.send_json({'success': True, 'message': 'File deleted or record not found'})
+
+            except Exception as e:
+                print(e)
+                self.send_error(500, str(e))
+            return
+
         # API: Delete Scene
-        if self.path.startswith('/api/scenes/'):
             try:
                 scene_id = self.path.split('/')[-1]
                 
@@ -257,40 +463,36 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def generate_prompt_logic(self, scene, character):
         char = character
         
-        # Use core_identity_prompt if available (new concise format)
+        # Use core_identity_prompt if available
         if 'core_identity_prompt' in char:
             physical_desc = char['core_identity_prompt']
         else:
-            # Fallback to building from individual fields (backward compatibility)
-            face = char['face']
-            body = char['body']
+            face = char.get('face', {})
+            body = char.get('body', {})
+            name = char.get('name', 'Character')
+            age = char.get('age', '20')
             physical_desc = (
-                f"A high-quality, realistic photo of {char['name']}, a {char['age']} Vietnamese woman. "
-                f"Ethnicity: {char['ethnicity']}. "
-                f"Hair: {char['hair']}. "
-                f"Body: {body['type']}, {body['height']}, {body['build']}, {body['posture']}. "
-                f"Face: {face['shape']}, {face['skin']}, {face['eyes']}, {face['eyebrows']}, {face['nose']}, {face['lips']}, {face['cheekbones']}. "
-                f"Features: {face['features']}."
+                f"A high-quality, realistic photo of {name}, {age}. "
             )
         
         action = scene.get('action', '')
         setting = scene.get('setting', '')
         view = scene.get('view', '')
         props = scene.get('props', '')
-        lighting = scene.get('lighting', char['photography']['lighting'])
+        lighting = scene.get('lighting', char.get('photography', {}).get('lighting', ''))
         
         if 'outfit_changes' in scene:
             outfit = scene['outfit_changes']
         else:
-            bo = char['base_outfit']
-            outfit = f"{bo['top']}, {bo['bottom']}, {bo['accessories']}"
+            bo = char.get('base_outfit', {})
+            outfit = f"{bo.get('top','')}, {bo.get('bottom','')}"
 
         full_prompt = (
             f"{physical_desc} Action: {action}. Outfit: {outfit}. Setting: {setting}. "
         )
         if props:
             full_prompt += f"Props: {props}. "
-        full_prompt += f"Lighting: {lighting}. View: {view}. Style: {char['photography']['quality']}, {char['photography']['composition']}."
+        full_prompt += f"Lighting: {lighting}. View: {view}."
         
         return full_prompt
 

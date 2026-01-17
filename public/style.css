@@ -322,6 +322,11 @@ body {
     display: flex;
 }
 
+#deleteModal {
+    z-index: 1100;
+    /* Higher than standard modals */
+}
+
 .modal-content {
     width: 800px;
     /* Wider default width */
@@ -567,4 +572,8 @@ body {
 .btn-secondary:hover {
     border-color: var(--text-main);
     color: var(--text-main);
+}
+
+#deleteModal {
+    z-index: 100000;
 }

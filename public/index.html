@@ -17,12 +17,20 @@
     <div class="app-container">
         <!-- Sidebar / Header -->
         <header class="header">
-            <div class="logo">
-                <h1>AI Manager</h1>
+            <a href="/" class="logo" style="text-decoration: none; color: white;">
+                <i class="fas fa-camera-retro" style="font-size: 1.5rem; color: #58a6ff;"></i>
+                <h1>Prompt Manager</h1>
                 <span class="badge">Linh Trang</span>
-            </div>
+            </a>
             <nav>
-                <a href="/galleries" class="btn btn-secondary" style="margin-right: 0.5rem;">
+                <select id="profileSelect" class="form-select"
+                    style="margin-right: 0.5rem; padding: 0.5rem; border-radius: 6px; border: 1px solid #ddd;">
+                    <option value="linhtrang">Linh Trang</option>
+                </select>
+                <button id="openCloneModalBtn" class="btn btn-outline" style="margin-right: 0.5rem;"
+                    title="Clone Current Profile"><i class="fas fa-copy"></i></button>
+
+                <a href="/galleries" id="navGalleryLink" class="btn btn-secondary" style="margin-right: 0.5rem;">
                     <i class="fas fa-images"></i> Galleries / Thư Viện
                 </a>
                 <button id="addSceneBtn" class="btn btn-primary"><i class="fas fa-plus"></i> New Scene</button>
@@ -305,6 +313,27 @@
             <div class="modal-actions">
                 <button id="saveJsonBtn" class="btn btn-primary">Save Changes</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal: Clone Profile -->
+    <div id="cloneModal" class="modal">
+        <div class="modal-content glass-panel" style="width: 400px;">
+            <span class="close-modal">&times;</span>
+            <h2>Clone Profile</h2>
+            <form id="cloneForm">
+                <div class="form-group">
+                    <label>New Profile ID (No spaces)</label>
+                    <input type="text" id="cloneId" required pattern="[a-zA-Z0-9_-]+" placeholder="e.g. model_b">
+                </div>
+                <div class="form-group">
+                    <label>New Profile Name</label>
+                    <input type="text" id="cloneName" required placeholder="e.g. Model B">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary full-width">Create Profile</button>
+                </div>
+            </form>
         </div>
     </div>
 
