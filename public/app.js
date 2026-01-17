@@ -133,7 +133,12 @@ function render() {
 
         let thumbHtml = '';
         if (imgCount > 0) {
-            const latestImg = scene.generated_images[imgCount - 1];
+            // Sort images by path string descending to get the latest timestamp
+            // Assumption: filenames are timestamps or sequential
+            const sortedImages = [...scene.generated_images].sort((a, b) => {
+                return b.localeCompare(a);
+            });
+            const latestImg = sortedImages[0];
             thumbHtml = `<img src="${latestImg}" class="scene-thumbnail" alt="${scene.name}">`;
         }
 

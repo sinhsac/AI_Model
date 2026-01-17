@@ -355,8 +355,10 @@
       "setting": "street filled with glowing colorful lanterns",
       "view": "low angle",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T14:17:25.840810",
+      "generated_images": [
+        "/uploads/scene_23/1768634245.jpg"
+      ]
     },
     {
       "id": "scene_24",
@@ -366,8 +368,10 @@
       "setting": "Vietnamese bus stop shelter",
       "view": "candid side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T14:18:10.601896",
+      "generated_images": [
+        "/uploads/scene_24/1768634290.jpg"
+      ]
     }
   ]
 }
