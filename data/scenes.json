@@ -8,7 +8,7 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T15:19:57.831926",
+      "updatedAt": "2026-01-17T22:25:29.171223",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_01/1768627149.jpg",
@@ -17,6 +17,9 @@
         ],
         "grok_linh_trang": [
           "/uploads/grok_linh_trang/scene_01/1768637952.jpg"
+        ],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_01/1768663529.jpg"
         ]
       },
       "lighting": null,
@@ -30,7 +33,7 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T15:32:03.923242",
+      "updatedAt": "2026-01-17T22:08:00.615052",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_02/1768628803.jpg",
@@ -38,6 +41,9 @@
         ],
         "grok_linh_trang": [
           "/uploads/grok_linh_trang/scene_02/1768638723.jpg"
+        ],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_02/1768662480.jpg"
         ]
       }
     },
@@ -157,7 +163,7 @@
       "setting": "Vietnamese street food stall with plastic chairs and tables",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T15:31:08.328147",
+      "updatedAt": "2026-01-17T22:24:06.711414",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_10/1768632494.jpg",
@@ -165,6 +171,9 @@
         ],
         "grok_linh_trang": [
           "/uploads/grok_linh_trang/scene_10/1768638668.jpg"
+        ],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_10/1768663446.jpg"
         ]
       },
       "props": null
@@ -239,7 +248,7 @@
       "setting": "iconic Hoan Kiem Lake background with Turtle Tower or red bridge in distance",
       "view": "portrait shot",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T15:31:20.423587",
+      "updatedAt": "2026-01-17T22:08:38.156502",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_15/1768633639.jpg",
@@ -247,6 +256,9 @@
         ],
         "grok_linh_trang": [
           "/uploads/grok_linh_trang/scene_15/1768638680.jpg"
+        ],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_15/1768662518.jpg"
         ]
       }
     },
@@ -705,6 +717,195 @@
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_44/1768636458.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_45",
+      "name": "Beach Bikini - Water Entry",
+      "action": "walking into the ocean, water up to waist",
+      "outfit_changes": "colorful bikini (tropical print), no mask, wet skin",
+      "lighting": "morning sun, golden sunrise glow",
+      "setting": "Vietnamese beach with clear blue water, white sand",
+      "view": "front view, full body shot, showcasing athletic build",
+      "createdAt": "2026-01-17T15:45:00.000000",
+      "updatedAt": "2026-01-17T22:18:48.421074",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_45/1768663128.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_46",
+      "name": "Beach Bikini - Standing in Water",
+      "action": "standing waist-deep in ocean, hands in hair, smiling",
+      "outfit_changes": "solid color bikini (coral or teal), no mask, wet hair and body",
+      "lighting": "bright morning sunlight, natural water reflections",
+      "setting": "calm beach waters with palm trees visible on shore",
+      "view": "front view, full body shot, showcasing curves and athletic physique",
+      "createdAt": "2026-01-17T15:46:00.000000",
+      "updatedAt": "2026-01-17T22:18:01.294040",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_46/1768663081.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_47",
+      "name": "Beach Bikini - Sand Portrait",
+      "action": "standing on sand, hand on hip, confident pose",
+      "outfit_changes": "bikini with sarong or beach cover-up, no mask, sunglasses",
+      "lighting": "morning golden hour, soft directional sunlight",
+      "setting": "pristine white sand beach, ocean backdrop",
+      "view": "front view, full body shot, cinematic beach portrait",
+      "createdAt": "2026-01-17T15:47:00.000000",
+      "updatedAt": "2026-01-17T22:17:16.990905",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_47/1768663036.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_48",
+      "name": "Beach Bikini - Wet Hair Play",
+      "action": "flipping wet hair, water droplets, joyful expression",
+      "outfit_changes": "bikini top and shorts, no mask, wet glistening skin",
+      "lighting": "bright morning sun creating sparkle on water drops",
+      "setting": "shallow beach water, sandy bottom visible",
+      "view": "side view, capturing hair motion and athletic silhouette",
+      "createdAt": "2026-01-17T15:48:00.000000",
+      "updatedAt": "2026-01-17T22:15:56.877701",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_48/1768662956.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_49",
+      "name": "Beach Bikini - Lying on Sand",
+      "action": "lying down on sand, one leg bent, relaxed pose",
+      "outfit_changes": "bikini with beach sarong, no mask, golden skin",
+      "lighting": "morning sun, warm golden light on body",
+      "setting": "white sand beach with ocean horizon",
+      "view": "low angle shot, showcasing body curves and athletic build",
+      "createdAt": "2026-01-17T15:49:00.000000",
+      "updatedAt": "2026-01-17T22:16:41.032174",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_49/1768663001.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_50",
+      "name": "Beach Bikini - Surfboard Ready",
+      "action": "holding surfboard, standing on sand, athletic stance",
+      "outfit_changes": "sports bikini, no mask, rash guard on arms",
+      "props": "colorful surfboard or bodyboard",
+      "lighting": "bright morning sunlight",
+      "setting": "beach with breaking waves, surfer vibe",
+      "view": "front view, full body shot, active beach lifestyle",
+      "createdAt": "2026-01-17T15:50:00.000000",
+      "updatedAt": "2026-01-17T22:15:13.121979",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_50/1768662913.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_51",
+      "name": "Beach Bikini - Running in Water",
+      "action": "running through shallow water, mid-stride, energetic",
+      "outfit_changes": "bikini, no mask, splashing water, muscular movement",
+      "lighting": "golden morning sun, water spray highlighted",
+      "setting": "shallow beach waters, sandy bottom",
+      "view": "side view, capturing motion and athletic build",
+      "createdAt": "2026-01-17T15:51:00.000000",
+      "updatedAt": "2026-01-17T22:14:33.729619",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_51/1768662873.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_52",
+      "name": "Beach Bikini - Yoga Stretch Pose",
+      "action": "doing yoga stretch pose on sand, balance and flexibility",
+      "outfit_changes": "sports bikini, no mask, barefoot",
+      "lighting": "morning sunlight casting soft shadows",
+      "setting": "white sand beach with calm ocean background",
+      "view": "side view, showcasing flexible yoga physique",
+      "createdAt": "2026-01-17T15:52:00.000000",
+      "updatedAt": "2026-01-17T22:13:41.720633",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_52/1768662821.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_53",
+      "name": "Beach Bikini - Sunset Gaze",
+      "action": "standing, looking out at ocean, contemplative expression",
+      "outfit_changes": "bikini, no mask, beach wrap around waist",
+      "lighting": "late morning golden light, glowing skin",
+      "setting": "beach shoreline, waves gently rolling",
+      "view": "back view, long hair flowing, contemplative mood",
+      "createdAt": "2026-01-17T15:53:00.000000",
+      "updatedAt": "2026-01-17T22:12:34.583421",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_53/1768662754.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_54",
+      "name": "Beach Bikini - Close-up Beach Portrait",
+      "action": "looking at camera, natural smile, windblown hair",
+      "outfit_changes": "bikini top, no mask, skin glowing from sun",
+      "lighting": "bright morning sun, natural soft light on face",
+      "setting": "beach background, blurred ocean and sky",
+      "view": "close-up head and shoulders, candid beach portrait",
+      "createdAt": "2026-01-17T15:54:00.000000",
+      "updatedAt": "2026-01-17T22:11:57.941750",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_54/1768662717.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_55",
+      "name": "Beach Bikini - Poolside Vibes",
+      "action": "sitting on beach chair, sipping drink, sunglasses on",
+      "outfit_changes": "bikini with cover-up, no mask, summer accessories",
+      "props": "colorful beach chair, tropical drink",
+      "lighting": "bright morning sun, high noon tropical light",
+      "setting": "beachfront resort area with palm trees",
+      "view": "front view, full body seated, relaxed vacation mood",
+      "createdAt": "2026-01-17T15:55:00.000000",
+      "updatedAt": "2026-01-17T22:11:22.219865",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_55/1768662682.jpg"
         ]
       }
     }
