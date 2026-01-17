@@ -26,10 +26,11 @@
           "/uploads/gemini02_linhtrang/scene_01/1768667049.jpg"
         ],
         "gemini03_linhtrang": [
-          "/uploads/gemini03_linhtrang/scene_01/1768667389.jpg"
+          "/uploads/gemini03_linhtrang/scene_01/1768667389.jpg",
+          "/uploads/gemini03_linhtrang/scene_01/1768669739.jpg"
         ]
       },
-      "updatedAt": "2026-01-17T23:29:49.398906",
+      "updatedAt": "2026-01-18T00:08:59.695227",
       "createdAt": "2026-01-17T12:15:26.394918"
     },
     {
@@ -808,7 +809,7 @@
       "setting": "white sand beach with ocean horizon",
       "view": "low angle shot, showcasing body curves and supple yoga-toned physique",
       "createdAt": "2026-01-17T15:49:00.000000",
-      "updatedAt": "2026-01-17T23:30:32.619830",
+      "updatedAt": "2026-01-18T00:06:02.465237",
       "generated_images": {
         "linhtrang": [],
         "claude_linhtrang": [
@@ -825,7 +826,8 @@
           "/uploads/gemini01_linhtrang/scene_49/1768666649.jpg"
         ],
         "gemini03_linhtrang": [
-          "/uploads/gemini03_linhtrang/scene_49/1768667432.jpg"
+          "/uploads/gemini03_linhtrang/scene_49/1768667432.jpg",
+          "/uploads/gemini03_linhtrang/scene_49/1768669562.jpg"
         ]
       }
     },
@@ -1920,30 +1922,32 @@
     {
       "id": "scene_119",
       "name": "Pickleball - Backhand Swing",
-      "action": "executing backhand swing, body twisted, mini skirt riding up slightly showing glute definition",
-      "outfit_changes": "sexy crop top, short white mini skirt (very short), athletic shoes, dynamic action pose",
+      "action": "executing backhand swing, body twisted, white pleated tennis skirt riding up slightly showing bare thighs and glute definition",
+      "outfit_changes": "sexy white athletic crop top, short white pleated tennis/athletic skirt (knee-above length, flowy, NOT shorts), white athletic shoes, dynamic action pose, no shorts underneath visible",
       "props": "pickleball paddle, ball in motion, court net",
-      "lighting": "bright afternoon sun, action shot lighting, defining muscle engagement",
+      "lighting": "bright afternoon sun, action shot lighting, defining muscle engagement, backlighting on legs",
       "setting": "pickleball court, outdoor Hanoi sports facility",
-      "view": "side view, full body in mid-swing, emphasizing glute and leg muscles in action",
+      "view": "side view, full body in mid-swing, emphasizing bare legs, thighs, and peachy glutes in action, skirt fabric visible",
       "createdAt": "2026-01-17T17:32:00.000000",
-      "updatedAt": "2026-01-17T23:52:50.498741",
+      "updatedAt": "2026-01-18T00:03:53.318936",
       "generated_images": {
         "linhtrang": [],
         "gemini03_linhtrang": [
-          "/uploads/gemini03_linhtrang/scene_119/1768668770.jpg"
+          "/uploads/gemini03_linhtrang/scene_119/1768669380.jpg",
+          "/uploads/gemini03_linhtrang/scene_119/1768669392.jpg",
+          "/uploads/gemini03_linhtrang/scene_119/1768669433.jpg"
         ]
       }
     },
     {
       "id": "scene_120",
       "name": "Pickleball - Serving Power",
-      "action": "in serving position, arm extended high, one leg forward, showing explosive power and glute engagement",
-      "outfit_changes": "crop top, short mini skirt showing off peachy glutes, athletic shoes, powerful stance",
+      "action": "in serving position, arm extended high, one leg forward, showing explosive power and glute engagement, white pleated skirt riding up on powerful legs",
+      "outfit_changes": "white athletic crop top, short white pleated tennis skirt (knee-above, flowy athletic skirt NOT shorts), athletic shoes, powerful stance, bare legs visible",
       "props": "pickleball paddle, ball, serving position",
-      "lighting": "bright afternoon light, backlighting showing silhouette curves",
+      "lighting": "bright afternoon light, backlighting showing silhouette curves and leg definition",
       "setting": "pickleball court, professional outdoor facility in Hanoi",
-      "view": "side view, full body, emphasizing glute muscle engagement and powerful athletic pose",
+      "view": "side view, full body, emphasizing peachy glute muscle engagement, leg muscles, and powerful athletic pose",
       "createdAt": "2026-01-17T17:33:00.000000",
       "updatedAt": "2026-01-17T17:33:00.000000",
       "generated_images": {
@@ -1953,12 +1957,12 @@
     {
       "id": "scene_121",
       "name": "Pickleball - Lunging Shot",
-      "action": "lunging forward to hit ball, one leg extended, mini skirt exposing glutes, athletic explosive move",
-      "outfit_changes": "sexy crop top, very short white mini skirt, athletic shoes, lunge position showing flexibility",
+      "action": "lunging forward to hit ball, one leg extended, white pleated tennis skirt showing bare thighs and glutes, athletic explosive move",
+      "outfit_changes": "white athletic crop top, very short white pleated tennis skirt (flowy athletic skirt, knee-above or shorter, NOT shorts or compression shorts), athletic shoes, lunge position showing flexibility and bare legs",
       "props": "pickleball paddle, ball, net visible",
-      "lighting": "bright afternoon court light, side lighting on glutes and legs",
+      "lighting": "bright afternoon court light, side lighting on bare thighs and peachy glutes",
       "setting": "pickleball court, Hanoi sports facility, outdoor court",
-      "view": "side view, full body in lunge, emphasizing glute definition and athletic flexibility",
+      "view": "side view, full body in lunge, emphasizing glute definition, bare thigh muscles, and athletic flexibility",
       "createdAt": "2026-01-17T17:34:00.000000",
       "updatedAt": "2026-01-17T17:34:00.000000",
       "generated_images": {
@@ -2013,12 +2017,12 @@
     {
       "id": "scene_125",
       "name": "Pickleball - Cooling Off Moment",
-      "action": "sitting on bench after intense play, drinking water, sweaty glow, mini skirt riding up slightly",
-      "outfit_changes": "crop top, short white mini skirt, athletic shoes, glistening from physical exertion",
+      "action": "sitting on bench after intense play, drinking water, sweaty glow, white pleated athletic skirt riding up naturally showing bare thighs",
+      "outfit_changes": "white athletic crop top, short white pleated tennis skirt (athletic flowy skirt, NOT shorts), athletic shoes, glistening from physical exertion, bare legs and thighs visible",
       "props": "court bench, water bottle, towel, paddle",
-      "lighting": "golden afternoon light, warm glow on sweaty skin",
+      "lighting": "golden afternoon light, warm glow on sweaty skin and bare legs",
       "setting": "pickleball court sideline, Hanoi sports facility",
-      "view": "front view or side view, full body seated, showing athletic glowing body after intense play",
+      "view": "front view or side view, full body seated, showing athletic glowing body and bare legs after intense play",
       "createdAt": "2026-01-17T17:38:00.000000",
       "updatedAt": "2026-01-17T17:38:00.000000",
       "generated_images": {
