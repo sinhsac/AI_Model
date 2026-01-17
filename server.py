@@ -21,10 +21,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # Serve Static Files
         if self.path == '/' or self.path == '/index.html':
             self.path = '/public/index.html'
+        elif self.path == '/galleries' or self.path == '/galleries.html':
+            self.path = '/public/galleries.html'
         elif self.path.startswith('/style.css'):
              self.path = '/public/style.css'
         elif self.path.startswith('/app.js'):
              self.path = '/public/app.js'
+        elif self.path.startswith('/galleries.js'):
+             self.path = '/public/galleries.js'
         elif self.path.startswith('/uploads/'):
             # Allow serving uploaded images
             self.path = '/public' + self.path
