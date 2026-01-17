@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Trang AI Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar / Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>AI Manager</h1>
+                <span class="badge">Linh Trang</span>
+            </div>
+            <nav>
+                <button id="addSceneBtn" class="btn btn-primary"><i class="fas fa-plus"></i> New Scene</button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Character Summary Card -->
+            <section class="char-summary glass-panel">
+                <div class="panel-header">
+                    <h2>Character Profile</h2>
+                    <div class="actions">
+                        <button id="editProfileBtn" class="btn btn-outline btn-icon" title="Edit Profile"><i
+                                class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p><strong>Name:</strong> <span id="charNameDisplay">Loading...</span></p>
+                    <p><strong>Age:</strong> <span id="charAgeDisplay"></span></p>
+                    <p><strong>Visuals:</strong> <span id="charVisuals"></span></p>
+                </div>
+            </section>
+
+            <!-- Scenes Grid -->
+            <section class="scenes-section">
+                <div class="section-header">
+                    <h2>Scenes (<span id="sceneCount">0</span>)</h2>
+
+                </div>
+
+                <div id="scenesGrid" class="grid-container">
+                    <!-- Scenes injected here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-controls">
+                    <button id="prevPageBtn" class="btn btn-outline" disabled>Previous</button>
+                    <span id="pageIndicator">Page 1</span>
+                    <button id="nextPageBtn" class="btn btn-outline">Next</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Modal: Edit Profile -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content glass-panel large-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Edit Character Profile</h2>
+            <form id="profileForm" class="profile-edit-grid">
+
+                <!-- Basic Info -->
+                <div class="edit-section">
+                    <h3>Basic Info</h3>
+                    <div class="form-row">
+                        <div class="form-group metade">
+                            <label>Name</label>
+                            <input type="text" name="name" id="pName" required>
+                        </div>
+                        <div class="form-group metade">
+                            <label>Age</label>
+                            <input type="text" name="age" id="pAge" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ethnicity</label>
+                        <input type="text" name="ethnicity" id="pEthnicity" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Hair Style</label>
+                        <input type="text" name="hair" id="pHair" required>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="edit-section">
+                    <h3>Body Stats</h3>
+                    <div class="form-row">
+                        <div class="form-group metade">
+                            <label>Height</label>
+                            <input type="text" name="body_height" id="pBodyHeight">
+                        </div>
+                        <div class="form-group metade">
+                            <label>Type</label>
+                            <input type="text" name="body_type" id="pBodyType">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Build Details</label>
+                        <textarea name="body_build" id="pBodyBuild"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Posture</label>
+                        <input type="text" name="body_posture" id="pBodyPosture">
+                    </div>
+                </div>
+
+                <!-- Facials -->
+                <div class="edit-section full-width-section">
+                    <h3>Facial Features</h3>
+                    <div class="form-row">
+                        <div class="form-group third">
+                            <label>Face Shape</label>
+                            <textarea name="face_shape" id="pFaceShape"></textarea>
+                        </div>
+                        <div class="form-group third">
+                            <label>Skin Tone</label>
+                            <textarea name="face_skin" id="pFaceSkin"></textarea>
+                        </div>
+                        <div class="form-group third">
+                            <label>Cheekbones</label>
+                            <textarea name="face_cheekbones" id="pFaceCheekbones"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group third">
+                            <label>Eyes</label>
+                            <textarea name="face_eyes" id="pFaceEyes"></textarea>
+                        </div>
+                        <div class="form-group third">
+                            <label>Eyebrows</label>
+                            <textarea name="face_eyebrows" id="pFaceEyebrows"></textarea>
+                        </div>
+                        <div class="form-group third">
+                            <label>Nose</label>
+                            <textarea name="face_nose" id="pFaceNose"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>Lips</label>
+                            <textarea name="face_lips" id="pFaceLips"></textarea>
+                        </div>
+                        <div class="form-group half">
+                            <label>Special Features (Mole etc)</label>
+                            <textarea name="face_features" id="pFaceFeatures"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Style & Photo -->
+                <div class="edit-section">
+                    <h3>Base Outfit</h3>
+                    <div class="form-group">
+                        <label>Top</label>
+                        <textarea name="outfit_top" id="pOutfitTop"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Bottom</label>
+                        <textarea name="outfit_bottom" id="pOutfitBottom"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Accessories</label>
+                        <textarea name="outfit_acc" id="pOutfitAcc"></textarea>
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Photography Default</h3>
+                    <div class="form-group">
+                        <label>Quality</label>
+                        <input type="text" name="photo_qual" id="pPhotoQual">
+                    </div>
+                    <div class="form-group">
+                        <label>Lighting</label>
+                        <input type="text" name="photo_light" id="pPhotoLight">
+                    </div>
+                    <div class="form-group">
+                        <label>Composition</label>
+                        <input type="text" name="photo_comp" id="pPhotoComp">
+                    </div>
+                </div>
+
+                <div class="form-actions full-width-section">
+                    <button type="submit" class="btn btn-primary full-width">Save Full Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Add/Edit Scene -->
+    <div id="sceneModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2 id="sceneModalTitle">Add New Scene</h2>
+            <form id="sceneForm">
+                <input type="hidden" name="id" id="sceneId">
+                <div class="form-group">
+                    <label>Scene Name</label>
+                    <input type="text" name="name" id="sceneName" required placeholder="e.g. Library Reading">
+                </div>
+                <div class="form-group">
+                    <label>Action</label>
+                    <textarea name="action" id="sceneAction" required placeholder="e.g. reading a book"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Setting</label>
+                    <textarea name="setting" id="sceneSetting" required
+                        placeholder="e.g. quiet library with wooden shelves"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Outfit (Optional)</label>
+                    <textarea name="outfit_changes" id="sceneOutfit" placeholder="e.g. cozy sweater"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Lighting (Optional)</label>
+                    <textarea name="lighting" id="sceneLighting" placeholder="e.g. soft lamp light"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>View (Optional)</label>
+                    <textarea name="view" id="sceneView" placeholder="e.g. side profile"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Props (Optional)</label>
+                    <textarea name="props" id="sceneProps" placeholder="e.g. holding a book"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Save Scene</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Edit JSON -->
+    <div id="jsonModal" class="modal">
+        <div class="modal-content glass-panel large-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Edit Scene JSON</h2>
+            <p class="small-text">Advanced Mode: Edit the raw data directly.</p>
+            <textarea id="jsonEditor" class="code-editor" spellcheck="false"></textarea>
+            <div class="modal-actions">
+                <button id="saveJsonBtn" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Delete Confirmation -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content glass-panel" style="width: 400px; text-align: center;">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: #f85149;">Delete Scene?</h2>
+            <p>Are you sure you want to delete <strong id="deleteTargetName"></strong>?</p>
+            <p class="small-text" style="color: #8b949e;">This action cannot be undone.</p>
+            <div class="modal-actions" style="justify-content: center; margin-top: 1.5rem;">
+                <button id="cancelDeleteBtn" class="btn btn-outline">Cancel</button>
+                <button id="confirmDeleteBtn" class="btn btn-danger">Delete Forever</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: View Prompt -->
+    <div id="promptModal" class="modal">
+        <div class="modal-content glass-panel large-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Generated Prompt</h2>
+            <div class="prompt-box">
+                <p id="generatedPromptText"></p>
+            </div>
+            <div class="modal-actions">
+                <button id="copyBtn" class="btn btn-primary">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Gallery & Upload -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content glass-panel large-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Scene Gallery</h2>
+
+            <div class="upload-section">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <button id="uploadBtn" class="btn btn-primary"><i class="fas fa-upload"></i> Upload Image</button>
+                <p class="small-text">Upload generated results to save them here.</p>
+            </div>
+
+            <div id="galleryGrid" class="gallery-grid">
+                <!-- Images injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

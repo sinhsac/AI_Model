@@ -1,0 +1,321 @@
+{
+  "character": {
+    "name": "Linh Trang",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only)",
+    "face": {
+      "shape": "soft oval with slightly rounded cheeks, delicate jawline, natural Vietnamese proportions",
+      "eyes": "almond-shaped, dark brown, double eyelids, slightly upturned outer corners, warm and friendly expression",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight, slightly button",
+      "lips": "natural, rose-pink",
+      "skin": "warm medium tone with natural glow, smooth complexion, Southeast Asian skin tone",
+      "cheekbones": "high but soft",
+      "features": "small mole near left eye"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "fit and toned, athletic build with feminine curves",
+      "height": "162-165cm (average Vietnamese height)",
+      "build": "slim waist, toned arms and legs, defined abs, proportionate figure",
+      "posture": "confident and natural"
+    },
+    "age": "23 years old",
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo",
+      "lighting": "natural daylight",
+      "composition": "cinematic composition"
+    }
+  },
+  "base_prompt": "A high-quality, realistic photo of a 23 years old Vietnamese woman with long, straight brown hair standing on an electric scooter. She has a fit and toned, athletic build with feminine curves, 162-165cm height, slim waist, toned arms and legs, defined abs, proportionate figure. She has a natural Vietnamese face with a soft oval face shape with slightly rounded cheeks, delicate jawline, warm medium tone skin with natural glow and smooth complexion (Southeast Asian skin tone), a gentle nose bridge with slightly rounded tip and small nostrils (typical Vietnamese nose shape), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, natural pink medium fullness lips with soft cupid's bow, subtle soft cheekbones (not high or sharp), distinctly Southeast Asian features with youthful fresh appearance. She is wearing a fitted black short-sleeved t-shirt and high-waisted black leggings. The scooter is modern, matte black and grey. The setting is a roadside in Vietnam, with a paved sidewalk, yellow road lines, and blurred street-side shops in the background. Natural daylight, side view, cinematic composition. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian.",
+  "scenes": [
+    {
+      "id": "scene_01",
+      "name": "Electric Scooter - Roadside",
+      "action": "standing on an electric scooter",
+      "props": "modern, matte black and grey scooter",
+      "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:19:09.898647",
+      "generated_images": [
+        "/uploads/scene_01/1768627149.jpg"
+      ]
+    },
+    {
+      "id": "scene_02",
+      "name": "Front View Scooter",
+      "action": "standing on an electric scooter",
+      "props": "modern, matte black and grey scooter",
+      "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:46:49.364361",
+      "generated_images": [
+        "/uploads/scene_02/1768628803.jpg",
+        "/uploads/scene_02/1768628809.jpg"
+      ]
+    },
+    {
+      "id": "scene_03",
+      "name": "Cafe - No Mask",
+      "action": "sitting at a table with coffee cup",
+      "outfit_changes": "no face mask, showing natural smile",
+      "setting": "trendy Vietnamese cafe with wooden tables and plants in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:55:54.967341",
+      "generated_images": [
+        "/uploads/scene_03/1768629354.jpg"
+      ]
+    },
+    {
+      "id": "scene_04",
+      "name": "Street Walk - White Outfit",
+      "action": "walking casually",
+      "outfit_changes": "white oversized t-shirt and light blue jeans, no mask",
+      "setting": "busy Vietnamese street with motorbikes and shops",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:56:36.615581",
+      "generated_images": [
+        "/uploads/scene_04/1768629396.jpg"
+      ]
+    },
+    {
+      "id": "scene_05",
+      "name": "Golden Hour Portrait",
+      "action": "standing and looking at camera",
+      "outfit_changes": "no face mask, natural smile",
+      "lighting": "golden hour, warm sunset glow",
+      "setting": "rooftop or open space with city background",
+      "view": "front view, portrait style",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:57:21.258326",
+      "generated_images": [
+        "/uploads/scene_05/1768629441.jpg"
+      ]
+    },
+    {
+      "id": "scene_06",
+      "name": "Market Shopping",
+      "action": "holding shopping bags, browsing items",
+      "outfit_changes": "casual sundress, no mask, straw hat",
+      "setting": "traditional Vietnamese market with colorful stalls and fruits",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_07",
+      "name": "Gym Workout",
+      "action": "doing yoga pose or stretching",
+      "outfit_changes": "sports bra and yoga pants, no mask",
+      "setting": "modern gym with mirrors and equipment in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_08",
+      "name": "Beach Sunset",
+      "action": "walking barefoot on sand",
+      "outfit_changes": "light flowy dress, no mask, hair flowing in wind",
+      "lighting": "sunset, warm orange and pink sky",
+      "setting": "Vietnamese beach with waves and palm trees",
+      "view": "back view, looking at ocean",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_09",
+      "name": "Study/Work",
+      "action": "sitting at desk with laptop, writing notes",
+      "outfit_changes": "casual blouse, no mask, glasses",
+      "setting": "cozy home office with books and plants",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_10",
+      "name": "Night Street Food",
+      "action": "eating banh mi or pho, holding chopsticks",
+      "outfit_changes": "casual hoodie and jeans, no mask",
+      "lighting": "night time, warm street lights",
+      "setting": "Vietnamese street food stall with plastic chairs and tables",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_11",
+      "name": "Bookstore Browse",
+      "action": "reading a book, standing between shelves",
+      "outfit_changes": "cozy sweater and jeans, no mask",
+      "setting": "modern bookstore with wooden shelves and warm lighting",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_12",
+      "name": "Rain Day",
+      "action": "holding umbrella, looking up at rain",
+      "outfit_changes": "raincoat or light jacket, no mask",
+      "lighting": "overcast, soft diffused light",
+      "setting": "wet Vietnamese street with reflections on pavement",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_13",
+      "name": "Cafe Coc - Sidewalk",
+      "action": "sitting on low plastic stool, drinking coffee",
+      "outfit_changes": "casual t-shirt, shorts, no mask",
+      "setting": "typical Vietnamese sidewalk cafe specific with low plastic stools, old wall background",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_14",
+      "name": "Park Morning Exercise",
+      "action": "stretching or jogging",
+      "outfit_changes": "sporty tank top, running shorts, no mask",
+      "lighting": "morning sun, soft shadows",
+      "setting": "green park in Vietnam (Cong vien) with paved paths and trees",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_15",
+      "name": "Hoan Kiem Lake",
+      "action": "standing by the lake railing",
+      "outfit_changes": "elegant summer dress, no mask",
+      "setting": "iconic Hoan Kiem Lake background with Turtle Tower or red bridge in distance",
+      "view": "portrait shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_16",
+      "name": "Flower Stall",
+      "action": "smelling a lotus flower or rose bouquet",
+      "outfit_changes": "Ao Dai (traditional dress) or feminine blouse, no mask",
+      "setting": "street flower vendor bicycle or stall loaded with colorful flowers",
+      "view": "close up side profile",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_17",
+      "name": "Temple Visit",
+      "action": "holding a burning incense stick, praying gesture",
+      "outfit_changes": "white Ao Dai, no mask",
+      "setting": "ancient Vietnamese temple courtyard with smoke and altars",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_18",
+      "name": "Motorbike Ready",
+      "action": "putting on a helmet or sitting on bike",
+      "outfit_changes": "sun protection jacket (ninja lead style) or hoodies, jeans",
+      "props": "patterned helmet",
+      "setting": "parking lot with many motorbikes",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:50:52.589625",
+      "generated_images": [
+        "/uploads/scene_18/1768629052.jpg"
+      ]
+    },
+    {
+      "id": "scene_19",
+      "name": "Tra Da Sidewalk",
+      "action": "drinking iced tea (Tra Da), cracking sunflower seeds",
+      "outfit_changes": "very casual home clothes or t-shirt",
+      "setting": "sidewalk tea stall with glass jug of tea and plastic chairs",
+      "view": "wide shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_20",
+      "name": "Supermarket Grocery",
+      "action": "pushing a cart, picking up fruit",
+      "outfit_changes": "casual chic outfit",
+      "setting": "modern supermarket aisle (WinMart/Go!)",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_21",
+      "name": "Co-working Space",
+      "action": "working on laptop, focused expression",
+      "outfit_changes": "smart casual blazer",
+      "setting": "modern aesthetic cafe/workspace with glass walls",
+      "view": "offset front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_22",
+      "name": "Home Cooking",
+      "action": "stirring a pot or chopping vegetables",
+      "outfit_changes": "apron over home clothes",
+      "setting": "Vietnamese style kitchen",
+      "view": "mid shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_23",
+      "name": "Lantern Street",
+      "action": "looking up at lanterns, smiling",
+      "outfit_changes": "boho style dress",
+      "lighting": "night, colorful lantern light",
+      "setting": "street filled with glowing colorful lanterns",
+      "view": "low angle",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    },
+    {
+      "id": "scene_24",
+      "name": "Bus Stop Waiting",
+      "action": "checking phone, waiting",
+      "outfit_changes": "student style or office wear with earphones",
+      "setting": "Vietnamese bus stop shelter",
+      "view": "candid side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:15:26.394918",
+      "generated_images": []
+    }
+  ]
+}
