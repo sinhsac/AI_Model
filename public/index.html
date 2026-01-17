@@ -71,93 +71,141 @@
     <div id="profileModal" class="modal">
         <div class="modal-content glass-panel large-modal">
             <span class="close-modal">&times;</span>
-            <h2>Edit Character Profile</h2>
+            <h2>Edit Character Profile / Chỉnh Sửa Hồ Sơ Nhân Vật</h2>
             <form id="profileForm" class="profile-edit-grid">
 
                 <!-- Basic Info -->
                 <div class="edit-section">
-                    <h3>Basic Info</h3>
+                    <h3>Basic Info / Thông Tin Cơ Bản</h3>
                     <div class="form-row">
                         <div class="form-group metade">
-                            <label>Name</label>
+                            <label>Name / Tên</label>
                             <input type="text" name="name" id="pName" required>
                         </div>
                         <div class="form-group metade">
-                            <label>Age</label>
+                            <label>Age / Tuổi</label>
                             <input type="text" name="age" id="pAge" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Ethnicity</label>
+                        <label>Ethnicity / Dân Tộc</label>
                         <input type="text" name="ethnicity" id="pEthnicity" required>
                     </div>
                     <div class="form-group">
-                        <label>Hair Style</label>
+                        <label>Hair Style / Kiểu Tóc</label>
                         <input type="text" name="hair" id="pHair" required>
+                    </div>
+                </div>
+
+                <!-- Personality -->
+                <div class="edit-section">
+                    <h3>Personality / Tính Cách</h3>
+                    <div class="form-group">
+                        <label>Traits / Đặc Điểm (phân cách bằng dấu phẩy)</label>
+                        <textarea name="personality_traits" id="pPersonalityTraits"
+                            placeholder="e.g. friendly, energetic, curious"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group metade">
+                            <label>MBTI Type / Loại MBTI</label>
+                            <input type="text" name="personality_mbti" id="pPersonalityMbti" placeholder="e.g. ENFP">
+                        </div>
+                        <div class="form-group metade">
+                            <label>Tone / Giọng Điệu</label>
+                            <input type="text" name="personality_tone" id="pPersonalityTone"
+                                placeholder="e.g. warm, casual">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Background -->
+                <div class="edit-section">
+                    <h3>Background / Lý Lịch</h3>
+                    <div class="form-row">
+                        <div class="form-group metade">
+                            <label>Hometown / Quê Quán</label>
+                            <input type="text" name="background_hometown" id="pBackgroundHometown"
+                                placeholder="e.g. Hanoi, Vietnam">
+                        </div>
+                        <div class="form-group metade">
+                            <label>Occupation / Nghề Nghiệp</label>
+                            <input type="text" name="background_occupation" id="pBackgroundOccupation"
+                                placeholder="e.g. Content Creator">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Education / Học Vấn</label>
+                        <input type="text" name="background_education" id="pBackgroundEducation"
+                            placeholder="e.g. University graduate - Communications">
+                    </div>
+                    <div class="form-group">
+                        <label>Family / Gia Đình</label>
+                        <textarea name="background_family" id="pBackgroundFamily"
+                            placeholder="e.g. middle-class family, close relationship with parents"></textarea>
                     </div>
                 </div>
 
                 <!-- Body -->
                 <div class="edit-section">
-                    <h3>Body Stats</h3>
+                    <h3>Body Stats / Thông Số Cơ Thể</h3>
                     <div class="form-row">
                         <div class="form-group metade">
-                            <label>Height</label>
+                            <label>Height / Chiều Cao</label>
                             <input type="text" name="body_height" id="pBodyHeight">
                         </div>
                         <div class="form-group metade">
-                            <label>Type</label>
+                            <label>Type / Loại Hình</label>
                             <input type="text" name="body_type" id="pBodyType">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Build Details</label>
+                        <label>Build Details / Chi Tiết Vóc Dáng</label>
                         <textarea name="body_build" id="pBodyBuild"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Posture</label>
+                        <label>Posture / Tư Thế</label>
                         <input type="text" name="body_posture" id="pBodyPosture">
                     </div>
                 </div>
 
                 <!-- Facials -->
                 <div class="edit-section full-width-section">
-                    <h3>Facial Features</h3>
+                    <h3>Facial Features / Đặc Điểm Khuôn Mặt</h3>
                     <div class="form-row">
                         <div class="form-group third">
-                            <label>Face Shape</label>
+                            <label>Face Shape / Hình Mặt</label>
                             <textarea name="face_shape" id="pFaceShape"></textarea>
                         </div>
                         <div class="form-group third">
-                            <label>Skin Tone</label>
+                            <label>Skin Tone / Màu Da</label>
                             <textarea name="face_skin" id="pFaceSkin"></textarea>
                         </div>
                         <div class="form-group third">
-                            <label>Cheekbones</label>
+                            <label>Cheekbones / Gò Má</label>
                             <textarea name="face_cheekbones" id="pFaceCheekbones"></textarea>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group third">
-                            <label>Eyes</label>
+                            <label>Eyes / Mắt</label>
                             <textarea name="face_eyes" id="pFaceEyes"></textarea>
                         </div>
                         <div class="form-group third">
-                            <label>Eyebrows</label>
+                            <label>Eyebrows / Lông Mày</label>
                             <textarea name="face_eyebrows" id="pFaceEyebrows"></textarea>
                         </div>
                         <div class="form-group third">
-                            <label>Nose</label>
+                            <label>Nose / Mũi</label>
                             <textarea name="face_nose" id="pFaceNose"></textarea>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group half">
-                            <label>Lips</label>
+                            <label>Lips / Môi</label>
                             <textarea name="face_lips" id="pFaceLips"></textarea>
                         </div>
                         <div class="form-group half">
-                            <label>Special Features (Mole etc)</label>
+                            <label>Special Features / Đặc Điểm Đặc Biệt (nốt ruồi, v.v.)</label>
                             <textarea name="face_features" id="pFaceFeatures"></textarea>
                         </div>
                     </div>
@@ -165,39 +213,39 @@
 
                 <!-- Style & Photo -->
                 <div class="edit-section">
-                    <h3>Base Outfit</h3>
+                    <h3>Base Outfit / Trang Phục Mặc Định</h3>
                     <div class="form-group">
-                        <label>Top</label>
+                        <label>Top / Áo</label>
                         <textarea name="outfit_top" id="pOutfitTop"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Bottom</label>
+                        <label>Bottom / Quần</label>
                         <textarea name="outfit_bottom" id="pOutfitBottom"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Accessories</label>
+                        <label>Accessories / Phụ Kiện</label>
                         <textarea name="outfit_acc" id="pOutfitAcc"></textarea>
                     </div>
                 </div>
 
                 <div class="edit-section">
-                    <h3>Photography Default</h3>
+                    <h3>Photography Default / Cài Đặt Chụp Ảnh</h3>
                     <div class="form-group">
-                        <label>Quality</label>
+                        <label>Quality / Chất Lượng</label>
                         <input type="text" name="photo_qual" id="pPhotoQual">
                     </div>
                     <div class="form-group">
-                        <label>Lighting</label>
+                        <label>Lighting / Ánh Sáng</label>
                         <input type="text" name="photo_light" id="pPhotoLight">
                     </div>
                     <div class="form-group">
-                        <label>Composition</label>
+                        <label>Composition / Bố Cục</label>
                         <input type="text" name="photo_comp" id="pPhotoComp">
                     </div>
                 </div>
 
                 <div class="form-actions full-width-section">
-                    <button type="submit" class="btn btn-primary full-width">Save Full Profile</button>
+                    <button type="submit" class="btn btn-primary full-width">Save Full Profile / Lưu Hồ Sơ</button>
                 </div>
             </form>
         </div>
@@ -211,35 +259,35 @@
             <form id="sceneForm">
                 <input type="hidden" name="id" id="sceneId">
                 <div class="form-group">
-                    <label>Scene Name</label>
+                    <label>Scene Name / Tên Cảnh</label>
                     <input type="text" name="name" id="sceneName" required placeholder="e.g. Library Reading">
                 </div>
                 <div class="form-group">
-                    <label>Action</label>
+                    <label>Action / Hành Động</label>
                     <textarea name="action" id="sceneAction" required placeholder="e.g. reading a book"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Setting</label>
+                    <label>Setting / Bối Cảnh</label>
                     <textarea name="setting" id="sceneSetting" required
                         placeholder="e.g. quiet library with wooden shelves"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Outfit (Optional)</label>
+                    <label>Outfit / Trang Phục (Tùy chọn)</label>
                     <textarea name="outfit_changes" id="sceneOutfit" placeholder="e.g. cozy sweater"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Lighting (Optional)</label>
+                    <label>Lighting / Ánh Sáng (Tùy chọn)</label>
                     <textarea name="lighting" id="sceneLighting" placeholder="e.g. soft lamp light"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>View (Optional)</label>
+                    <label>View / Góc Nhìn (Tùy chọn)</label>
                     <textarea name="view" id="sceneView" placeholder="e.g. side profile"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Props (Optional)</label>
+                    <label>Props / Đạo Cụ (Tùy chọn)</label>
                     <textarea name="props" id="sceneProps" placeholder="e.g. holding a book"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary full-width">Save Scene</button>
+                <button type="submit" class="btn btn-primary full-width">Save Scene / Lưu Cảnh</button>
             </form>
         </div>
     </div>

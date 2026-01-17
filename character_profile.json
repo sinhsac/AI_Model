@@ -8,18 +8,36 @@
       "eyebrows": "naturally arched, medium thickness, dark brown",
       "nose": "straight, slightly button",
       "lips": "natural, rose-pink",
-      "skin": "warm medium tone with natural glow, smooth complexion, Southeast Asian skin tone",
+      "skin": "light to medium tan with natural glow, smooth complexion, typical Northern Vietnamese skin tone",
       "cheekbones": "high but soft",
       "features": "small mole near left eye"
     },
     "hair": "long, straight, jet black, silky, reaching lower back",
     "body": {
       "type": "fit and toned, athletic build with feminine curves",
-      "height": "162-165cm (average Vietnamese height)",
+      "height": "165cm (average Vietnamese height)",
       "build": "slim waist, toned arms and legs, defined abs, proportionate figure",
       "posture": "confident and natural"
     },
     "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother"
+    },
     "base_outfit": {
       "top": "fitted white short-sleeved t-shirt",
       "bottom": "high-waisted muted olive leggings",
@@ -29,9 +47,10 @@
       "quality": "high-quality, realistic photo",
       "lighting": "natural daylight",
       "composition": "cinematic composition"
-    }
+    },
+    "core_identity_prompt": "A high-quality, realistic photo of Linh Trang, a 23-year-old Vietnamese woman from Hanoi. She has long, straight jet black hair reaching her lower back. Body: fit and toned athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs. Face: soft oval shape with slightly rounded cheeks, delicate jawline, light to medium tan skin with natural glow (typical Northern Vietnamese), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, straight bridge with slightly button tip nose (typical Vietnamese nose shape), natural rose-pink lips with medium fullness, soft slightly high cheekbones, small mole near left eye. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian."
   },
-  "base_prompt": "A high-quality, realistic photo of a 23 years old Vietnamese woman with long, straight brown hair standing on an electric scooter. She has a fit and toned, athletic build with feminine curves, 162-165cm height, slim waist, toned arms and legs, defined abs, proportionate figure. She has a natural Vietnamese face with a soft oval face shape with slightly rounded cheeks, delicate jawline, warm medium tone skin with natural glow and smooth complexion (Southeast Asian skin tone), a gentle nose bridge with slightly rounded tip and small nostrils (typical Vietnamese nose shape), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, natural pink medium fullness lips with soft cupid's bow, subtle soft cheekbones (not high or sharp), distinctly Southeast Asian features with youthful fresh appearance. She is wearing a fitted black short-sleeved t-shirt and high-waisted black leggings. The scooter is modern, matte black and grey. The setting is a roadside in Vietnam, with a paved sidewalk, yellow road lines, and blurred street-side shops in the background. Natural daylight, side view, cinematic composition. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian.",
+  "base_prompt": "A high-quality, realistic photo of a 23 years old Vietnamese woman with long, straight jet black hair standing on an electric scooter. She has a fit and toned, athletic build with feminine curves, 165cm height, slim waist, toned arms and legs, defined abs, proportionate figure. She has a natural Vietnamese face with a soft oval face shape with slightly rounded cheeks, delicate jawline, light to medium tan skin with natural glow (typical Northern Vietnamese), straight bridge with slightly button tip nose (typical Vietnamese nose shape), almond-shaped dark brown eyes with double eyelids and slightly upturned outer corners, naturally arched medium thickness dark brown eyebrows, natural rose-pink lips with medium fullness, soft slightly high cheekbones, distinctly Southeast Asian features with youthful fresh appearance. She is wearing a fitted black short-sleeved t-shirt and high-waisted black leggings. The scooter is modern, matte black and grey. The setting is a roadside in Vietnam, with a paved sidewalk, yellow road lines, and blurred street-side shops in the background. Natural daylight, side view, cinematic composition. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only, NOT East Asian.",
   "scenes": [
     {
       "id": "scene_01",
@@ -41,9 +60,10 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:19:09.898647",
+      "updatedAt": "2026-01-17T13:18:33.110403",
       "generated_images": [
-        "/uploads/scene_01/1768627149.jpg"
+        "/uploads/scene_01/1768627149.jpg",
+        "/uploads/scene_01/1768630713.jpg"
       ]
     },
     {
@@ -108,8 +128,10 @@
       "setting": "traditional Vietnamese market with colorful stalls and fruits",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:16:46.545501",
+      "generated_images": [
+        "/uploads/scene_06/1768630606.jpg"
+      ]
     },
     {
       "id": "scene_07",
@@ -119,8 +141,10 @@
       "setting": "modern gym with mirrors and equipment in background",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:17:48.660867",
+      "generated_images": [
+        "/uploads/scene_07/1768630668.jpg"
+      ]
     },
     {
       "id": "scene_08",
@@ -131,8 +155,10 @@
       "setting": "Vietnamese beach with waves and palm trees",
       "view": "back view, looking at ocean",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:19:21.013721",
+      "generated_images": [
+        "/uploads/scene_08/1768630761.jpg"
+      ]
     },
     {
       "id": "scene_09",
@@ -142,8 +168,10 @@
       "setting": "cozy home office with books and plants",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:47:33.098331",
+      "generated_images": [
+        "/uploads/scene_09/1768632453.jpg"
+      ]
     },
     {
       "id": "scene_10",
@@ -154,8 +182,10 @@
       "setting": "Vietnamese street food stall with plastic chairs and tables",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:48:14.138877",
+      "generated_images": [
+        "/uploads/scene_10/1768632494.jpg"
+      ]
     },
     {
       "id": "scene_11",
@@ -165,8 +195,10 @@
       "setting": "modern bookstore with wooden shelves and warm lighting",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:49:43.806685",
+      "generated_images": [
+        "/uploads/scene_11/1768632583.jpg"
+      ]
     },
     {
       "id": "scene_12",
@@ -177,8 +209,10 @@
       "setting": "wet Vietnamese street with reflections on pavement",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:52:40.396379",
+      "generated_images": [
+        "/uploads/scene_12/1768632760.jpg"
+      ]
     },
     {
       "id": "scene_13",
@@ -188,8 +222,10 @@
       "setting": "typical Vietnamese sidewalk cafe specific with low plastic stools, old wall background",
       "view": "side view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T12:15:26.394918",
-      "generated_images": []
+      "updatedAt": "2026-01-17T13:53:34.756169",
+      "generated_images": [
+        "/uploads/scene_13/1768632814.jpg"
+      ]
     },
     {
       "id": "scene_14",

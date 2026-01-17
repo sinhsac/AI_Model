@@ -93,7 +93,16 @@ function render() {
     const char = profileData.character;
     charNameDisplay.textContent = char.name;
     charAgeDisplay.textContent = char.age;
-    charVisuals.textContent = `${char.ethnicity}, ${char.hair}. ${char.face.features}`;
+
+    // Display personality and background if available
+    let visualsText = `${char.ethnicity}, ${char.hair}. ${char.face.features}`;
+    if (char.personality) {
+        visualsText += ` | ${char.personality.traits.slice(0, 3).join(', ')}`;
+    }
+    if (char.background) {
+        visualsText += ` | ${char.background.occupation}`;
+    }
+    charVisuals.textContent = visualsText;
 
     // Sort scenes by updatedAt desc (most recent first)
     let scenes = [...profileData.scenes];
@@ -426,6 +435,36 @@ profileForm.addEventListener('submit', async (e) => {
         }
     };
 
+    // Add personality if fields exist
+    const traitsInput = document.getElementById('pPersonalityTraits').value;
+    if (traitsInput) {
+        updated.personality = {
+            traits: traitsInput.split(',').map(t => t.trim()).filter(t => t),
+            mbti: document.getElementById('pPersonalityMbti').value,
+            tone: document.getElementById('pPersonalityTone').value
+        };
+    } else if (current.personality) {
+        updated.personality = current.personality;
+    }
+
+    // Add background if fields exist
+    const hometownInput = document.getElementById('pBackgroundHometown').value;
+    if (hometownInput) {
+        updated.background = {
+            hometown: hometownInput,
+            occupation: document.getElementById('pBackgroundOccupation').value,
+            education: document.getElementById('pBackgroundEducation').value,
+            family: document.getElementById('pBackgroundFamily').value
+        };
+    } else if (current.background) {
+        updated.background = current.background;
+    }
+
+    // Preserve core_identity_prompt if exists
+    if (current.core_identity_prompt) {
+        updated.core_identity_prompt = current.core_identity_prompt;
+    }
+
     try {
         const res = await fetch(`${API_BASE}/profile`, {
             method: 'PUT',
@@ -509,6 +548,21 @@ editProfileBtn.addEventListener('click', () => {
     document.getElementById('pPhotoQual').value = char.photography.quality;
     document.getElementById('pPhotoLight').value = char.photography.lighting;
     document.getElementById('pPhotoComp').value = char.photography.composition;
+
+    // Personality
+    if (char.personality) {
+        document.getElementById('pPersonalityTraits').value = char.personality.traits ? char.personality.traits.join(', ') : '';
+        document.getElementById('pPersonalityMbti').value = char.personality.mbti || '';
+        document.getElementById('pPersonalityTone').value = char.personality.tone || '';
+    }
+
+    // Background
+    if (char.background) {
+        document.getElementById('pBackgroundHometown').value = char.background.hometown || '';
+        document.getElementById('pBackgroundOccupation').value = char.background.occupation || '';
+        document.getElementById('pBackgroundEducation').value = char.background.education || '';
+        document.getElementById('pBackgroundFamily').value = char.background.family || '';
+    }
 
     profileModal.classList.add('show');
 });

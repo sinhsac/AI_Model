@@ -8,7 +8,7 @@ from datetime import datetime
 
 PORT = 3000
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROFILE_PATH = os.path.join(BASE_DIR, '../character_profile.json')
+PROFILE_PATH = os.path.join(BASE_DIR, 'character_profile.json')
 PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
 UPLOAD_DIR = os.path.join(PUBLIC_DIR, 'uploads')
 
@@ -242,16 +242,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def generate_prompt_logic(self, scene, character):
         char = character
-        face = char['face']
-        body = char['body']
-        physical_desc = (
-            f"A high-quality, realistic photo of {char['name']}, a {char['age']} Vietnamese woman. "
-            f"Ethnicity: {char['ethnicity']}. "
-            f"Hair: {char['hair']}. "
-            f"Body: {body['type']}, {body['height']}, {body['build']}, {body['posture']}. "
-            f"Face: {face['shape']}, {face['skin']}, {face['eyes']}, {face['eyebrows']}, {face['nose']}, {face['lips']}, {face['cheekbones']}. "
-            f"Features: {face['features']}."
-        )
+        
+        # Use core_identity_prompt if available (new concise format)
+        if 'core_identity_prompt' in char:
+            physical_desc = char['core_identity_prompt']
+        else:
+            # Fallback to building from individual fields (backward compatibility)
+            face = char['face']
+            body = char['body']
+            physical_desc = (
+                f"A high-quality, realistic photo of {char['name']}, a {char['age']} Vietnamese woman. "
+                f"Ethnicity: {char['ethnicity']}. "
+                f"Hair: {char['hair']}. "
+                f"Body: {body['type']}, {body['height']}, {body['build']}, {body['posture']}. "
+                f"Face: {face['shape']}, {face['skin']}, {face['eyes']}, {face['eyebrows']}, {face['nose']}, {face['lips']}, {face['cheekbones']}. "
+                f"Features: {face['features']}."
+            )
         
         action = scene.get('action', '')
         setting = scene.get('setting', '')
