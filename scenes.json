@@ -1,0 +1,601 @@
+{
+  "scenes": [
+    {
+      "id": "scene_01",
+      "name": "Electric Scooter - Roadside",
+      "action": "standing on an electric scooter",
+      "props": "modern, matte black and grey scooter",
+      "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:18:33.110403",
+      "generated_images": [
+        "/uploads/scene_01/1768627149.jpg",
+        "/uploads/scene_01/1768630713.jpg"
+      ]
+    },
+    {
+      "id": "scene_02",
+      "name": "Front View Scooter",
+      "action": "standing on an electric scooter",
+      "props": "modern, matte black and grey scooter",
+      "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:46:49.364361",
+      "generated_images": [
+        "/uploads/scene_02/1768628803.jpg",
+        "/uploads/scene_02/1768628809.jpg"
+      ]
+    },
+    {
+      "id": "scene_03",
+      "name": "Cafe - No Mask",
+      "action": "sitting at a table with coffee cup",
+      "outfit_changes": "no face mask, showing natural smile",
+      "setting": "trendy Vietnamese cafe with wooden tables and plants in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:55:54.967341",
+      "generated_images": [
+        "/uploads/scene_03/1768629354.jpg"
+      ]
+    },
+    {
+      "id": "scene_04",
+      "name": "Street Walk - White Outfit",
+      "action": "walking casually",
+      "outfit_changes": "white oversized t-shirt and light blue jeans, no mask",
+      "setting": "busy Vietnamese street with motorbikes and shops",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:56:36.615581",
+      "generated_images": [
+        "/uploads/scene_04/1768629396.jpg"
+      ]
+    },
+    {
+      "id": "scene_05",
+      "name": "Golden Hour Portrait",
+      "action": "standing and looking at camera",
+      "outfit_changes": "no face mask, natural smile",
+      "lighting": "golden hour, warm sunset glow",
+      "setting": "rooftop or open space with city background",
+      "view": "front view, portrait style",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:57:21.258326",
+      "generated_images": [
+        "/uploads/scene_05/1768629441.jpg"
+      ]
+    },
+    {
+      "id": "scene_06",
+      "name": "Market Shopping",
+      "action": "holding shopping bags, browsing items",
+      "outfit_changes": "casual sundress, no mask, straw hat",
+      "setting": "traditional Vietnamese market with colorful stalls and fruits",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:16:46.545501",
+      "generated_images": [
+        "/uploads/scene_06/1768630606.jpg"
+      ]
+    },
+    {
+      "id": "scene_07",
+      "name": "Gym Workout",
+      "action": "doing yoga pose or stretching",
+      "outfit_changes": "sports bra and yoga pants, no mask",
+      "setting": "modern gym with mirrors and equipment in background",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:17:48.660867",
+      "generated_images": [
+        "/uploads/scene_07/1768630668.jpg"
+      ]
+    },
+    {
+      "id": "scene_08",
+      "name": "Beach Sunset",
+      "action": "walking barefoot on sand",
+      "outfit_changes": "light flowy dress, no mask, hair flowing in wind",
+      "lighting": "sunset, warm orange and pink sky",
+      "setting": "Vietnamese beach with waves and palm trees",
+      "view": "back view, looking at ocean",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:19:21.013721",
+      "generated_images": [
+        "/uploads/scene_08/1768630761.jpg"
+      ]
+    },
+    {
+      "id": "scene_09",
+      "name": "Study/Work",
+      "action": "sitting at desk with laptop, writing notes",
+      "outfit_changes": "casual blouse, no mask, glasses",
+      "setting": "cozy home office with books and plants",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:47:33.098331",
+      "generated_images": [
+        "/uploads/scene_09/1768632453.jpg"
+      ]
+    },
+    {
+      "id": "scene_10",
+      "name": "Night Street Food",
+      "action": "eating banh mi or pho, holding chopsticks",
+      "outfit_changes": "casual hoodie and jeans, no mask",
+      "lighting": "night time, warm street lights",
+      "setting": "Vietnamese street food stall with plastic chairs and tables",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:48:14.138877",
+      "generated_images": [
+        "/uploads/scene_10/1768632494.jpg"
+      ]
+    },
+    {
+      "id": "scene_11",
+      "name": "Bookstore Browse",
+      "action": "reading a book, standing between shelves",
+      "outfit_changes": "cozy sweater and jeans, no mask",
+      "setting": "modern bookstore with wooden shelves and warm lighting",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:49:43.806685",
+      "generated_images": [
+        "/uploads/scene_11/1768632583.jpg"
+      ]
+    },
+    {
+      "id": "scene_12",
+      "name": "Rain Day",
+      "action": "holding umbrella, looking up at rain",
+      "outfit_changes": "raincoat or light jacket, no mask",
+      "lighting": "overcast, soft diffused light",
+      "setting": "wet Vietnamese street with reflections on pavement",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:52:40.396379",
+      "generated_images": [
+        "/uploads/scene_12/1768632760.jpg"
+      ]
+    },
+    {
+      "id": "scene_13",
+      "name": "Cafe Coc - Sidewalk",
+      "action": "sitting on low plastic stool, drinking coffee",
+      "outfit_changes": "casual t-shirt, shorts, no mask",
+      "setting": "typical Vietnamese sidewalk cafe specific with low plastic stools, old wall background",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:53:34.756169",
+      "generated_images": [
+        "/uploads/scene_13/1768632814.jpg"
+      ]
+    },
+    {
+      "id": "scene_14",
+      "name": "Park Morning Exercise",
+      "action": "stretching or jogging",
+      "outfit_changes": "sporty tank top, running shorts, no mask",
+      "lighting": "morning sun, soft shadows",
+      "setting": "green park in Vietnam (Cong vien) with paved paths and trees",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T13:58:51.185986",
+      "generated_images": [
+        "/uploads/scene_14/1768633131.jpg"
+      ]
+    },
+    {
+      "id": "scene_15",
+      "name": "Hoan Kiem Lake",
+      "action": "standing by the lake railing",
+      "outfit_changes": "elegant summer dress, no mask",
+      "setting": "iconic Hoan Kiem Lake background with Turtle Tower or red bridge in distance",
+      "view": "portrait shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:32:19.215837",
+      "generated_images": [
+        "/uploads/scene_15/1768633639.jpg",
+        "/uploads/scene_15/1768635139.jpg"
+      ]
+    },
+    {
+      "id": "scene_16",
+      "name": "Flower Stall",
+      "action": "smelling a lotus flower or rose bouquet",
+      "outfit_changes": "Ao Dai (traditional dress) or feminine blouse, no mask",
+      "setting": "street flower vendor bicycle or stall loaded with colorful flowers",
+      "view": "close up side profile",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:08:28.565404",
+      "generated_images": [
+        "/uploads/scene_16/1768633708.jpg"
+      ]
+    },
+    {
+      "id": "scene_17",
+      "name": "Temple Visit",
+      "action": "holding a burning incense stick, praying gesture",
+      "outfit_changes": "white Ao Dai, no mask",
+      "setting": "ancient Vietnamese temple courtyard with smoke and altars",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:09:12.197494",
+      "generated_images": [
+        "/uploads/scene_17/1768633752.jpg"
+      ]
+    },
+    {
+      "id": "scene_18",
+      "name": "Motorbike Ready",
+      "action": "putting on a helmet or sitting on bike",
+      "outfit_changes": "sun protection jacket (ninja lead style) or hoodies, jeans",
+      "props": "patterned helmet",
+      "setting": "parking lot with many motorbikes",
+      "view": "front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T12:50:52.589625",
+      "generated_images": [
+        "/uploads/scene_18/1768629052.jpg"
+      ]
+    },
+    {
+      "id": "scene_19",
+      "name": "Tra Da Sidewalk",
+      "action": "drinking iced tea (Tra Da), cracking sunflower seeds",
+      "outfit_changes": "very casual home clothes or t-shirt",
+      "setting": "sidewalk tea stall with glass jug of tea and plastic chairs",
+      "view": "wide shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:10:18.745229",
+      "generated_images": [
+        "/uploads/scene_19/1768633818.jpg"
+      ]
+    },
+    {
+      "id": "scene_20",
+      "name": "Supermarket Grocery",
+      "action": "pushing a cart, picking up fruit",
+      "outfit_changes": "casual chic outfit",
+      "setting": "modern supermarket aisle (WinMart/Go!)",
+      "view": "side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:11:10.040089",
+      "generated_images": [
+        "/uploads/scene_20/1768633870.jpg"
+      ]
+    },
+    {
+      "id": "scene_21",
+      "name": "Co-working Space",
+      "action": "working on laptop, focused expression",
+      "outfit_changes": "smart casual blazer",
+      "setting": "modern aesthetic cafe/workspace with glass walls",
+      "view": "offset front view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:11:49.815210",
+      "generated_images": [
+        "/uploads/scene_21/1768633909.jpg"
+      ]
+    },
+    {
+      "id": "scene_22",
+      "name": "Home Cooking",
+      "action": "stirring a pot or chopping vegetables",
+      "outfit_changes": "apron over home clothes",
+      "setting": "Vietnamese style kitchen",
+      "view": "mid shot",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:15:55.811940",
+      "generated_images": [
+        "/uploads/scene_22/1768634155.jpg"
+      ]
+    },
+    {
+      "id": "scene_23",
+      "name": "Lantern Street",
+      "action": "looking up at lanterns, smiling",
+      "outfit_changes": "boho style dress",
+      "lighting": "night, colorful lantern light",
+      "setting": "street filled with glowing colorful lanterns",
+      "view": "low angle",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:17:25.840810",
+      "generated_images": [
+        "/uploads/scene_23/1768634245.jpg"
+      ]
+    },
+    {
+      "id": "scene_24",
+      "name": "Bus Stop Waiting",
+      "action": "checking phone, waiting",
+      "outfit_changes": "student style or office wear with earphones",
+      "setting": "Vietnamese bus stop shelter",
+      "view": "candid side view",
+      "createdAt": "2026-01-17T12:15:26.394918",
+      "updatedAt": "2026-01-17T14:38:40.881970",
+      "generated_images": [
+        "/uploads/scene_24/1768634290.jpg",
+        "/uploads/scene_24/1768635520.jpg"
+      ]
+    },
+    {
+      "id": "scene_25",
+      "name": "Face Verify - Close Up Natural",
+      "action": "looking directly at camera, neutral expression",
+      "outfit_changes": "simple white tank top",
+      "lighting": "soft diffuse natural window light",
+      "setting": "indoor minimal white background",
+      "view": "extreme close up on face, focusing on eyes and skin texture",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:25:44.615084",
+      "generated_images": [
+        "/uploads/scene_25/1768634744.jpg"
+      ]
+    },
+    {
+      "id": "scene_26",
+      "name": "Face Verify - Side Profile",
+      "action": "looking to the left, static pose",
+      "outfit_changes": "black turtleneck",
+      "lighting": "studio lighting, high contrast",
+      "setting": "studio grey background",
+      "view": "90 degree side profile, focusing on nose bridge and jawline",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:27:01.776362",
+      "generated_images": [
+        "/uploads/scene_26/1768634821.jpg"
+      ]
+    },
+    {
+      "id": "scene_27",
+      "name": "Face Verify - High Angle",
+      "action": "looking up at camera, slight smile",
+      "outfit_changes": "casual blouse",
+      "lighting": "indoor warm light",
+      "setting": "cozy library corner",
+      "view": "high angle shot (camera above eye level), focusing on eyes",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:28:31.367206",
+      "generated_images": [
+        "/uploads/scene_27/1768634911.jpg"
+      ]
+    },
+    {
+      "id": "scene_28",
+      "name": "Face Verify - Low Angle",
+      "action": "looking down at camera, confident expression",
+      "outfit_changes": "blazer or jacket",
+      "lighting": "outdoor bright sunlight",
+      "setting": "outdoor sky background",
+      "view": "low angle shot (camera below chin level), focusing on face shape",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:29:05.923800",
+      "generated_images": [
+        "/uploads/scene_28/1768634945.jpg"
+      ]
+    },
+    {
+      "id": "scene_29",
+      "name": "Face Verify - 3/4 Golden Hour",
+      "action": "turning head slightly to camera",
+      "outfit_changes": "summer dress",
+      "lighting": "golden hour sunset hitting face side",
+      "setting": "balcony at sunset",
+      "view": "3/4 portrait view, highlighting cheekbones",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:29:44.171723",
+      "generated_images": [
+        "/uploads/scene_29/1768634984.jpg"
+      ]
+    },
+    {
+      "id": "scene_30",
+      "name": "Face Verify - Dutch Angle",
+      "action": "laughing naturally, hair messy",
+      "outfit_changes": "streetwear hoodie",
+      "lighting": "street shade",
+      "setting": "urban street wall",
+      "view": "dutch angle (tilted), candid close up",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:31:55.972670",
+      "generated_images": [
+        "/uploads/scene_30/1768635115.jpg"
+      ]
+    },
+    {
+      "id": "scene_31",
+      "name": "Face Verify - Night Neon",
+      "action": "staring at city lights",
+      "outfit_changes": "leather jacket",
+      "lighting": "blue and pink neon signs reflection",
+      "setting": "city street at night",
+      "view": "close up, cinematic lighting on face",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:33:12.458751",
+      "generated_images": [
+        "/uploads/scene_31/1768635192.jpg"
+      ]
+    },
+    {
+      "id": "scene_32",
+      "name": "Face Verify - Wet Look",
+      "action": "wiping rain from face or just wet hair",
+      "outfit_changes": "raincoat",
+      "lighting": "overcast soft light",
+      "setting": "rainy street",
+      "view": "close up face, wet skin texture detail",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:33:52.173979",
+      "generated_images": [
+        "/uploads/scene_32/1768635232.jpg"
+      ]
+    },
+    {
+      "id": "scene_33",
+      "name": "Face Verify - Glasses",
+      "action": "looking over rim of reading glasses",
+      "outfit_changes": "office wear",
+      "props": "thin frame glasses",
+      "setting": "office desk",
+      "view": "front facing, focus on eyes behind glasses",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:35:28.272921",
+      "generated_images": [
+        "/uploads/scene_33/1768635328.jpg"
+      ]
+    },
+    {
+      "id": "scene_34",
+      "name": "Face Verify - Backlight",
+      "action": "hair blowing in wind, sun behind",
+      "outfit_changes": "white sundress",
+      "lighting": "strong backlight creating halo",
+      "setting": "open field",
+      "view": "portrait, face in soft shadow, rim light on hair",
+      "createdAt": "2026-01-17T14:30:00.000000",
+      "updatedAt": "2026-01-17T14:37:47.474323",
+      "generated_images": [
+        "/uploads/scene_34/1768635467.jpg"
+      ]
+    },
+    {
+      "id": "scene_35",
+      "name": "Wave S100 - Traffic Light",
+      "action": "waiting at traffic light, one leg down, confident posture",
+      "outfit_changes": "tight white t-shirt, skinny blue jeans, showing curves",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "busy Hanoi intersection",
+      "view": "front view, full body shot, camera at eye level",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:44:32.978373",
+      "generated_images": [
+        "/uploads/scene_35/1768635872.jpg"
+      ]
+    },
+    {
+      "id": "scene_36",
+      "name": "Wave S100 - Gym Commute",
+      "action": "sitting on bike, hands on handlebars, chest up",
+      "outfit_changes": "sports bra, yoga leggings, athletic shoes",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "outside modern gym",
+      "view": "front view, full body shot, showcasing athletic build",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:45:10.006883",
+      "generated_images": [
+        "/uploads/scene_36/1768635910.jpg"
+      ]
+    },
+    {
+      "id": "scene_37",
+      "name": "Wave S100 - Office Run",
+      "action": "straddling the bike, checking smartwatch",
+      "outfit_changes": "fitted pencil skirt, silk blouse, high heels",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "office building entrance",
+      "view": "front view, full body shot, elegant pose",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:45:48.979785",
+      "generated_images": [
+        "/uploads/scene_37/1768635948.jpg"
+      ]
+    },
+    {
+      "id": "scene_38",
+      "name": "Wave S100 - Date Night",
+      "action": "sitting casually on bike seat, smiling",
+      "outfit_changes": "black bodycon dress, showing figure",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "trendy cafe front at night",
+      "view": "front view, full body shot, cinematic lighting",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:46:28.770263",
+      "generated_images": [
+        "/uploads/scene_38/1768635988.jpg"
+      ]
+    },
+    {
+      "id": "scene_39",
+      "name": "Wave S100 - Street Style",
+      "action": "leaning slightly forward, engaging with camera",
+      "outfit_changes": "crop top, baggy cargo pants, sneakers",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "graffiti wall background",
+      "view": "front view, full body shot, cool attitude",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:47:15.290348",
+      "generated_images": [
+        "/uploads/scene_39/1768636035.jpg"
+      ]
+    },
+    {
+      "id": "scene_40",
+      "name": "Wave S100 - Summer Vibes",
+      "action": "resting on bike, taking off sunglasses",
+      "outfit_changes": "denim shorts, halter neck top",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "sunny lakeside road",
+      "view": "front view, full body shot, highlighting legs",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:48:17.747511",
+      "generated_images": [
+        "/uploads/scene_40/1768636097.jpg"
+      ]
+    },
+    {
+      "id": "scene_41",
+      "name": "Wave S100 - Biker Chic",
+      "action": "standing straddled over bike, zipping jacket",
+      "outfit_changes": "leather jacket, tight black jeans, boots",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "urban underpass",
+      "view": "front view, full body shot, edgy look",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:51:46.354187",
+      "generated_images": [
+        "/uploads/scene_41/1768636306.jpg"
+      ]
+    },
+    {
+      "id": "scene_42",
+      "name": "Wave S100 - Morning Coffee",
+      "action": "sitting on bike holding takeaway coffee",
+      "outfit_changes": "casual grey sleeveless dress, sneakers",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "morning street with sunlight",
+      "view": "front view, full body shot, relaxed vibe",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:45:00.000000",
+      "generated_images": []
+    },
+    {
+      "id": "scene_43",
+      "name": "Wave S100 - Student Style",
+      "action": "putting books in bag, bike on kickstand",
+      "outfit_changes": "white shirt tucked in, high waisted jeans",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "university gate",
+      "view": "front view, full body shot, youthful",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:45:00.000000",
+      "generated_images": []
+    },
+    {
+      "id": "scene_44",
+      "name": "Wave S100 - Weekend Trip",
+      "action": "ready to go, adjusting helmet strap",
+      "outfit_changes": "tank top, flannel shirt around waist, leggings",
+      "props": "Honda Wave S 100 motorbike (Red/Black)",
+      "setting": "suburban road with greenery",
+      "view": "front view, full body shot, adventurous",
+      "createdAt": "2026-01-17T14:45:00.000000",
+      "updatedAt": "2026-01-17T14:45:00.000000",
+      "generated_images": []
+    }
+  ]
+}

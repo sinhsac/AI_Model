@@ -41,7 +41,7 @@ const pageIndicator = document.getElementById('pageIndicator');
 // State
 let profileData = null;
 let currentPage = 1;
-const itemsPerPage = 6;
+const itemsPerPage = 8;
 let currentSceneIdForUpload = null;
 let sceneIdToDelete = null;
 

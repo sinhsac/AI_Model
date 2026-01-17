@@ -9,12 +9,19 @@ from datetime import datetime
 PORT = 3000
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROFILE_PATH = os.path.join(BASE_DIR, 'character_profile.json')
+SCENES_PATH = os.path.join(BASE_DIR, 'scenes.json')
 PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
 UPLOAD_DIR = os.path.join(PUBLIC_DIR, 'uploads')
+ITEMS_PER_PAGE = 8
 
 # Ensure upload dir exists
 if not os.path.exists(UPLOAD_DIR):
     os.makedirs(UPLOAD_DIR)
+
+# Ensure scenes.json exists if not present
+if not os.path.exists(SCENES_PATH):
+    with open(SCENES_PATH, 'w', encoding='utf-8') as f:
+        json.dump({"scenes": []}, f)
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -33,20 +40,21 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             # Allow serving uploaded images
             self.path = '/public' + self.path
             
-        # API: Get Profile (with Pagination support for scenes)
+        # API: Get Profile (Merges Profile + Scenes for frontend compatibility)
         if self.path.startswith('/api/profile'):
             try:
+                # Read Profile
                 with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
+                    profile_data = json.load(f)
                 
-                # Parse query params for pagination logic not strictly needed if we just return all
-                # But let's support a simple ?full=true or similar if needed. 
-                # For now, return ALL data, frontend handles pagination (easier for <100 items).
-                # User asked for pagination because "scenes can be too many". 
-                # Let's return full data for v2.0, frontend paginates.
-                # If we need server-side, we'd parse `self.path` query string.
+                # Read Scenes
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
+                    scenes_data = json.load(f)
                 
-                self.send_json(data)
+                # Merge
+                full_data = {**profile_data, **scenes_data}
+                
+                self.send_json(full_data)
                 return
             except Exception as e:
                 self.send_error(500, str(e))
@@ -68,7 +76,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 req_data = json.loads(body)
                 new_scene = req_data.get('newScene')
                 
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 if not new_scene.get('id'):
@@ -81,7 +89,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 new_scene['generated_images'] = []
                 
                 data['scenes'].append(new_scene)
-                self.save_profile(data)
+                self.save_json(SCENES_PATH, data)
                 
                 self.send_json({'success': True, 'scene': new_scene})
             except Exception as e:
@@ -133,22 +141,27 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 with open(filepath, 'wb') as f:
                     f.write(file_data)
                 
-                # Update JSON
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                # Update JSON (Scenes)
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 relative_path = f"/uploads/{scene_id}/{filename}"
                 
+                found = False
                 for scene in data['scenes']:
                     if scene['id'] == scene_id:
                         if 'generated_images' not in scene:
                             scene['generated_images'] = []
                         scene['generated_images'].append(relative_path)
                         scene['updatedAt'] = datetime.now().isoformat()
+                        found = True
                         break
                 
-                self.save_profile(data)
-                self.send_json({'success': True, 'url': relative_path})
+                if found:
+                    self.save_json(SCENES_PATH, data)
+                    self.send_json({'success': True, 'url': relative_path})
+                else:
+                    self.send_error(404, "Scene not found")
                 
             except Exception as e:
                 print(e)
@@ -169,7 +182,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     data = json.load(f)
                 
                 data['character'] = new_char # Replace
-                self.save_profile(data)
+                self.save_json(PROFILE_PATH, data)
                 self.send_json({'success': True})
             except Exception as e:
                 self.send_error(500, str(e))
@@ -181,14 +194,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 req_data = json.loads(body)
                 updated_scene = req_data.get('scene')
                 
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 for i, scene in enumerate(data['scenes']):
                     if scene['id'] == updated_scene['id']:
-                        # Preserve read-only fields if needed, but for now overwrite all
-                        # except generated_images if not passed? 
-                        # Better: Merge
                         updated_scene['updatedAt'] = datetime.now().isoformat()
                         if 'generated_images' not in updated_scene:
                             updated_scene['generated_images'] = scene.get('generated_images', [])
@@ -198,7 +208,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                         data['scenes'][i] = updated_scene
                         break
                 
-                self.save_profile(data)
+                self.save_json(SCENES_PATH, data)
                 self.send_json({'success': True})
             except Exception as e:
                 self.send_error(500, str(e))
@@ -210,14 +220,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             try:
                 scene_id = self.path.split('/')[-1]
                 
-                with open(PROFILE_PATH, 'r', encoding='utf-8') as f:
+                with open(SCENES_PATH, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 initial_len = len(data['scenes'])
                 data['scenes'] = [s for s in data['scenes'] if s['id'] != scene_id]
                 
                 if len(data['scenes']) < initial_len:
-                    self.save_profile(data)
+                    self.save_json(SCENES_PATH, data)
                     self.send_json({'success': True})
                 else:
                     self.send_error(404, "Scene not found")
@@ -240,8 +250,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(data).encode('utf-8'))
 
-    def save_profile(self, data):
-        with open(PROFILE_PATH, 'w', encoding='utf-8') as f:
+    def save_json(self, path, data):
+        with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
 
     def generate_prompt_logic(self, scene, character):
