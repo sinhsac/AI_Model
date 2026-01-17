@@ -1,0 +1,60 @@
+{
+  "character": {
+    "name": "Linh_Trang_Gen03",
+    "ethnicity": "Vietnamese (Northern Kinh appearance, strictly Southeast Asian features)",
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": "medium-wide dark brown eyes, natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "features": "small mole near left eye, youthful Southeast Asian facial structure"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "Slender yet powerful hourglass figure with highly developed glute definition",
+      "height": "165cm",
+      "build": "Professional fitness-toned physique – lean and muscularly defined in lower body while maintaining feminine softness. No excess weight, focuses on the aesthetic of a glute-focused trainer",
+      "body_characteristics": "Supple yoga-toned appearance combined with strong glute-lifting results. High-set hips and a dramatic waist-to-hip ratio. Physique shows clear signs of squat and deadlift training, looking firm, lifted, and athletic",
+      "chest": "Naturally full and rounded, well-proportioned to her lean shoulders",
+      "waist": "Narrow, tapered slim waist (approx. 63-64cm) with a clean, flat midsection. Sharp transition into the hips which highlights the 'fitness model' silhouette",
+      "hips": "Widely rounded, firm, and high-set. Glutes are sculpted and lifted, creating a powerful and voluminous curve that is the focal point of her physique",
+      "legs": "Shapely and firm; thighs are toned with clear muscle maturity but no bulky striation. Smooth, healthy skin texture with a golden glow",
+      "arms": "Slender, smooth, and gracefully toned without being bulky",
+      "skin_texture": "Warm light-medium tan, golden undertone, natural healthy glow with realistic skin texture",
+      "overall_aesthetic": "Elite fitness influencer aesthetic. Combines the grace of a yoga practitioner with the powerful, sculpted curves of a lower-body specialist. Lean, healthy, and highly photogenic"
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Fitness Coach & Glute Transformation Specialist, Yoga Influencer",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother",
+      "lifestyle": "Active fitness lifestyle, combines heavy lower-body resistance training with yoga for flexibility. Focuses on sculpting the perfect glute-to-waist ratio"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo, looks like taken with professional camera in real life",
+      "lighting": "natural daylight, soft and flattering",
+      "composition": "cinematic yet natural everyday composition"
+    }
+  }
+}

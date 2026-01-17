@@ -58,9 +58,12 @@
 
             <!-- Scenes Grid -->
             <section class="scenes-section">
-                <div class="section-header">
+                <div class="section-header" style="justify-content: space-between; display: flex; align-items: center;">
                     <h2>Scenes (<span id="sceneCount">0</span>)</h2>
-
+                    <div class="search-box">
+                        <input type="text" id="sceneSearchInput" placeholder="Search scenes..."
+                            style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ddd; width: 250px;">
+                    </div>
                 </div>
 
                 <div id="scenesGrid" class="grid-container">
@@ -154,28 +157,78 @@
                         <textarea name="background_family" id="pBackgroundFamily"
                             placeholder="e.g. middle-class family, close relationship with parents"></textarea>
                     </div>
+                    <!-- Added Lifestyle -->
+                    <div class="form-group">
+                        <label>Lifestyle / Lối Sống</label>
+                        <textarea name="background_lifestyle" id="pBackgroundLifestyle"
+                            placeholder="e.g. active fitness enthusiast..."></textarea>
+                    </div>
                 </div>
 
                 <!-- Body -->
                 <div class="edit-section">
                     <h3>Body Stats / Thông Số Cơ Thể</h3>
+
+                    <div class="form-group">
+                        <label>Body Characteristics / Đặc Điểm Cơ Thể</label>
+                        <textarea name="body_characteristics" id="pBodyCharacteristics"
+                            placeholder="e.g. healthy athletic appearance..."></textarea>
+                    </div>
+
                     <div class="form-row">
-                        <div class="form-group metade">
+                        <div class="form-group third">
                             <label>Height / Chiều Cao</label>
                             <input type="text" name="body_height" id="pBodyHeight">
                         </div>
-                        <div class="form-group metade">
+                        <div class="form-group third">
                             <label>Type / Loại Hình</label>
                             <input type="text" name="body_type" id="pBodyType">
                         </div>
+                        <div class="form-group third">
+                            <label>Posture / Tư Thế</label>
+                            <input type="text" name="body_posture" id="pBodyPosture">
+                        </div>
                     </div>
+
+                    <div class="form-row">
+                        <div class="form-group third">
+                            <label>Chest / Ngực</label>
+                            <input type="text" name="body_chest" id="pBodyChest">
+                        </div>
+                        <div class="form-group third">
+                            <label>Waist / Eo</label>
+                            <input type="text" name="body_waist" id="pBodyWaist">
+                        </div>
+                        <div class="form-group third">
+                            <label>Hips / Hông</label>
+                            <input type="text" name="body_hips" id="pBodyHips">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label>Arms / Tay</label>
+                            <textarea name="body_arms" id="pBodyArms"></textarea>
+                        </div>
+                        <div class="form-group half">
+                            <label>Legs / Chân</label>
+                            <textarea name="body_legs" id="pBodyLegs"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Skin Texture / Kết Cấu Da</label>
+                        <textarea name="body_skin" id="pBodySkin"></textarea>
+                    </div>
+
                     <div class="form-group">
                         <label>Build Details / Chi Tiết Vóc Dáng</label>
                         <textarea name="body_build" id="pBodyBuild"></textarea>
                     </div>
+
                     <div class="form-group">
-                        <label>Posture / Tư Thế</label>
-                        <input type="text" name="body_posture" id="pBodyPosture">
+                        <label>Overall Aesthetic / Thẩm Mỹ Tổng Thể</label>
+                        <textarea name="body_aesthetic" id="pBodyAesthetic"></textarea>
                     </div>
                 </div>
 
@@ -255,6 +308,15 @@
                     </div>
                 </div>
 
+                <div class="edit-section full-width-section">
+                    <h3>Core Identity / Prompt Định Danh</h3>
+                    <div class="alert alert-info" style="font-size: 0.9rem; margin-bottom: 1rem; color: #58a6ff;">
+                        <i class="fas fa-info-circle"></i> This is the base prompt used for all image generation. / Đây
+                        là prompt gốc được dùng cho mọi lần tạo ảnh.
+                    </div>
+                    <textarea name="core_identity" id="pCoreIdentity" style="height: 150px;"></textarea>
+                </div>
+
                 <div class="form-actions full-width-section">
                     <button type="submit" class="btn btn-primary full-width">Save Full Profile / Lưu Hồ Sơ</button>
                 </div>
@@ -297,6 +359,11 @@
                 <div class="form-group">
                     <label>Props / Đạo Cụ (Tùy chọn)</label>
                     <textarea name="props" id="sceneProps" placeholder="e.g. holding a book"></textarea>
+                </div>
+                <!-- Added Image Count -->
+                <div class="form-group">
+                    <label>Number of Images / Số Lượng Ảnh (Gemini)</label>
+                    <input type="number" name="image_count" id="sceneImageCount" min="1" max="10" value="1" required>
                 </div>
                 <button type="submit" class="btn btn-primary full-width">Save Scene / Lưu Cảnh</button>
             </form>

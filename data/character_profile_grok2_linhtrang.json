@@ -1,0 +1,61 @@
+{
+  "character": {
+    "name": "Linh_Trang_grok2",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only. Typical Northern Vietnamese Kinh appearance with Southeast Asian traits)",
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": "medium-wide dark brown eyes, natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "features": "small mole near left eye, youthful Southeast Asian facial structure"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "naturally curvy and feminine figure with balanced, attractive proportions – healthy young Vietnamese woman who practices yoga for flexibility and wellness",
+      "height": "165cm (average Vietnamese height)",
+      "build": "well-proportioned feminine build with soft natural curves – slim defined waist contrasting with fuller bust and hips, smooth and smooth lines, no visible muscle separation or hard definition",
+      "body_characteristics": "balanced hourglass shape with sensual softness: naturally full bust, noticeably rounded hips and buttocks, gently tapered waist. Body looks healthy, feminine and attractive like real-life photos of young Vietnamese women who do yoga regularly. No excess fat, no muscular definition, smooth skin texture with natural glow",
+      "chest": "full, rounded and naturally prominent (proportionate C-D cup appearance), soft and lifted due to good posture",
+      "waist": "slim and naturally defined (around 25-26 inches), gentle inward curve creating attractive contrast with bust and hips",
+      "hips": "rounded, full and feminine, wider than waist with smooth, sensual curve, peachy rounded glute shape enhanced by yoga practice",
+      "legs": "shapely and smooth with gentle feminine fullness in thighs, long and well-proportioned, no muscular bulk",
+      "arms": "soft, smooth and gracefully slender, feminine appearance, no visible muscle lines",
+      "skin_texture": "smooth, soft, healthy natural glow, warm golden undertone, realistic skin texture",
+      "posture": "excellent yoga posture – gracefully upright, open chest accentuating bust, confident and elegant alignment",
+      "overall_aesthetic": "alluring Vietnamese yoga girl aesthetic – naturally curvy, feminine and sexy body that looks like real photos of young Hanoi women who practice yoga 4-5 times a week. Emphasizes attractive hourglass proportions, full bust, defined waist, rounded hips and buttocks. Healthy glow, sensual softness, no gym muscularity, no excess fat – realistic and photograph-like sexy appearance"
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist, Yoga & Wellness Influencer",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother",
+      "lifestyle": "active wellness enthusiast, practices gentle yoga 4-5 times weekly, occasional pilates and stretching, focuses on mindfulness, flexibility, feeling confident in her feminine curves"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo, looks like taken with professional camera in real life",
+      "lighting": "natural daylight, soft and flattering",
+      "composition": "cinematic yet natural everyday composition, accentuating feminine curves"
+    }
+  }
+}

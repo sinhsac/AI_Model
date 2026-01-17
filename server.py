@@ -463,17 +463,53 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def generate_prompt_logic(self, scene, character):
         char = character
         
-        # Use core_identity_prompt if available
-        if 'core_identity_prompt' in char:
+        # Use core_identity_prompt if available and not empty
+        if char.get('core_identity_prompt'):
             physical_desc = char['core_identity_prompt']
         else:
             face = char.get('face', {})
             body = char.get('body', {})
             name = char.get('name', 'Character')
             age = char.get('age', '20')
-            physical_desc = (
-                f"A high-quality, realistic photo of {name}, {age}. "
-            )
+            ethnicity = char.get('ethnicity', '')
+            hair = char.get('hair', '')
+            
+            # Construct meaningful fallback
+            physical_desc = f"A high-quality, realistic photo of {name}, {age} years old, {ethnicity}. "
+            if hair:
+                physical_desc += f"Hair: {hair}. "
+            
+            # Body
+            if body:
+                b_details = []
+                if body.get('height'): b_details.append(f"height {body['height']}")
+                if body.get('type'): b_details.append(f"body type {body['type']}")
+                if body.get('chest'): b_details.append(f"chest {body['chest']}")
+                if body.get('waist'): b_details.append(f"waist {body['waist']}")
+                if body.get('hips'): b_details.append(f"hips {body['hips']}")
+                if body.get('arms'): b_details.append(f"arms {body['arms']}")
+                if body.get('legs'): b_details.append(f"legs {body['legs']}")
+                if body.get('skin_texture'): b_details.append(f"skin {body['skin_texture']}")
+                if body.get('characteristics'): b_details.append(body['characteristics'])
+                if body.get('overall_aesthetic'): b_details.append(body['overall_aesthetic'])
+                
+                if b_details:
+                    physical_desc += f"Body details: {', '.join(b_details)}. "
+            
+            # Face
+            if face:
+                f_details = []
+                if face.get('shape'): f_details.append(f"face shape {face['shape']}")
+                if face.get('eyes'): f_details.append(f"eyes {face['eyes']}")
+                if face.get('skin'): f_details.append(f"skin {face['skin']}")
+                
+                if f_details:
+                    physical_desc += f"Face details: {', '.join(f_details)}. "
+            
+            # Background/Lifestyle
+            background = char.get('background', {})
+            if background.get('lifestyle'):
+                 physical_desc += f"Lifestyle context: {background['lifestyle']}. "
         
         action = scene.get('action', '')
         setting = scene.get('setting', '')
@@ -493,6 +529,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if props:
             full_prompt += f"Props: {props}. "
         full_prompt += f"Lighting: {lighting}. View: {view}."
+
+        # Image Count Logic
+        image_count = int(scene.get('image_count', 1))
+        if image_count > 1:
+            full_prompt = f"[Generate {image_count} images] " + full_prompt
         
         return full_prompt
 

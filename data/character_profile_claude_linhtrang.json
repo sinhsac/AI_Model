@@ -14,18 +14,18 @@
     },
     "hair": "long, straight, jet black, silky, reaching lower back",
     "body": {
-      "type": "fit and toned yoga athlete build with feminine curves, healthy and soft appearance",
+      "type": "naturally full and soft feminine figure with healthy, gentle curves – looks like a typical young Vietnamese woman who practices yoga regularly for wellness and flexibility",
       "height": "165cm (average Vietnamese height)",
-      "build": "athletic yet soft build - lean toned arms and legs from yoga/pilates practice, defined but not bulky shoulders, firm flexible back, long lean torso, gently defined waist (not sharp), well-proportioned feminine hips and thighs with slight natural softness, subtle abdominal definition (visible but soft, not six-pack), peachy rounded glute shape from yoga practice",
-      "body_characteristics": "healthy athletic appearance with natural feminine softness - no heavy muscularity, no sharp angular muscle definition. Body shows consistent yoga/pilates practice through posture, flexibility, and toned lean muscle tone. Soft rounded curves maintained while showing athletic conditioning. Natural skin texture with healthy glow",
-      "chest": "proportionate to frame, naturally full and soft",
-      "waist": "slim and defined naturally from yoga core work, approximately 24-26 inches, showing subtle abdominal tone",
-      "hips": "naturally rounded and feminine, wider than Western yoga body standards, typical Vietnamese proportions",
-      "legs": "long lean appearance, toned without bulk, defined quadriceps and calves from yoga practice, smooth and feminine",
-      "arms": "toned and lean from flexibility training, graceful and sculpted appearance, soft without visible bulging muscles",
-      "skin_texture": "smooth, soft, healthy glow, no visible cellulite or blemishes, warm golden undertone throughout body",
-      "posture": "excellent yoga posture - naturally upright, graceful, open chest, aligned spine, radiating confidence and flexibility",
-      "overall_aesthetic": "Vietnamese yoga girl aesthetic - healthy athletic appearance emphasizing flexibility and strength training (yoga/pilates) rather than heavy weightlifting. Feminine soft curves combined with athletic conditioning. Natural beauty ideal for Southeast Asian wellness influencer or content creator. No K-pop idol muscularity, no bodybuilding definition"
+      "build": "soft and naturally curvy build – smooth, rounded feminine proportions with gentle natural softness throughout the body, no visible muscle separation or hard definition, healthy and relaxed appearance from consistent light yoga/pilates practice",
+      "body_characteristics": "very natural-looking body with pleasant fullness and softness – typical of many Vietnamese girls who do yoga for health, flexibility and mindfulness. Maintains feminine rounded curves, gentle plumpness in the right places, healthy skin glow, no trace of bodybuilding or athletic muscularity. Looks like real-life photos of everyday yoga enthusiasts rather than fitness models",
+      "chest": "naturally full, soft and rounded, proportionate to frame",
+      "waist": "naturally slim-to-medium with soft gentle curve (around 26-28 inches), slight natural softness around the midsection, no sharp definition or visible abs",
+      "hips": "naturally rounded, full and feminine, typical generous Vietnamese hip-to-waist ratio, soft and smooth",
+      "legs": "smooth and shapely with natural softness, gently rounded thighs and calves, feminine and relaxed look, no muscular striation or bulk",
+      "arms": "soft, smooth and gently rounded, feminine and graceful, no visible muscle lines or tone that looks 'worked out'",
+      "skin_texture": "smooth, soft, healthy natural glow, warm golden undertone, realistic skin texture with light natural imperfections if any (very lifelike)",
+      "posture": "excellent natural posture from yoga – gracefully upright, open chest, relaxed and confident alignment, looks effortless and real",
+      "overall_aesthetic": "authentic Vietnamese yoga girl next-door aesthetic – healthy, naturally full and soft feminine body that looks like real photos of young Hanoi women who practice yoga 4-5 times a week for wellness, stress relief and gentle flexibility. Emphasizes natural beauty, pleasant curves, and everyday healthy glow. Absolutely no gym-rat muscularity, no sharp lines, no fitness-model definition – prioritizes realistic, relatable, photograph-like appearance"
     },
     "age": "23 years old",
     "personality": {
@@ -45,7 +45,7 @@
       "occupation": "Content Creator & Digital Marketing Specialist, Yoga & Wellness Influencer",
       "education": "University graduate - Communications & Media",
       "family": "middle-class family, close relationship with parents and younger brother",
-      "lifestyle": "active fitness enthusiast, practices yoga 4-5 times weekly, occasional pilates and stretching, focuses on flexibility and mindfulness over heavy weightlifting"
+      "lifestyle": "active wellness enthusiast, practices gentle yoga 4-5 times weekly, occasional pilates and stretching, focuses on mindfulness, flexibility, stress relief and feeling good in her natural body rather than building muscle or achieving a 'toned' look"
     },
     "base_outfit": {
       "top": "fitted white short-sleeved t-shirt",
@@ -53,10 +53,9 @@
       "accessories": ""
     },
     "photography": {
-      "quality": "high-quality, realistic photo",
-      "lighting": "natural daylight",
-      "composition": "cinematic composition"
-    },
-    "core_identity_prompt": "A high-quality, realistic photo of Linh Trang, a 23-year-old Vietnamese woman from Hanoi. She has long, straight jet black hair reaching her lower back. Body: fit and toned yoga athlete build with feminine curves, 165cm height, lean toned arms and legs from yoga practice, well-defined but soft waist (24-26 inches), subtle abdominal definition (visible but soft, not bulky), peachy rounded glutes, naturally rounded feminine hips and thighs with healthy softness, proportionate chest with natural fullness, excellent graceful posture from yoga training, smooth healthy skin with golden undertone throughout, no heavy muscularity or angular definition - emphasizing flexibility and strength conditioning rather than bodybuilding. Face: soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), warm light-medium tan skin with golden undertone (classic Northern Vietnamese), medium-wide dark brown eyes with natural double eyelids and soft rounded shape, naturally arched medium thickness dark brown eyebrows, low-to-medium nose bridge with softly rounded button tip (typical Vietnamese nose shape, wider and flatter), full natural rose-pink lips, soft gently prominent cheekbones, small mole near left eye, youthful Southeast Asian fresh appearance. MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics whatsoever. Strictly Vietnamese Southeast Asian yoga girl aesthetic - soft feminine curves combined with lean athletic conditioning from yoga/pilates practice, NOT K-pop idol look, NOT heavy bodybuilding muscularity, NOT sharp angular bone structure, NOT pale white skin."
+      "quality": "high-quality, realistic photo, looks like taken with professional camera in real life",
+      "lighting": "natural daylight, soft and flattering",
+      "composition": "cinematic yet natural everyday composition"
+    }
   }
 }

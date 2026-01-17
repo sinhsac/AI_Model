@@ -4,11 +4,10 @@
       "id": "scene_01",
       "name": "Electric Scooter - Roadside",
       "action": "standing on an electric scooter",
-      "props": "modern, matte black and grey scooter",
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "side view",
-      "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T22:25:29.171223",
+      "props": "modern, matte black and grey scooter",
+      "image_count": "1",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_01/1768627149.jpg",
@@ -19,11 +18,19 @@
           "/uploads/grok_linh_trang/scene_01/1768637952.jpg"
         ],
         "claude_linhtrang": [
-          "/uploads/claude_linhtrang/scene_01/1768663529.jpg"
+          "/uploads/claude_linhtrang/scene_01/1768663529.jpg",
+          "/uploads/claude_linhtrang/scene_01/1768664019.jpg",
+          "/uploads/claude_linhtrang/scene_01/1768664403.jpg"
+        ],
+        "gemini02_linhtrang": [
+          "/uploads/gemini02_linhtrang/scene_01/1768667049.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_01/1768667389.jpg"
         ]
       },
-      "lighting": null,
-      "outfit_changes": null
+      "updatedAt": "2026-01-17T23:29:49.398906",
+      "createdAt": "2026-01-17T12:15:26.394918"
     },
     {
       "id": "scene_02",
@@ -33,7 +40,7 @@
       "setting": "roadside in Vietnam, paved sidewalk, yellow road lines, blurred street-side shops in background",
       "view": "front view",
       "createdAt": "2026-01-17T12:15:26.394918",
-      "updatedAt": "2026-01-17T22:08:00.615052",
+      "updatedAt": "2026-01-17T23:33:05.773202",
       "generated_images": {
         "linhtrang": [
           "/uploads/linhtrang/scene_02/1768628803.jpg",
@@ -44,6 +51,9 @@
         ],
         "claude_linhtrang": [
           "/uploads/claude_linhtrang/scene_02/1768662480.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_02/1768667585.jpg"
         ]
       }
     },
@@ -583,7 +593,7 @@
       "outfit_changes": "sports bra, yoga leggings, athletic shoes",
       "props": "Honda Wave S 100 motorbike (Red/Black)",
       "setting": "outside modern gym",
-      "view": "front view, full body shot, showcasing athletic build",
+      "view": "front view, full body shot, showcasing supple yoga-toned physique",
       "createdAt": "2026-01-17T14:45:00.000000",
       "updatedAt": "2026-01-17T14:45:10.006883",
       "generated_images": {
@@ -727,7 +737,7 @@
       "outfit_changes": "colorful bikini (tropical print), no mask, wet skin",
       "lighting": "morning sun, golden sunrise glow",
       "setting": "Vietnamese beach with clear blue water, white sand",
-      "view": "front view, full body shot, showcasing athletic build",
+      "view": "front view, full body shot, showcasing supple yoga-toned physique",
       "createdAt": "2026-01-17T15:45:00.000000",
       "updatedAt": "2026-01-17T22:18:48.421074",
       "generated_images": {
@@ -746,11 +756,12 @@
       "setting": "calm beach waters with palm trees visible on shore",
       "view": "front view, full body shot, showcasing curves and athletic physique",
       "createdAt": "2026-01-17T15:46:00.000000",
-      "updatedAt": "2026-01-17T22:18:01.294040",
+      "updatedAt": "2026-01-17T22:42:55.432590",
       "generated_images": {
         "linhtrang": [],
         "claude_linhtrang": [
-          "/uploads/claude_linhtrang/scene_46/1768663081.jpg"
+          "/uploads/claude_linhtrang/scene_46/1768663081.jpg",
+          "/uploads/claude_linhtrang/scene_46/1768664575.jpg"
         ]
       }
     },
@@ -795,13 +806,26 @@
       "outfit_changes": "bikini with beach sarong, no mask, golden skin",
       "lighting": "morning sun, warm golden light on body",
       "setting": "white sand beach with ocean horizon",
-      "view": "low angle shot, showcasing body curves and athletic build",
+      "view": "low angle shot, showcasing body curves and supple yoga-toned physique",
       "createdAt": "2026-01-17T15:49:00.000000",
-      "updatedAt": "2026-01-17T22:16:41.032174",
+      "updatedAt": "2026-01-17T23:30:32.619830",
       "generated_images": {
         "linhtrang": [],
         "claude_linhtrang": [
-          "/uploads/claude_linhtrang/scene_49/1768663001.jpg"
+          "/uploads/claude_linhtrang/scene_49/1768663001.jpg",
+          "/uploads/claude_linhtrang/scene_49/1768664511.jpg"
+        ],
+        "grok2_linhtrang": [
+          "/uploads/grok2_linhtrang/scene_49/1768665643.jpg"
+        ],
+        "grok3_linhtrang": [
+          "/uploads/grok3_linhtrang/scene_49/1768665683.jpg"
+        ],
+        "gemini01_linhtrang": [
+          "/uploads/gemini01_linhtrang/scene_49/1768666649.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_49/1768667432.jpg"
         ]
       }
     },
@@ -815,11 +839,14 @@
       "setting": "beach with breaking waves, surfer vibe",
       "view": "front view, full body shot, active beach lifestyle",
       "createdAt": "2026-01-17T15:50:00.000000",
-      "updatedAt": "2026-01-17T22:15:13.121979",
+      "updatedAt": "2026-01-17T23:32:18.323757",
       "generated_images": {
         "linhtrang": [],
         "claude_linhtrang": [
           "/uploads/claude_linhtrang/scene_50/1768662913.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_50/1768667538.jpg"
         ]
       }
     },
@@ -830,7 +857,7 @@
       "outfit_changes": "bikini, no mask, splashing water, muscular movement",
       "lighting": "golden morning sun, water spray highlighted",
       "setting": "shallow beach waters, sandy bottom",
-      "view": "side view, capturing motion and athletic build",
+      "view": "side view, capturing motion and supple yoga-toned physique",
       "createdAt": "2026-01-17T15:51:00.000000",
       "updatedAt": "2026-01-17T22:14:33.729619",
       "generated_images": {
@@ -849,11 +876,12 @@
       "setting": "white sand beach with calm ocean background",
       "view": "side view, showcasing flexible yoga physique",
       "createdAt": "2026-01-17T15:52:00.000000",
-      "updatedAt": "2026-01-17T22:13:41.720633",
+      "updatedAt": "2026-01-17T22:46:45.242499",
       "generated_images": {
         "linhtrang": [],
         "claude_linhtrang": [
-          "/uploads/claude_linhtrang/scene_52/1768662821.jpg"
+          "/uploads/claude_linhtrang/scene_52/1768662821.jpg",
+          "/uploads/claude_linhtrang/scene_52/1768664805.jpg"
         ]
       }
     },
@@ -907,6 +935,1109 @@
         "claude_linhtrang": [
           "/uploads/claude_linhtrang/scene_55/1768662682.jpg"
         ]
+      }
+    },
+    {
+      "id": "scene_56",
+      "name": "Resort Pool - Poolside Abs Flex",
+      "action": "standing poolside, hands behind head, flexing core muscles, confident smile",
+      "outfit_changes": "sports bikini (high-waisted), no mask, showcasing toned abdominal definition",
+      "lighting": "bright morning sun, high contrast shadows defining muscles",
+      "setting": "luxury resort pool Tháng Năm, lounge chairs and tropical plants in background",
+      "view": "front view, full body shot, emphasizing athletic core definition",
+      "createdAt": "2026-01-17T16:00:00.000000",
+      "updatedAt": "2026-01-17T16:00:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_57",
+      "name": "Resort Pool - Pool Entry Stride",
+      "action": "walking down pool stairs, one leg elevated, showcasing leg definition",
+      "outfit_changes": "sports bikini bottom, no top or bikini top, no mask, wet skin highlighting muscles",
+      "lighting": "morning sunlight sparkling on water, side lighting",
+      "setting": "resort pool Tháng Năm with clear blue water, modern architecture",
+      "view": "side view, full body, emphasizing leg and glute muscles",
+      "createdAt": "2026-01-17T16:01:00.000000",
+      "updatedAt": "2026-01-17T16:01:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_58",
+      "name": "Resort Pool - Poolside Yoga Pose",
+      "action": "doing downward dog yoga pose on pool deck, flexibility and core engagement",
+      "outfit_changes": "sports bikini, no mask, barefoot, body alignment showing flexibility",
+      "lighting": "bright morning sun, warm golden tone",
+      "setting": "resort pool deck with wooden loungers, Tháng Năm resort background",
+      "view": "side view, full body shot, showcasing yoga strength and flexibility",
+      "createdAt": "2026-01-17T16:02:00.000000",
+      "updatedAt": "2026-01-17T16:02:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_59",
+      "name": "Resort Pool - Plank Pose Strength",
+      "action": "holding plank position on pool deck, engaged core and shoulders",
+      "outfit_changes": "sports bikini, no mask, showing muscle definition from gym training",
+      "lighting": "direct morning sunlight, defining muscle lines",
+      "setting": "resort pool Tháng Năm, minimalist luxury background",
+      "view": "side view, full body, emphasizing core strength and shoulder definition",
+      "createdAt": "2026-01-17T16:03:00.000000",
+      "updatedAt": "2026-01-17T16:03:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_60",
+      "name": "Resort Pool - Water Fitness Lunge",
+      "action": "doing walking lunge in shallow pool water, one leg extended",
+      "outfit_changes": "sports bikini, no mask, wet skin showing glute and leg definition",
+      "lighting": "bright morning sun with water reflections",
+      "setting": "shallow end of resort pool Tháng Năm, water ripples visible",
+      "view": "front view, full body shot, showcasing leg and glute muscles from gym work",
+      "createdAt": "2026-01-17T16:04:00.000000",
+      "updatedAt": "2026-01-17T16:04:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_61",
+      "name": "Resort Pool - Bikini Flex Back",
+      "action": "standing with back to camera, turning slightly, showing back muscles and glutes",
+      "outfit_changes": "bikini, no mask, back muscles and glute definition visible",
+      "lighting": "morning sun creating back lighting and muscle definition",
+      "setting": "resort pool Tháng Năm, infinity pool edge visible",
+      "view": "back view to 3/4 view, full body, emphasizing posterior chain from gym training",
+      "createdAt": "2026-01-17T16:05:00.000000",
+      "updatedAt": "2026-01-17T16:05:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_62",
+      "name": "Resort Pool - Poolside Core Engagement",
+      "action": "sitting on pool edge, feet in water, core engaged, hands supporting",
+      "outfit_changes": "sports bikini, no mask, showing abdominal definition",
+      "lighting": "bright morning sunlight, side lighting on torso",
+      "setting": "resort pool Tháng Năm edge, clear water below",
+      "view": "front view, mid-shot focusing on core definition and arm strength",
+      "createdAt": "2026-01-17T16:06:00.000000",
+      "updatedAt": "2026-01-17T23:36:30.533321",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_62/1768665036.jpg",
+          "/uploads/claude_linhtrang/scene_62/1768665264.jpg"
+        ],
+        "grok2_linhtrang": [
+          "/uploads/grok2_linhtrang/scene_62/1768665460.jpg"
+        ],
+        "grok3_linhtrang": [
+          "/uploads/grok3_linhtrang/scene_62/1768665503.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_62/1768667790.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_63",
+      "name": "Resort Pool - Bikini Stretch Routine",
+      "action": "doing standing forward fold stretch, showing back and hamstring flexibility",
+      "outfit_changes": "sports bikini, no mask, barefoot, full body flexibility pose",
+      "lighting": "warm morning sun, golden tone",
+      "setting": "resort pool deck Tháng Năm, infinity view background",
+      "view": "side view, full body, emphasizing yoga flexibility and body awareness",
+      "createdAt": "2026-01-17T16:07:00.000000",
+      "updatedAt": "2026-01-17T23:31:15.960176",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_63/1768664997.jpg"
+        ],
+        "grok2_linhtrang": [
+          "/uploads/grok2_linhtrang/scene_63/1768665608.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_63/1768667475.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_64",
+      "name": "Resort Pool - Pool Workout Portrait",
+      "action": "standing in pool, water to chest, confident athletic posture, looking at camera",
+      "outfit_changes": "sports bikini top, no mask, wet glistening skin, supple yoga-toned physique visible",
+      "lighting": "bright morning sunlight, water reflections on body",
+      "setting": "center of resort pool Tháng Năm, resort architecture visible",
+      "view": "front view, head and shoulders emphasis, athletic and confident expression",
+      "createdAt": "2026-01-17T16:08:00.000000",
+      "updatedAt": "2026-01-17T22:48:30.021054",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_64/1768664910.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_65",
+      "name": "Resort Pool - Bridge Pose Strength",
+      "action": "doing bridge yoga pose on pool deck, core and glute engagement",
+      "outfit_changes": "sports bikini, no mask, showing glute definition and core strength",
+      "lighting": "direct morning sun, dramatic muscle definition shadows",
+      "setting": "resort pool deck Tháng Năm, luxury pool architecture",
+      "view": "front view from above, full body, emphasizing hip and glute strength",
+      "createdAt": "2026-01-17T16:09:00.000000",
+      "updatedAt": "2026-01-17T22:47:38.787698",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_65/1768664858.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_66",
+      "name": "Resort Pool - Waterside Fitness Goals",
+      "action": "standing on pool deck with arms crossed or flexed, powerful confident stance",
+      "outfit_changes": "sports bikini, no mask, muscular athletic posture",
+      "lighting": "golden morning hour, warm light defining musculature",
+      "setting": "resort pool Tháng Năm background, luxury setting, palm trees framing",
+      "view": "front view, full body shot, fitness achievement showcase",
+      "createdAt": "2026-01-17T16:10:00.000000",
+      "updatedAt": "2026-01-17T23:37:02.946504",
+      "generated_images": {
+        "linhtrang": [],
+        "claude_linhtrang": [
+          "/uploads/claude_linhtrang/scene_66/1768664957.jpg"
+        ],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_66/1768667822.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_67",
+      "name": "Resort Pool - Glute Flex Back Pose",
+      "action": "standing with back to camera, feet shoulder-width apart, flexing glute muscles, confident pose",
+      "outfit_changes": "high-waisted sports bikini bottom, no top or thin bikini top, no mask, showcasing peachy rounded glutes",
+      "lighting": "bright morning sun creating defined shadows on glute muscles",
+      "setting": "resort pool Tháng Năm deck, luxury background, palm trees visible",
+      "view": "back view, full body shot, emphasizing glute shape and definition from gym training",
+      "createdAt": "2026-01-17T16:15:00.000000",
+      "updatedAt": "2026-01-17T16:15:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_68",
+      "name": "Resort Pool - Hip Thrusts Poolside",
+      "action": "doing weighted hip thrust exercise on pool deck, glute muscles fully engaged and elevated",
+      "outfit_changes": "high-waisted bikini bottom, sports top, no mask, glutes at peak contraction",
+      "lighting": "direct morning sunlight, dramatic muscle definition on glutes",
+      "setting": "resort pool Tháng Năm, with weight plate or bench prop",
+      "view": "side view, full body, emphasizing glute height and muscle engagement",
+      "createdAt": "2026-01-17T16:16:00.000000",
+      "updatedAt": "2026-01-17T16:16:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_69",
+      "name": "Resort Pool - Glute Bridge Peak",
+      "action": "holding glute bridge pose at peak contraction, hips fully elevated, core tight",
+      "outfit_changes": "high-cut bikini bottom, sports bra top, no mask, glute definition at maximum",
+      "lighting": "bright morning sun, side lighting defining muscle",
+      "setting": "resort pool deck Tháng Năm, yoga mat visible",
+      "view": "side view, full body, showcasing glute peak and hip elevation",
+      "createdAt": "2026-01-17T16:17:00.000000",
+      "updatedAt": "2026-01-17T16:17:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_70",
+      "name": "Resort Pool - Single Leg Glute Kickback",
+      "action": "performing single leg glute kickback, one leg extended high behind, glute fully contracted",
+      "outfit_changes": "bikini bottom, sports top, no mask, back leg muscles engaged and defined",
+      "lighting": "morning sun, back lighting emphasizing leg extension and glute shape",
+      "setting": "resort pool Tháng Năm, near yoga area",
+      "view": "side view, full body, emphasizing glute and leg definition on extended leg",
+      "createdAt": "2026-01-17T16:18:00.000000",
+      "updatedAt": "2026-01-17T16:18:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_71",
+      "name": "Resort Pool - Donkey Kicks Form",
+      "action": "doing donkey kicks exercise, hands on pool deck, one leg kicked back, glute-focused movement",
+      "outfit_changes": "high-waisted bikini bottom, sports bra, no mask, glute muscles fully visible",
+      "lighting": "bright morning light, side angle showing glute definition",
+      "setting": "resort pool deck Tháng Năm with gym equipment area",
+      "view": "side view, full body, emphasizing glute muscle engagement and shape",
+      "createdAt": "2026-01-17T16:19:00.000000",
+      "updatedAt": "2026-01-17T16:19:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_72",
+      "name": "Resort Pool - Glute Squat Form",
+      "action": "performing deep squat with hands clasped in front, glutes engaged, form perfect",
+      "outfit_changes": "bikini bottom, sports bra top, no mask, showing glute and leg engagement",
+      "lighting": "golden morning sun, warm tones, muscle definition clear",
+      "setting": "resort pool deck Tháng Năm, minimal background",
+      "view": "front view, full body, emphasizing squat depth and glute engagement",
+      "createdAt": "2026-01-17T16:20:00.000000",
+      "updatedAt": "2026-01-17T16:20:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_73",
+      "name": "Resort Pool - Glute Focused Back Bend",
+      "action": "doing yoga back bend pose, glutes squeezed, back arched, flexibility on display",
+      "outfit_changes": "high-waisted bikini, no mask, back and glute muscles fully visible",
+      "lighting": "bright morning sunlight, defining back and glute curves",
+      "setting": "resort pool Tháng Năm, yoga mat area with water view",
+      "view": "side view, full body, showcasing glute shape in extended back bend",
+      "createdAt": "2026-01-17T16:21:00.000000",
+      "updatedAt": "2026-01-17T16:21:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_74",
+      "name": "Resort Pool - Glute Focused Lunge",
+      "action": "stepping into deep lunge position, back knee lowered, front glute engaged",
+      "outfit_changes": "bikini bottom, sports bra, no mask, glute and leg definition visible",
+      "lighting": "morning sun, side lighting on muscles",
+      "setting": "resort pool Tháng Năm deck, grass area visible",
+      "view": "side view, full body, emphasizing front glute engagement in lunge",
+      "createdAt": "2026-01-17T16:22:00.000000",
+      "updatedAt": "2026-01-17T16:22:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_75",
+      "name": "Resort Pool - Glute Flex Side Profile",
+      "action": "turning to side profile, flexing glutes, hand on hip, confident trainer posture",
+      "outfit_changes": "high-cut bikini bottom, sports top, no mask, glute shape prominent from side",
+      "lighting": "golden hour morning light, side lighting defining glute curves",
+      "setting": "resort pool Tháng Năm, infinity pool edge background",
+      "view": "side profile 90 degree, full body, emphasizing rounded peachy glute shape",
+      "createdAt": "2026-01-17T16:23:00.000000",
+      "updatedAt": "2026-01-17T16:23:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_76",
+      "name": "Resort Pool - Glute Cable Machine Demo",
+      "action": "at cable machine, performing glute kickback exercise, one leg extended, muscular contraction",
+      "outfit_changes": "bikini bottom, sports bra top, no mask, demonstrating trainer form on equipment",
+      "props": "cable machine or resistance equipment",
+      "lighting": "bright indoor/outdoor gym area with morning light",
+      "setting": "resort pool Tháng Năm fitness gym area, professional trainer setting",
+      "view": "side view, full body, showing proper glute exercise form and definition",
+      "createdAt": "2026-01-17T16:24:00.000000",
+      "updatedAt": "2026-01-17T16:24:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_77",
+      "name": "Cutting Grass for Buffalo",
+      "action": "cutting grass with sickle, bundle of grass in hand, working in rice field",
+      "outfit_changes": "simple cotton shirt, loose black pants, head wrapped with scarf, barefoot or rubber sandals, natural working clothes",
+      "props": "sickle, bundle of grass, wooden basket",
+      "lighting": "bright midday sun or golden afternoon light",
+      "setting": "rural rice field in Northern Vietnamese delta, flat landscape with distant trees",
+      "view": "side view, full body shot, showing manual farm work",
+      "createdAt": "2026-01-17T16:30:00.000000",
+      "updatedAt": "2026-01-17T16:30:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_78",
+      "name": "Feeding Buffalo at Water",
+      "action": "standing beside buffalo at water's edge, feeding grass, gentle interaction with animal",
+      "outfit_changes": "simple shirt, pants rolled up, head wrapped with cloth, barefoot, natural rural look",
+      "props": "buffalo, grass bundles, water source",
+      "lighting": "golden afternoon sunlight, warm tones",
+      "setting": "buffalo pond or river edge in Northern delta village, water buffalo visible",
+      "view": "side view, full body, showing bond with buffalo and daily farm life",
+      "createdAt": "2026-01-17T16:31:00.000000",
+      "updatedAt": "2026-01-17T23:40:11.231315",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_78/1768668011.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_79",
+      "name": "Well Bathing - Water Scoop",
+      "action": "at village well, scooping water with wooden bucket, pouring water over body or head, bathing",
+      "outfit_changes": "wet simple shirt or no shirt (modest), wet pants or shorts, no mask, wet hair, natural rural bathing",
+      "props": "traditional wooden well, metal or bamboo bucket, water",
+      "lighting": "golden morning or evening light, soft natural light",
+      "setting": "traditional village well in Northern Vietnamese countryside, old brick structure visible",
+      "view": "front view or side view, full body, showing traditional daily life bathing ritual",
+      "createdAt": "2026-01-17T16:32:00.000000",
+      "updatedAt": "2026-01-17T16:32:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_80",
+      "name": "Lotus Pond Morning",
+      "action": "standing in shallow lotus pond, gathering lotus flowers or leaves, peaceful morning",
+      "outfit_changes": "simple wet shirt, wet pants rolled up, barefoot in water, no mask, wet hair",
+      "props": "lotus flowers, traditional boat or pond setting",
+      "lighting": "early morning soft golden light, misty atmosphere",
+      "setting": "beautiful lotus pond (ao sen) in Northern Vietnamese delta, pink lotus flowers visible",
+      "view": "front view or side view, full body, peaceful countryside morning",
+      "createdAt": "2026-01-17T16:33:00.000000",
+      "updatedAt": "2026-01-17T16:33:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_81",
+      "name": "Rice Harvesting Work",
+      "action": "harvesting rice with sickle, bending to cut rice stalks, bundle of rice in arms",
+      "outfit_changes": "simple cotton shirt, loose pants, head covered with cloth, barefoot or sandals, working clothes",
+      "props": "sickle, rice bundles, baskets",
+      "lighting": "bright afternoon sun, golden harvest time light",
+      "setting": "golden rice field ready for harvest, Northern Vietnamese delta landscape",
+      "view": "side view, full body, showing harvest work and dedication",
+      "createdAt": "2026-01-17T16:34:00.000000",
+      "updatedAt": "2026-01-17T16:34:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_82",
+      "name": "Rice Threshing with Family",
+      "action": "threshing rice with parents, separating grain from straw, family working together",
+      "outfit_changes": "simple shirt, pants, head cloth, barefoot or sandals, working with family",
+      "props": "rice bundles, threshing tools, wooden work surface",
+      "lighting": "golden afternoon harvest light, warm tones",
+      "setting": "rural threshing ground near house, family members visible in background",
+      "view": "side view or front view, full body, showing family farm work unity",
+      "createdAt": "2026-01-17T16:35:00.000000",
+      "updatedAt": "2026-01-17T16:35:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_83",
+      "name": "Straw Spreading - Hay Day",
+      "action": "spreading and drying rice straw (rơm) on ground, tossing straw for air-drying, hard physical work",
+      "outfit_changes": "simple shirt, pants, head wrapped cloth, barefoot or sandals, covered in straw dust",
+      "props": "rice straw piles, wooden rakes or tools",
+      "lighting": "bright noon sun, very hot day appearance, golden harvest time",
+      "setting": "rural drying ground near village house, Northern delta countryside",
+      "view": "side view, full body, showing physical hard work of straw drying",
+      "createdAt": "2026-01-17T16:36:00.000000",
+      "updatedAt": "2026-01-17T16:36:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_84",
+      "name": "Well Bathing - Evening Ritual",
+      "action": "bathing at well in evening, pouring water, relaxed expression after day's work, peaceful",
+      "outfit_changes": "wet simple clothes or minimal clothing, wet hair, no mask, tired but content expression",
+      "props": "traditional village well, bucket, water",
+      "lighting": "golden sunset evening light, soft warm glow",
+      "setting": "traditional village well, golden hour, peaceful rural evening",
+      "view": "front view or side view, full body, showing relaxation after hard work",
+      "createdAt": "2026-01-17T16:37:00.000000",
+      "updatedAt": "2026-01-17T23:40:48.854082",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_84/1768668048.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_85",
+      "name": "Carrying Grass Bundle",
+      "action": "carrying large bundle of grass on head or in arms, walking through rice field path, strong posture",
+      "outfit_changes": "simple shirt, pants, no head cloth, barefoot or sandals, showing strength",
+      "props": "large grass bundle, field path",
+      "lighting": "golden afternoon light, warm tones",
+      "setting": "rural rice field path in Northern delta, flat landscape with distant tree line",
+      "view": "front view or side view, full body, showing strength and dedication to farm work",
+      "createdAt": "2026-01-17T16:38:00.000000",
+      "updatedAt": "2026-01-17T16:38:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_86",
+      "name": "Lotus Pond - Bathing in Water",
+      "action": "bathing in lotus pond, sitting in shallow water, peaceful morning bath in nature",
+      "outfit_changes": "wet simple shirt, wet pants or loose pants rolled up, barefoot, no mask, wet hair",
+      "props": "lotus pond water, lotus flowers",
+      "lighting": "soft early morning mist light, golden sunrise glow",
+      "setting": "beautiful serene lotus pond (ao sen), pink lotus flowers blooming, Northern delta",
+      "view": "front view or side view, full body, showing peaceful natural bathing ritual",
+      "createdAt": "2026-01-17T16:39:00.000000",
+      "updatedAt": "2026-01-17T16:39:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_87",
+      "name": "Well Bathing - Intimate Water Pour",
+      "action": "at well, pouring cool water over shoulders and body, eyes closed in pleasure, sensual bathing moment",
+      "outfit_changes": "wet thin simple shirt clinging to body, wet hair flowing down back, barefoot, natural and intimate",
+      "props": "traditional wooden well, metal bucket, water dripping",
+      "lighting": "golden afternoon light with soft mist, warm diffused glow",
+      "setting": "traditional village well in Northern delta, peaceful and intimate",
+      "view": "front or side view, upper body and full body mix, emphasizing curves and femininity",
+      "createdAt": "2026-01-17T16:45:00.000000",
+      "updatedAt": "2026-01-17T16:45:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_88",
+      "name": "Lotus Pond - Sensual Bathing",
+      "action": "bathing in lotus pond, water up to waist, one hand touching lotus flower, dreamy sensual expression",
+      "outfit_changes": "wet thin shirt or no shirt (modest), wet hair cascading, glowing skin, intimate water bathing",
+      "props": "lotus flowers, lotus pond water",
+      "lighting": "soft golden sunrise or sunset light, romantic glow on water and skin",
+      "setting": "serene lotus pond (ao sen) with pink lotus blooms, misty romantic atmosphere",
+      "view": "front view, upper body focus, showcasing feminine beauty and curves in water",
+      "createdAt": "2026-01-17T16:46:00.000000",
+      "updatedAt": "2026-01-17T16:46:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_89",
+      "name": "Rice Field - Sensual Stretching",
+      "action": "stretching gracefully in rice field, arms raised, back arched slightly, showing feminine curves",
+      "outfit_changes": "simple white or light colored shirt, loose pants or rolled up pants, barefoot, graceful posture",
+      "props": "golden rice field background",
+      "lighting": "golden afternoon harvest light, warm sun creating glow on body",
+      "setting": "beautiful golden rice field in Northern delta, peaceful countryside",
+      "view": "side view, full body, emphasizing flexible curves and graceful body lines",
+      "createdAt": "2026-01-17T16:47:00.000000",
+      "updatedAt": "2026-01-17T16:47:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_90",
+      "name": "Buffalo Bath - Water Play",
+      "action": "bathing beside buffalo in water, splashing water playfully, wet and glistening, carefree joy",
+      "outfit_changes": "wet simple shirt clinging to body, wet pants or shorts, wet hair, youthful carefree energy",
+      "props": "buffalo in water, natural water source",
+      "lighting": "bright midday sun or golden afternoon light, water sparkles highlighting body",
+      "setting": "buffalo pond or river in Northern delta, natural water setting",
+      "view": "front or side view, full body, showcasing youthful feminine beauty and playfulness",
+      "createdAt": "2026-01-17T16:48:00.000000",
+      "updatedAt": "2026-01-17T23:44:16.686000",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_90/1768668256.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_91",
+      "name": "Field Work - Bending Grace",
+      "action": "bending gracefully while cutting grass or harvesting, showing strength and feminine curves",
+      "outfit_changes": "simple shirt, tight pants showing form, head cloth, barefoot, toned athletic body visible",
+      "props": "sickle, grass or rice bundles",
+      "lighting": "golden afternoon work light, warm tones emphasizing body definition",
+      "setting": "rural rice field, Northern Vietnamese delta landscape",
+      "view": "side view, full body, emphasizing curves while performing farm work",
+      "createdAt": "2026-01-17T16:49:00.000000",
+      "updatedAt": "2026-01-17T16:49:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_92",
+      "name": "Well Edge - Thoughtful Moment",
+      "action": "sitting on well edge, looking at reflection in water, contemplative and intimate expression",
+      "outfit_changes": "simple light shirt, pants rolled up or legs dangling, wet hair, barefoot, natural beauty",
+      "props": "traditional well, water surface",
+      "lighting": "soft golden hour light, romantic glow, natural diffused light",
+      "setting": "traditional village well, peaceful countryside evening",
+      "view": "side or front view, showcasing face and body in intimate contemplative pose",
+      "createdAt": "2026-01-17T16:50:00.000000",
+      "updatedAt": "2026-01-17T23:42:59.989637",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_92/1768668179.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_93",
+      "name": "Straw Pile - Resting Beauty",
+      "action": "resting on straw pile after work, lying back, relaxed sensual pose, tired but beautiful",
+      "outfit_changes": "simple shirt, pants, head cloth removed, wet from work perspiration, tousled hair",
+      "props": "hay/straw pile, rural setting",
+      "lighting": "golden late afternoon light, warm glow on body",
+      "setting": "rural drying ground with straw piles, Northern delta countryside",
+      "view": "side or front view, full body, showcasing tiredness with beauty and grace",
+      "createdAt": "2026-01-17T16:51:00.000000",
+      "updatedAt": "2026-01-17T16:51:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_94",
+      "name": "Lotus Pond - Flower Harvest Beauty",
+      "action": "gathering lotus flowers in pond, reaching with grace, water droplets on body and flowers",
+      "outfit_changes": "wet simple shirt, wet hair, barefoot in water, glowing skin, elegant pose",
+      "props": "lotus flowers, lotus baskets, pond water",
+      "lighting": "soft morning golden light, romantic misty atmosphere, water reflections",
+      "setting": "beautiful lotus pond with pink blooms, Northern delta serene setting",
+      "view": "front view or 3/4 view, upper body to full body, emphasizing grace and feminine beauty",
+      "createdAt": "2026-01-17T16:52:00.000000",
+      "updatedAt": "2026-01-17T16:52:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_95",
+      "name": "Rice Field - Golden Hour Portrait",
+      "action": "standing in golden rice field, wind in hair, looking at camera with confident sensual expression",
+      "outfit_changes": "simple light colored shirt (white or cream), loose pants, head cloth optional, bare shoulders possible",
+      "props": "golden rice stalks",
+      "lighting": "golden hour harvest light, sun creating halo effect on hair and body",
+      "setting": "beautiful golden ripe rice field, Northern Vietnamese delta landscape",
+      "view": "front view or 3/4 view, full body portrait, emphasizing beauty and natural curves",
+      "createdAt": "2026-01-17T16:53:00.000000",
+      "updatedAt": "2026-01-17T16:53:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_96",
+      "name": "Village Well - After Work Glow",
+      "action": "freshly bathed at well, hair wet and shiny, natural glow on face, intimate vulnerable moment",
+      "outfit_changes": "simple light shirt, wet hair down, subtle glistening skin, natural minimal look",
+      "props": "traditional well, bucket, water",
+      "lighting": "soft romantic golden sunset light, warm glow on skin and hair",
+      "setting": "traditional village well, peaceful golden hour countryside",
+      "view": "front or 3/4 view, face and upper body focus, emphasizing natural beauty and femininity",
+      "createdAt": "2026-01-17T16:54:00.000000",
+      "updatedAt": "2026-01-17T16:54:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_97",
+      "name": "Office Desk - Professional Portrait",
+      "action": "sitting at office desk, hands clasped professionally, looking at camera with confident smile",
+      "outfit_changes": "professional white or light blue blouse, dark blazer, no mask, polished professional look",
+      "props": "modern office desk, computer, documents, pen",
+      "lighting": "bright office LED lighting with natural daylight from window",
+      "setting": "modern real estate office in Hanoi, glass walls, professional workspace",
+      "view": "front view, head and shoulders to upper body, professional headshot style",
+      "createdAt": "2026-01-17T17:00:00.000000",
+      "updatedAt": "2026-01-17T17:00:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_98",
+      "name": "Property Viewing - Walking",
+      "action": "walking through apartment or property, holding tablet/folder, inspecting space, professional stride",
+      "outfit_changes": "professional dress pants or skirt, fitted blouse, blazer, heels, elegant professional",
+      "props": "tablet, folder, pen, property documents",
+      "lighting": "natural daylight through windows in property, professional day lighting",
+      "setting": "modern apartment interior in Hanoi high-rise, spacious living room, city view",
+      "view": "side view or front view, full body shot, showcasing professional elegance",
+      "createdAt": "2026-01-17T17:01:00.000000",
+      "updatedAt": "2026-01-17T17:01:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_99",
+      "name": "Client Meeting - Presentation",
+      "action": "presenting property information to client, pointing at tablet or document, engaging professional",
+      "outfit_changes": "professional pencil skirt, fitted blouse, blazer, no mask, professional makeup",
+      "props": "tablet, documents, coffee cup, modern meeting table",
+      "lighting": "office meeting room lighting, professional and well-lit",
+      "setting": "modern real estate office meeting room, floor-to-ceiling windows, Hanoi city view",
+      "view": "front view or 3/4 view, full body, showing professional confidence and expertise",
+      "createdAt": "2026-01-17T17:02:00.000000",
+      "updatedAt": "2026-01-17T23:45:53.738705",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_99/1768668353.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_100",
+      "name": "Office Window View - Thinking",
+      "action": "standing at office window, looking out at Hanoi city, contemplative professional pose",
+      "outfit_changes": "professional dress pants, fitted silk blouse, light blazer, no mask, elegant",
+      "props": "office window, city view of Hanoi",
+      "lighting": "natural daylight through window, soft side lighting on body",
+      "setting": "high-rise office building in Hanoi, panoramic city view, modern office space",
+      "view": "side view or back 3/4 view, full body, showcasing professional ambition",
+      "createdAt": "2026-01-17T17:03:00.000000",
+      "updatedAt": "2026-01-17T17:03:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_101",
+      "name": "Property Listing - Exterior Shot",
+      "action": "standing in front of luxury apartment building or house, holding property flyer or tablet",
+      "outfit_changes": "professional dress, fitted blouse, smart blazer, heels, confident pose",
+      "props": "property flyer, tablet, pen, professional documents",
+      "lighting": "bright daylight, building facade lighting, professional day setting",
+      "setting": "luxury apartment building in Hanoi, modern architecture background",
+      "view": "front view, full body shot, professional realtor portrait",
+      "createdAt": "2026-01-17T17:04:00.000000",
+      "updatedAt": "2026-01-17T17:04:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_102",
+      "name": "Office Workday - Focused Moment",
+      "action": "working at desk, typing on keyboard, focused professional expression, working intently",
+      "outfit_changes": "professional blouse, no blazer or blazer draped on chair, sleeves rolled up slightly, no mask",
+      "props": "office desk, computer, documents, coffee",
+      "lighting": "office LED and window light, bright workspace",
+      "setting": "modern real estate office, professional workspace, plants and modern decor",
+      "view": "front view or side view, full body seated at desk, showing work dedication",
+      "createdAt": "2026-01-17T17:05:00.000000",
+      "updatedAt": "2026-01-17T17:05:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_103",
+      "name": "After Hours - Office Relaxation",
+      "action": "relaxing at desk after work, leaning back in chair, slight smile, professional but at ease",
+      "outfit_changes": "professional blouse, blazer on chair, hair down, elegant relaxed professional",
+      "props": "office desk, comfortable chair, coffee, city view window",
+      "lighting": "soft office evening light with city lights visible outside",
+      "setting": "modern office in Hanoi high-rise, golden hour city view",
+      "view": "front view or side view, full body seated, showing professional elegance at ease",
+      "createdAt": "2026-01-17T17:06:00.000000",
+      "updatedAt": "2026-01-17T17:06:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_104",
+      "name": "Phone Call - Mobile Professional",
+      "action": "taking phone call, holding phone to ear, walking or standing, engaged professional",
+      "outfit_changes": "professional dress pants or skirt, fitted blouse, blazer, heels, no mask, polished",
+      "props": "smartphone, documents or folder in other hand",
+      "lighting": "natural office lighting, professional day setting",
+      "setting": "modern Hanoi office or hallway, professional environment",
+      "view": "front view or side view, full body shot, showing mobile professional lifestyle",
+      "createdAt": "2026-01-17T17:07:00.000000",
+      "updatedAt": "2026-01-17T17:07:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_105",
+      "name": "Client Handshake - Deal Moment",
+      "action": "shaking hands with client or colleague, professional smile, successful negotiation moment",
+      "outfit_changes": "professional dress, fitted blouse, blazer, heels, polished professional look",
+      "props": "documents, pen, other person (optional blur background)",
+      "lighting": "professional office lighting, bright and clear",
+      "setting": "modern real estate office meeting area, professional setting, Hanoi office space",
+      "view": "front view or 3/4 view, full body shot, showing professional success and confidence",
+      "createdAt": "2026-01-17T17:08:00.000000",
+      "updatedAt": "2026-01-17T17:08:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_106",
+      "name": "Business Casual - Lunch Break",
+      "action": "taking lunch break at office, holding coffee cup or tea, relaxed break moment",
+      "outfit_changes": "professional blouse or dress, blazer removed, casual but professional, no mask",
+      "props": "coffee cup, food on plate, office desk, window view",
+      "lighting": "bright midday office lighting, warm natural light",
+      "setting": "modern Hanoi office, break room or desk area with city view",
+      "view": "front view or side view, upper body to full body, showing professional work-life balance",
+      "createdAt": "2026-01-17T17:09:00.000000",
+      "updatedAt": "2026-01-17T17:09:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_107",
+      "name": "Office Desk - Pencil Skirt Posture",
+      "action": "sitting at office desk, legs crossed showing off fitted pencil skirt, confident leaning back pose",
+      "outfit_changes": "fitted white silk blouse, high-waisted black or navy pencil skirt (showing curves), black heels, no mask",
+      "props": "modern office desk, computer, documents, professional workspace",
+      "lighting": "bright office lighting with side window light defining body shape",
+      "setting": "modern Hanoi real estate office, professional but showcasing figure",
+      "view": "front view or side view, full body seated, emphasizing leg and hip curves",
+      "createdAt": "2026-01-17T17:15:00.000000",
+      "updatedAt": "2026-01-17T17:15:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_108",
+      "name": "Office Staircase - Ascending Confidence",
+      "action": "walking up office stairs, one hand on railing, confident stride showcasing leg definition",
+      "outfit_changes": "fitted professional blouse, tight dress pants or skirt showing leg muscles, heels clicking",
+      "props": "office staircase, glass railing, modern building",
+      "lighting": "bright stairwell lighting, side lighting defining leg and glute muscles",
+      "setting": "modern Hanoi office building, professional staircase with architecture",
+      "view": "side view, full body shot, emphasizing athletic glute and leg definition",
+      "createdAt": "2026-01-17T17:16:00.000000",
+      "updatedAt": "2026-01-17T17:16:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_109",
+      "name": "Office Window - Subtle Flex",
+      "action": "standing at office window, hand on hip, subtle back arch, confident professional stance",
+      "outfit_changes": "fitted white or light blouse, tight black dress pants or skirt, heels, no blazer, showing curves",
+      "props": "office window, city view, documents held in hand",
+      "lighting": "natural daylight through window, back lighting creating silhouette showing curves",
+      "setting": "high-rise Hanoi office, panoramic city view in background",
+      "view": "side profile or back 3/4 view, full body, emphasizing glute and curves shape",
+      "createdAt": "2026-01-17T17:17:00.000000",
+      "updatedAt": "2026-01-17T23:48:18.416038",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_109/1768668498.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_110",
+      "name": "Meeting Room - Leaning Professional",
+      "action": "leaning against meeting room table, arms crossed or hand on table, confident powerful pose",
+      "outfit_changes": "fitted blouse tucked in, tight dress pants showing defined waist and glutes, heels, no mask",
+      "props": "modern meeting table, glass walls, documents",
+      "lighting": "office meeting room lighting, side lighting defining waist and curves",
+      "setting": "modern glass meeting room in Hanoi office, professional but confident",
+      "view": "front view or side view, full body, emphasizing toned waist and glute shape",
+      "createdAt": "2026-01-17T17:18:00.000000",
+      "updatedAt": "2026-01-17T17:18:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_111",
+      "name": "Office Hallway - Power Walk",
+      "action": "walking down office hallway confidently, hand holding tablet or phone, athletic stride",
+      "outfit_changes": "fitted professional blouse, tight dress pants highlighting leg definition and glutes, heels, blazer optional",
+      "props": "tablet, smartphone, office hallway with modern design",
+      "lighting": "bright hallway lighting, overhead and side lighting defining muscle definition",
+      "setting": "modern Hanoi office hallway, contemporary architecture, professional environment",
+      "view": "front view walking toward camera or side view, full body, emphasizing athletic fitness",
+      "createdAt": "2026-01-17T17:19:00.000000",
+      "updatedAt": "2026-01-17T17:19:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_112",
+      "name": "Office Lounge - Relaxed Confidence",
+      "action": "relaxing in office lounge area, sitting with one leg extended, confident relaxed pose",
+      "outfit_changes": "fitted professional blouse, tight dress pants or mini skirt, heels, no mask, at ease",
+      "props": "modern lounge chair, coffee table, city view window",
+      "lighting": "soft office lounge lighting, natural window light, warm ambiance",
+      "setting": "modern office lounge in Hanoi high-rise, panoramic city view, comfortable seating",
+      "view": "front view or side view, full body seated, emphasizing leg and glute shape",
+      "createdAt": "2026-01-17T17:20:00.000000",
+      "updatedAt": "2026-01-17T17:20:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_113",
+      "name": "Property Tour - Bending Grace",
+      "action": "in property, bending down to check details or inspect space, showing curves while working",
+      "outfit_changes": "fitted professional blouse, tight dress pants showing glute definition, heels, bent pose",
+      "props": "property interior, clipboard or tablet, professional documents",
+      "lighting": "natural property lighting, side lighting showing curves and muscle definition",
+      "setting": "luxury apartment interior in Hanoi, modern living space, professional property viewing",
+      "view": "side view, full body bent position, emphasizing glute and curve definition",
+      "createdAt": "2026-01-17T17:21:00.000000",
+      "updatedAt": "2026-01-17T17:21:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_114",
+      "name": "Office Chair - Powerful Seated Pose",
+      "action": "sitting in executive office chair, leaning back slightly, hand on armrest, confident power pose",
+      "outfit_changes": "fitted professional blouse, tight dress pants or pencil skirt, heels still on, confident expression",
+      "props": "executive office chair, desk, city view window, documents",
+      "lighting": "office lighting with side window light, defining body contours and confidence",
+      "setting": "executive office space in modern Hanoi building, professional success setting",
+      "view": "front view, full body seated, emphasizing confident power and glute shape",
+      "createdAt": "2026-01-17T17:22:00.000000",
+      "updatedAt": "2026-01-17T17:22:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_115",
+      "name": "Client Presentation - Standing Confident",
+      "action": "presenting to clients, standing with hand on hip, pointing at screen, confident professional stance",
+      "outfit_changes": "fitted professional blouse, tight dress pants or skirt showing curves, heels, blazer optional, no mask",
+      "props": "presentation screen, documents, client meeting room",
+      "lighting": "bright meeting room lighting, side lighting on body defining curves",
+      "setting": "modern meeting room in Hanoi real estate office, professional presentation setting",
+      "view": "front view or side view, full body standing, emphasizing confidence and body shape",
+      "createdAt": "2026-01-17T17:23:00.000000",
+      "updatedAt": "2026-01-17T17:23:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_116",
+      "name": "Lunch Break - Leaning Against Wall",
+      "action": "taking lunch break at office, leaning against wall casually, holding coffee, relaxed but fit",
+      "outfit_changes": "fitted professional blouse (possibly unbuttoned slightly at top), tight dress pants showing fit body, heels",
+      "props": "coffee cup, window with city view, modern office wall",
+      "lighting": "natural office lighting, side lighting defining body lines and muscle tone",
+      "setting": "modern Hanoi office lounge area, floor-to-ceiling windows, casual break moment",
+      "view": "front view or side view, full body against wall, emphasizing athletic body and relaxed confidence",
+      "createdAt": "2026-01-17T17:24:00.000000",
+      "updatedAt": "2026-01-17T23:49:16.210414",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_116/1768668556.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_117",
+      "name": "Pickleball Court - Arrival Portrait",
+      "action": "arriving at pickleball court, holding paddle, confident sexy stride, ready to play",
+      "outfit_changes": "white or light colored athletic crop top or tank top, short white mini skirt (knee-length or above), white athletic shoes, no underwear visible but skirt is short and flowy, no mask",
+      "props": "pickleball paddle, tennis bag, court setting",
+      "lighting": "bright afternoon sunlight, golden hour approaching, warm glow",
+      "setting": "modern pickleball court in Hanoi, professional sports facility, outdoor court",
+      "view": "front view, full body shot, showcasing confident arrival and athletic figure",
+      "createdAt": "2026-01-17T17:30:00.000000",
+      "updatedAt": "2026-01-17T17:30:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_118",
+      "name": "Pickleball - Ready Stance",
+      "action": "standing in ready position on court, knees slightly bent, paddle up, legs apart stance",
+      "outfit_changes": "athletic crop top, short white mini skirt showing off glutes and legs, athletic shoes, no mask",
+      "props": "pickleball paddle, ball, net in background",
+      "lighting": "bright afternoon court lighting, side lighting defining leg muscles",
+      "setting": "pickleball court, professional outdoor sports facility in Hanoi",
+      "view": "front view, full body, emphasizing athletic stance and leg definition",
+      "createdAt": "2026-01-17T17:31:00.000000",
+      "updatedAt": "2026-01-17T17:31:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_119",
+      "name": "Pickleball - Backhand Swing",
+      "action": "executing backhand swing, body twisted, mini skirt riding up slightly showing glute definition",
+      "outfit_changes": "sexy crop top, short white mini skirt (very short), athletic shoes, dynamic action pose",
+      "props": "pickleball paddle, ball in motion, court net",
+      "lighting": "bright afternoon sun, action shot lighting, defining muscle engagement",
+      "setting": "pickleball court, outdoor Hanoi sports facility",
+      "view": "side view, full body in mid-swing, emphasizing glute and leg muscles in action",
+      "createdAt": "2026-01-17T17:32:00.000000",
+      "updatedAt": "2026-01-17T23:52:50.498741",
+      "generated_images": {
+        "linhtrang": [],
+        "gemini03_linhtrang": [
+          "/uploads/gemini03_linhtrang/scene_119/1768668770.jpg"
+        ]
+      }
+    },
+    {
+      "id": "scene_120",
+      "name": "Pickleball - Serving Power",
+      "action": "in serving position, arm extended high, one leg forward, showing explosive power and glute engagement",
+      "outfit_changes": "crop top, short mini skirt showing off peachy glutes, athletic shoes, powerful stance",
+      "props": "pickleball paddle, ball, serving position",
+      "lighting": "bright afternoon light, backlighting showing silhouette curves",
+      "setting": "pickleball court, professional outdoor facility in Hanoi",
+      "view": "side view, full body, emphasizing glute muscle engagement and powerful athletic pose",
+      "createdAt": "2026-01-17T17:33:00.000000",
+      "updatedAt": "2026-01-17T17:33:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_121",
+      "name": "Pickleball - Lunging Shot",
+      "action": "lunging forward to hit ball, one leg extended, mini skirt exposing glutes, athletic explosive move",
+      "outfit_changes": "sexy crop top, very short white mini skirt, athletic shoes, lunge position showing flexibility",
+      "props": "pickleball paddle, ball, net visible",
+      "lighting": "bright afternoon court light, side lighting on glutes and legs",
+      "setting": "pickleball court, Hanoi sports facility, outdoor court",
+      "view": "side view, full body in lunge, emphasizing glute definition and athletic flexibility",
+      "createdAt": "2026-01-17T17:34:00.000000",
+      "updatedAt": "2026-01-17T17:34:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_122",
+      "name": "Pickleball - Victory Moment",
+      "action": "celebrating point win, arm raised in victory, mini skirt showing glutes, confident happy expression",
+      "outfit_changes": "crop top, short white mini skirt, athletic shoes, flushed from physical activity",
+      "props": "pickleball paddle, court background, net",
+      "lighting": "golden afternoon light, warm glow on happy confident face and body",
+      "setting": "pickleball court, Hanoi sports facility, outdoor",
+      "view": "front view, full body, showing confident celebratory pose with body on display",
+      "createdAt": "2026-01-17T17:35:00.000000",
+      "updatedAt": "2026-01-17T17:35:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_123",
+      "name": "Pickleball - Stretching Break",
+      "action": "taking break between games, stretching hamstrings or quads, mini skirt showing glute curves",
+      "outfit_changes": "crop top, short white mini skirt, athletic shoes, flexibility pose",
+      "props": "court bench, paddle resting, water bottle",
+      "lighting": "golden afternoon light, warm and relaxed",
+      "setting": "pickleball court sideline, Hanoi sports facility",
+      "view": "side view, full body stretching pose, emphasizing glute and leg flexibility",
+      "createdAt": "2026-01-17T17:36:00.000000",
+      "updatedAt": "2026-01-17T17:36:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_124",
+      "name": "Pickleball - Talking with Colleague",
+      "action": "chatting with colleague on court, relaxed pose, hand on hip, mini skirt showing off figure",
+      "outfit_changes": "crop top, short white mini skirt, athletic shoes, confident casual pose",
+      "props": "pickleball paddle, colleague (optional), water bottle",
+      "lighting": "golden afternoon sunlight, warm friendly glow",
+      "setting": "pickleball court, outdoor Hanoi sports facility",
+      "view": "front view or 3/4 view, full body, showing confident fit body in casual conversation",
+      "createdAt": "2026-01-17T17:37:00.000000",
+      "updatedAt": "2026-01-17T17:37:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_125",
+      "name": "Pickleball - Cooling Off Moment",
+      "action": "sitting on bench after intense play, drinking water, sweaty glow, mini skirt riding up slightly",
+      "outfit_changes": "crop top, short white mini skirt, athletic shoes, glistening from physical exertion",
+      "props": "court bench, water bottle, towel, paddle",
+      "lighting": "golden afternoon light, warm glow on sweaty skin",
+      "setting": "pickleball court sideline, Hanoi sports facility",
+      "view": "front view or side view, full body seated, showing athletic glowing body after intense play",
+      "createdAt": "2026-01-17T17:38:00.000000",
+      "updatedAt": "2026-01-17T17:38:00.000000",
+      "generated_images": {
+        "linhtrang": []
+      }
+    },
+    {
+      "id": "scene_126",
+      "name": "Pickleball - Final Game Confidence",
+      "action": "final match moment, focused intense expression, mini skirt showing off peachy glutes, ready to win",
+      "outfit_changes": "crop top, short white mini skirt, athletic shoes, determined confident expression",
+      "props": "pickleball paddle, ball, net, court",
+      "lighting": "golden hour afternoon light, dramatic lighting on focused face and athletic body",
+      "setting": "pickleball court, professional Hanoi sports facility",
+      "view": "front view or side view, full body, emphasizing confident athletic power and sexy confidence",
+      "createdAt": "2026-01-17T17:39:00.000000",
+      "updatedAt": "2026-01-17T17:39:00.000000",
+      "generated_images": {
+        "linhtrang": []
       }
     }
   ]

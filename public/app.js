@@ -41,11 +41,13 @@ const galleryGrid = document.getElementById('galleryGrid');
 const prevPageBtn = document.getElementById('prevPageBtn');
 const nextPageBtn = document.getElementById('nextPageBtn');
 const pageIndicator = document.getElementById('pageIndicator');
+const sceneSearchInput = document.getElementById('sceneSearchInput');
 
 // State
 let profileData = null;
 let currentPage = 1;
 const itemsPerPage = 8;
+let searchQuery = ''; // Add search state
 let currentSceneIdForUpload = null;
 let sceneIdToDelete = null;
 let imagePathToDelete = null; // New state for image deletion
@@ -83,6 +85,15 @@ async function init() {
         await fetchProfile();
         render();
     });
+
+    // Search Listener
+    if (sceneSearchInput) {
+        sceneSearchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            currentPage = 1; // Reset to first page
+            render();
+        });
+    }
 
     render();
 }
@@ -176,7 +187,21 @@ function render() {
         return dateB - dateA;
     });
 
-    sceneCount.textContent = scenes.length;
+    // Filter scenes
+    if (searchQuery) {
+        scenes = scenes.filter(scene => {
+            const sName = (scene.name || '').toLowerCase();
+            const sId = (scene.id || '').toLowerCase();
+            const sAct = (scene.action || '').toLowerCase();
+            const sSet = (scene.setting || '').toLowerCase();
+            return sName.includes(searchQuery) ||
+                sId.includes(searchQuery) ||
+                sAct.includes(searchQuery) ||
+                sSet.includes(searchQuery);
+        });
+    }
+
+    sceneCount.textContent = `${scenes.length}`;
 
     // Pagination Logic
     const totalPages = Math.ceil(scenes.length / itemsPerPage);
@@ -221,6 +246,7 @@ function render() {
             <div class="scene-details">
                 <p><i class="fas fa-video"></i> ${scene.action || ''}</p>
                 <p><i class="fas fa-map-marker-alt"></i> ${scene.setting || ''}</p>
+                 ${scene.image_count && scene.image_count > 1 ? `<p style="color: #58a6ff; font-weight: bold;"><i class="fas fa-layer-group"></i> Target: ${scene.image_count} images</p>` : ''}
             </div>
             
              <div class="scene-meta">
@@ -290,6 +316,7 @@ function openEditModal(scene) {
     document.getElementById('sceneLighting').value = scene.lighting || '';
     document.getElementById('sceneView').value = scene.view || '';
     document.getElementById('sceneProps').value = scene.props || '';
+    document.getElementById('sceneImageCount').value = scene.image_count || 1;
 
     sceneModal.classList.add('show');
 }
@@ -554,7 +581,17 @@ profileForm.addEventListener('submit', async (e) => {
             height: document.getElementById('pBodyHeight').value,
             type: document.getElementById('pBodyType').value,
             build: document.getElementById('pBodyBuild').value,
-            posture: document.getElementById('pBodyPosture').value
+            posture: document.getElementById('pBodyPosture').value,
+
+            // New Fields
+            characteristics: document.getElementById('pBodyCharacteristics').value,
+            chest: document.getElementById('pBodyChest').value,
+            waist: document.getElementById('pBodyWaist').value,
+            hips: document.getElementById('pBodyHips').value,
+            arms: document.getElementById('pBodyArms').value,
+            legs: document.getElementById('pBodyLegs').value,
+            skin_texture: document.getElementById('pBodySkin').value,
+            overall_aesthetic: document.getElementById('pBodyAesthetic').value
         },
 
         face: {
@@ -599,13 +636,13 @@ profileForm.addEventListener('submit', async (e) => {
         hometown: document.getElementById('pBackgroundHometown').value,
         occupation: document.getElementById('pBackgroundOccupation').value,
         education: document.getElementById('pBackgroundEducation').value,
-        family: document.getElementById('pBackgroundFamily').value
+        family: document.getElementById('pBackgroundFamily').value,
+        lifestyle: document.getElementById('pBackgroundLifestyle').value
     };
 
     // Preserve core_identity_prompt if exists
-    if (current.core_identity_prompt) {
-        updated.core_identity_prompt = current.core_identity_prompt;
-    }
+    // core_identity_prompt
+    updated.core_identity_prompt = document.getElementById('pCoreIdentity').value || current.core_identity_prompt;
 
     try {
         const res = await fetch(`${API_BASE}/profile`, {
@@ -651,6 +688,7 @@ nextPageBtn.addEventListener('click', () => {
 function resetForm() {
     sceneForm.reset();
     document.getElementById('sceneId').value = '';
+    document.getElementById('sceneImageCount').value = 1;
     document.getElementById('sceneModalTitle').textContent = "Add New Scene";
 }
 
@@ -675,6 +713,16 @@ editProfileBtn.addEventListener('click', () => {
         document.getElementById('pBodyType').value = char.body.type || '';
         document.getElementById('pBodyBuild').value = char.body.build || '';
         document.getElementById('pBodyPosture').value = char.body.posture || '';
+
+        // New Fields
+        document.getElementById('pBodyCharacteristics').value = char.body.characteristics || '';
+        document.getElementById('pBodyChest').value = char.body.chest || '';
+        document.getElementById('pBodyWaist').value = char.body.waist || '';
+        document.getElementById('pBodyHips').value = char.body.hips || '';
+        document.getElementById('pBodyArms').value = char.body.arms || '';
+        document.getElementById('pBodyLegs').value = char.body.legs || '';
+        document.getElementById('pBodySkin').value = char.body.skin_texture || '';
+        document.getElementById('pBodyAesthetic').value = char.body.overall_aesthetic || '';
     }
 
     // Face
@@ -711,12 +759,17 @@ editProfileBtn.addEventListener('click', () => {
     }
 
     // Background
+    // Background
     if (char.background) {
         document.getElementById('pBackgroundHometown').value = char.background.hometown || '';
         document.getElementById('pBackgroundOccupation').value = char.background.occupation || '';
         document.getElementById('pBackgroundEducation').value = char.background.education || '';
         document.getElementById('pBackgroundFamily').value = char.background.family || '';
+        document.getElementById('pBackgroundLifestyle').value = char.background.lifestyle || '';
     }
+
+    // Core Identity
+    document.getElementById('pCoreIdentity').value = char.core_identity_prompt || '';
 
     profileModal.classList.add('show');
 });

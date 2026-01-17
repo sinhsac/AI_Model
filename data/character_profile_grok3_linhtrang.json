@@ -1,0 +1,61 @@
+{
+  "character": {
+    "name": "Linh_Trang_grok3",
+    "ethnicity": "Vietnamese (MUST avoid Chinese, Korean, Japanese, or any East Asian characteristics. Strictly Vietnamese features only. Typical Northern Vietnamese Kinh appearance with Southeast Asian traits)",
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": "medium-wide dark brown eyes, natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "features": "small mole near left eye, youthful Southeast Asian facial structure"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "naturally curvaceous and feminine figure with balanced, attractive proportions – healthy, sexy yoga girl look",
+      "height": "165cm (average Vietnamese height)",
+      "build": "hourglass-leaning feminine build – slim defined waist contrasting with naturally full bust and rounded hips, soft yet shapely overall appearance",
+      "body_characteristics": "very balanced and alluring body – smooth, feminine curves with noticeable hourglass shape. Soft natural fullness in bust and hips, narrow waist, no excess fat, no visible muscle separation. Looks like a real-life young Vietnamese woman who practices yoga regularly and takes good care of her body – healthy, sexy, and naturally photogenic",
+      "chest": "naturally full, rounded and perky, beautifully proportionate to frame, accentuating feminine curves",
+      "waist": "slim and naturally cinched (around 24-25 inches), gentle soft curve, no visible abs but flat and smooth midsection",
+      "hips": "naturally rounded, full and feminine, wider than waist creating attractive hourglass ratio, smooth and shapely",
+      "legs": "long, smooth and shapely with gentle feminine fullness in thighs, toned but soft, elegant calf curve",
+      "arms": "soft, smooth and gracefully slender, feminine and delicate, no visible muscle lines",
+      "skin_texture": "smooth, soft, healthy radiant glow, warm golden undertone, realistic lifelike skin",
+      "posture": "excellent yoga posture – gracefully upright, open chest, naturally confident and alluring stance",
+      "overall_aesthetic": "sexy Vietnamese yoga girl aesthetic – balanced hourglass figure with soft feminine curves, slim waist, full bust and hips. Looks like real photos of attractive young Hanoi women who do yoga for wellness, flexibility and to feel confident in their body. Naturally sensual without being overly muscular or artificial – emphasizes healthy sex appeal and everyday beauty"
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful and slightly flirty"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist, Yoga & Wellness Influencer",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother",
+      "lifestyle": "active wellness enthusiast, practices yoga 4-5 times weekly, occasional pilates and stretching, focuses on flexibility, mindfulness, body confidence and feeling feminine & attractive"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt (slightly cropped or form-fitting to show waist)",
+      "bottom": "high-waisted muted olive leggings (form-fitting, accentuating hips and curves)",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo, looks like taken with professional camera in real life",
+      "lighting": "natural daylight, soft and flattering, highlights curves beautifully",
+      "composition": "cinematic yet natural, slightly sensual pose and angle"
+    }
+  }
+}

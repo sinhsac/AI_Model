@@ -1,0 +1,60 @@
+{
+  "character": {
+    "name": "Linh_Trang_Gen01",
+    "ethnicity": "Vietnamese (Northern Kinh appearance, strictly Southeast Asian features)",
+    "face": {
+      "shape": "soft rounded oval with noticeably full cheeks, gentle rounded jawline (no sharp V-line), natural Northern Vietnamese proportions",
+      "eyes": "medium-wide dark brown eyes, natural double eyelids, soft rounded shape, warm and friendly expression, not narrow or fox-like",
+      "eyebrows": "naturally arched, medium thickness, dark brown",
+      "nose": "straight low-to-medium bridge, softly rounded button tip, typical Vietnamese nose shape (wider and flatter than East Asian high-bridge noses)",
+      "lips": "natural, full rose-pink, medium to slightly full",
+      "skin": "warm light-medium tan with golden undertone, natural glow, smooth complexion, classic Northern Vietnamese skin tone (not pale white)",
+      "cheekbones": "soft and gently prominent, not sharp or high",
+      "features": "small mole near left eye, youthful Southeast Asian facial structure"
+    },
+    "hair": "long, straight, jet black, silky, reaching lower back",
+    "body": {
+      "type": "Naturally full, soft feminine hourglass figure with healthy curves",
+      "height": "165cm",
+      "build": "Soft, curvaceous and balanced – emphasizes natural feminine fullness over athletic definition. The body shows a healthy layer of softness that looks realistic and relatable.",
+      "body_characteristics": "Authentic 'Yoga-girl' physique; maintaining a soft, supple appearance with natural curves. Looks like real-life photos of a healthy young woman in Hanoi who prioritizes flexibility and wellness.",
+      "chest": "Naturally full and rounded, well-proportioned to her shoulders and hips.",
+      "waist": "Naturally slim with a soft, gentle curve (approx. 65-68cm). Noticeable waist-to-hip transition with a slight, natural softness around the lower midsection (no visible abs).",
+      "hips": "Widely rounded and full, creating a clear hourglass silhouette. High-set hips that flow smoothly into shapely thighs.",
+      "legs": "Shapely and full; thighs are naturally rounded and firm but soft to the touch, tapering down to elegant calves. Smooth skin with no visible muscle separation.",
+      "arms": "Slender but soft, maintaining a graceful feminine line without gym-induced muscle tone.",
+      "skin_texture": "Warm light-medium tan, golden undertone, natural healthy glow with realistic skin texture.",
+      "overall_aesthetic": "Healthy, soft-curvy Vietnamese aesthetic. It captures the 'girl-next-door' vibe who is active but retains her natural feminine plumpness and soft edges."
+    },
+    "age": "23 years old",
+    "personality": {
+      "traits": [
+        "friendly",
+        "energetic",
+        "curious",
+        "independent",
+        "creative",
+        "optimistic"
+      ],
+      "mbti": "ENFP",
+      "tone": "warm, casual, occasionally playful"
+    },
+    "background": {
+      "hometown": "Hanoi, Vietnam",
+      "occupation": "Content Creator & Digital Marketing Specialist, Yoga & Wellness Influencer",
+      "education": "University graduate - Communications & Media",
+      "family": "middle-class family, close relationship with parents and younger brother",
+      "lifestyle": "active wellness enthusiast, practices gentle yoga 4-5 times weekly, occasional pilates and stretching, focuses on mindfulness, flexibility, stress relief and feeling good in her natural body rather than building muscle or achieving a 'toned' look"
+    },
+    "base_outfit": {
+      "top": "fitted white short-sleeved t-shirt",
+      "bottom": "high-waisted muted olive leggings",
+      "accessories": ""
+    },
+    "photography": {
+      "quality": "high-quality, realistic photo, looks like taken with professional camera in real life",
+      "lighting": "natural daylight, soft and flattering",
+      "composition": "cinematic yet natural everyday composition"
+    }
+  }
+}
