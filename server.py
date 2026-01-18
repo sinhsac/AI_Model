@@ -8,7 +8,20 @@ import re
 from datetime import datetime
 from urllib.parse import urlparse, parse_qs
 
-PORT = 3000
+PORT = 6969
+import socket
+
+def get_local_ip():
+    try:
+        # Connect to an external server to determine the specific interface
+        # This doesn't actually establish a connection
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        local_ip = s.getsockname()[0]
+        s.close()
+        return local_ip
+    except Exception:
+        return "127.0.0.1"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
@@ -537,8 +550,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         
         return full_prompt
 
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
+with socketserver.TCPServer(("0.0.0.0", PORT), Handler) as httpd:
+    local_ip = get_local_ip()
     print(f"Serving at port {PORT}")
+    print(f"Local Access: http://localhost:{PORT}")
+    print(f"Network Access: http://{local_ip}:{PORT}")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

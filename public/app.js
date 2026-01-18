@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = '/api';
 
 // DOM Elements
 const scenesGrid = document.getElementById('scenesGrid');
@@ -642,7 +642,7 @@ profileForm.addEventListener('submit', async (e) => {
 
     // Preserve core_identity_prompt if exists
     // core_identity_prompt
-    updated.core_identity_prompt = document.getElementById('pCoreIdentity').value || current.core_identity_prompt;
+    updated.core_identity_prompt = document.getElementById('pCoreIdentity').value;
 
     try {
         const res = await fetch(`${API_BASE}/profile`, {
@@ -833,13 +833,56 @@ cloneForm.addEventListener('submit', async (e) => {
 });
 
 // Copy Logic
+// Copy Logic
+function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        var successful = document.execCommand('copy');
+        if (successful) {
+            showToast("Prompt copied to clipboard");
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = "Copied!";
+            setTimeout(() => copyBtn.textContent = originalText, 2000);
+        } else {
+            showToast("Fallback: Copying failed", 'error');
+        }
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+        showToast("Unable to copy", 'error');
+    }
+
+    document.body.removeChild(textArea);
+}
+
 copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(generatedPromptText.textContent)
+    const text = generatedPromptText.textContent;
+    if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+    }
+
+    navigator.clipboard.writeText(text)
         .then(() => {
             const originalText = copyBtn.textContent;
             copyBtn.textContent = "Copied!";
             showToast("Prompt copied to clipboard");
             setTimeout(() => copyBtn.textContent = originalText, 2000);
+        })
+        .catch(err => {
+            console.error('Async: Could not copy text: ', err);
+            // Try fallback if async fails (e.g. non-secure context)
+            fallbackCopyTextToClipboard(text);
         });
 });
 
