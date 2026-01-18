@@ -9,6 +9,12 @@ from datetime import datetime
 from urllib.parse import urlparse, parse_qs
 
 PORT = 6969
+import traceback
+
+# Force UTF-8 for logs
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
 import socket
 
 def get_local_ip():
@@ -24,18 +30,19 @@ def get_local_ip():
         return "127.0.0.1"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
+CONFIGS_DIR = os.path.join(DATA_DIR, 'configs')
 PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
-UPLOADS_DIR = os.path.join(PUBLIC_DIR, 'uploads')
+UPLOADS_DIR = os.path.join(DATA_DIR, 'uploads')
 ITEMS_PER_PAGE = 8
 
 # Ensure dirs exist
-if not os.path.exists(DATA_DIR):
-    os.makedirs(DATA_DIR)
+if not os.path.exists(CONFIGS_DIR):
+    os.makedirs(CONFIGS_DIR)
 if not os.path.exists(UPLOADS_DIR):
     os.makedirs(UPLOADS_DIR)
 
 # Shared Scenes Path
-SCENES_PATH = os.path.join(DATA_DIR, 'scenes.json')
+SCENES_PATH = os.path.join(CONFIGS_DIR, 'scenes.json')
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -58,20 +65,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
              self.path = '/public/galleries.js'
         elif clean_path.startswith('/uploads/'):
             # Allow serving uploaded images
-            self.path = '/public' + clean_path
+            # Map /uploads/x to /data/uploads/x
+            # self.path is relative to CWD
+            self.path = '/data' + clean_path
             
         # API: List Profiles
         if clean_path == '/api/profiles':
             try:
                 profiles = []
-                for f in os.listdir(DATA_DIR):
+                for f in os.listdir(CONFIGS_DIR):
                     if f.startswith('character_profile_') and f.endswith('.json'):
                         # character_profile_xxx.json -> xxx
                         p_id = f.replace('character_profile_', '').replace('.json', '')
                         
                         # Read name from file
                         try:
-                            with open(os.path.join(DATA_DIR, f), 'r', encoding='utf-8') as pf:
+                            with open(os.path.join(CONFIGS_DIR, f), 'r', encoding='utf-8') as pf:
                                 p_data = json.load(pf)
                                 p_name = p_data.get('character', {}).get('name', p_id)
                         except:
@@ -88,7 +97,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # API: Get Profile (Merges Profile + Shared Scenes with Filtered Images)
         if parsed_url.path == '/api/profile':
             try:
-                profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
+                profile_path = os.path.join(CONFIGS_DIR, f'character_profile_{profile_id}.json')
                 
                 if not os.path.exists(profile_path):
                     self.send_error(404, "Profile not found")
@@ -128,15 +137,29 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self.send_json(full_data)
                 return
             except Exception as e:
-                print(e)
+                print(f"Error in GET {clean_path}: {e}")
+                traceback.print_exc()
                 self.send_error(500, str(e))
                 return
 
         # Default static file serving
-        if not self.path.startswith('/api') and not self.path.startswith('/public'):
+        if not self.path.startswith('/api') and not self.path.startswith('/public') and not self.path.startswith('/data'):
              self.path = '/public' + self.path
         
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
+
+    def log_message(self, format, *args):
+        # Override to ensure UTF-8 printing and custom format if needed
+        sys.stderr.write("%s - - [%s] %s\n" %
+                         (self.client_address[0],
+                          self.log_date_time_string(),
+                          format % args))
+
+    def send_error(self, code, message=None, explain=None):
+        # Custom error handling to log specific file for 404
+        if code == 404:
+            print(f"❌ [404 Not Found] File: {self.path}")
+        super().send_error(code, message, explain)
 
     def do_POST(self):
         length = int(self.headers.get('content-length'))
@@ -146,7 +169,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # Profile ID for context
         profile_id = req_data.get('profileId', 'linhtrang')
         
-        profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
+        profile_path = os.path.join(CONFIGS_DIR, f'character_profile_{profile_id}.json')
 
         # API: Create Profile (New or Clone)
         if self.path == '/api/profiles':
@@ -160,14 +183,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                      return
 
                 # Check if exists
-                new_p_path = os.path.join(DATA_DIR, f'character_profile_{new_id}.json')
+                new_p_path = os.path.join(CONFIGS_DIR, f'character_profile_{new_id}.json')
                 if os.path.exists(new_p_path):
                     self.send_error(400, "Profile ID already exists")
                     return
 
                 if source_id:
                     # Clone Mode
-                    source_path = os.path.join(DATA_DIR, f'character_profile_{source_id}.json')
+                    source_path = os.path.join(CONFIGS_DIR, f'character_profile_{source_id}.json')
                     if not os.path.exists(source_path):
                         self.send_error(404, "Source Profile not found")
                         return
@@ -203,6 +226,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 
                 self.send_json({'success': True})
             except Exception as e:
+                print(f"Error in POST {self.path}: {e}")
+                traceback.print_exc()
                 self.send_error(500, str(e))
             return
 
@@ -311,7 +336,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     self.send_error(404, "Scene not found")
                 
             except Exception as e:
-                print(e)
+                print(f"Error in Upload: {e}")
+                traceback.print_exc()
                 self.send_error(500, str(e))
             return
 
@@ -321,7 +347,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         req_data = json.loads(body)
         profile_id = req_data.get('profileId', 'linhtrang')
         
-        profile_path = os.path.join(DATA_DIR, f'character_profile_{profile_id}.json')
+        profile_path = os.path.join(CONFIGS_DIR, f'character_profile_{profile_id}.json')
 
         # API: Update Profile
         if self.path == '/api/profile':
